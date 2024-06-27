@@ -1,0 +1,2098 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../theme/frontend/css//fontawesome-free-6.4.0-web/css/all.css" rel="stylesheet">
+    <link href="../theme/frontend/css/toastify.css" rel="stylesheet">
+    <link href="../theme/frontend/css/animate.min.css" rel="stylesheet">
+    <link href="../theme/frontend/css/swiper-bundle.min.css" rel="stylesheet">
+    <link href="../theme/frontend/css/lightbox.css" rel="stylesheet">
+    <link href="../theme/frontend/css/select2.min.css" rel="stylesheet">
+    <link href="../theme/frontend/css/output.css" rel="stylesheet">
+    <link href="../theme/frontend/css/main.css" rel="stylesheet">
+    <link href="../theme/frontend/css/sub.css" rel="stylesheet">
+    <link href="../theme/frontend/css/add.css" rel="stylesheet">
+    <link href="../theme/frontend/css/style.css" rel="stylesheet">
+    <title>Tuyển dụng</title>
+</head>
+
+<body>
+    <header class="header bg-[var(--cl-blue)] xl:py-0 py-2 fixed">
+        <div class="2xl:px-10 xl:py-0 px-5 py-4 flex items-center !max-w-[1920px] mx-auto">
+            <span class="show-menu-mobile text-white block xl:hidden text-[20px] mr-4"><i
+                    class="fa-solid fa-bars"></i></span>
+            <a href="https://joblaw.vn" title="JobLaw TUYỂN DỤNG VIỆC LÀM PHÁP LUẬT"
+                class="h-logo max-w-[125px] lg:max-w-[135px] shrink-0 xl:mr-2">
+                <picture>
+                    <source media="(min-width:0px)" data-srcset="../theme/frontend/images/logo-joblaw.png"
+                        srcset="../theme/frontend/images/logo-joblaw.png">
+                    <img loading="auto" src="../theme/frontend/images/logo-joblaw.png"
+                        data-src="../theme/frontend/images/logo-joblaw.png" alt="Logo" title="Logo" class="img-fluid">
+                </picture>
+            </a>
+            <div class="menu flex-1 xl:flex items-center justify-end">
+                <a href="https://joblaw.vn" title="JobLaw TUYỂN DỤNG VIỆC LÀM PHÁP LUẬT"
+                    class="logo-mobile block xl:hidden max-w-[176px] mx-auto my-4">
+                    <picture>
+                        <source media="(min-width:0px)" data-srcset="../theme/frontend/images/logo-joblaw.png"
+                            srcset="../theme/frontend/images/logo-joblaw.png">
+                        <img loading="auto" src="../theme/frontend/images/logo-joblaw.png"
+                            data-src="../theme/frontend/images/logo-joblaw.png" alt="Logo" title="Logo"
+                            class="img-fluid">
+                    </picture>
+                </a>
+                <ul class="">
+                    <li><a href="tuyen-dung" title="Tuyển dụng" class=" ">Tuyển dụng</a></li>
+                    <li><a href="tim-ung-vien-moi" title="Ứng viên" class=" ">Ứng viên</a></li>
+                    <li><a href="phap-luat-lao-dong" title="Pháp luật lao động" class=" ">Pháp luật lao động</a>
+                        <ul class="">
+                            <li><a href="hoi-dap-nganh-luat" title="Hỏi - Đáp ngành luật" class=" ">Hỏi - Đáp ngành
+                                    luật</a></li>
+                            <li><a href="dinh-huong-nganh-luat" title="Định hướng ngành luật" class=" ">Định hướng ngành
+                                    luật</a></li>
+                            <li><a href="ki-nang-nganh-luat" title="Kĩ năng ngành luật" class=" ">Kĩ năng ngành luật</a>
+                            </li>
+                            <li><a href="tuyen-dung-cong-chuc" title="Tuyển dụng công chức" class=" ">Tuyển dụng công
+                                    chức</a></li>
+                        </ul><span class="btn-dropdown-menu"><i class="fa fa-angle-down text-[var(--cl-text-main)]"
+                                aria-hidden="true"></i></span>
+                    </li>
+                    <li><a href="tien-ich" title="Tiện ích" class=" ">Tiện ích</a>
+                        <ul class="">
+                            <li><a href="cong-cu-tinh-luong-gross-net" title="Công cụ tính lương Gross/Net"
+                                    class=" ">Công cụ tính lương Gross/Net</a></li>
+                            <li><a href="cong-cu-tinh-thue-tncn" title="Công cụ tính thuế TNCN" class=" ">Công cụ tính
+                                    thuế TNCN</a></li>
+                        </ul><span class="btn-dropdown-menu"><i class="fa fa-angle-down text-[var(--cl-text-main)]"
+                                aria-hidden="true"></i></span>
+                    </li>
+                    <li><a href="dich-vu-cua-chung-toi" title="Dịch vụ" class=" ">Dịch vụ</a></li>
+                    <li><a href="huong-dan-su-dung" title="Hướng dẫn sử dụng" class=" ">Hướng dẫn sử dụng</a></li>
+                    <li><a href="danh-ba-luat-su" title="Danh bạ luật sư" class=" ">Danh bạ luật sư</a></li>
+                    <li><a href="lien-he" title="Liên hệ" class=" ">Liên hệ</a></li>
+                </ul>
+                <div class="box-actions flex flex-wrap">
+                    <a href="https://joblaw.vn/dang-ky" title="Đăng ký"
+                        class="btn text-white py-4 px-6 bg-transparent hover:text-white rounded-[1rem] hover:bg-[var(--cl-orange)] transition-all duration-300 border border-solid border-white hover:border-[var(--cl-orange)] mr-4 last:mr-0 xl:min-w-[132px] text-center">Đăng
+                        ký</a>
+                    <a href="https://joblaw.vn/dang-nhap" title="Đăng nhập"
+                        class="btn text-white py-4 px-6 bg-transparent hover:text-white rounded-[1rem]  hover:bg-[var(--cl-orange)] transition-all duration-300 border border-solid border-white hover:border-[var(--cl-orange)] mr-4 last:mr-0 xl:min-w-[132px] text-center">Đăng
+                        nhập</a>
+
+                </div>
+
+            </div>
+            <div class="box-actions flex xl:hidden flex-1 justify-end flex-wrap">
+                <a href="https://joblaw.vn/dang-nhap" title="Đăng nhập"
+                    class="btn text-white hover:text-[var(--cl-text-main)] hover:bg-white transition-all duration-500 bg-[var(--cl-bg-main)] mb-2 lg:mb-0 mr-2 last:mr-0 border-solid border-[var(--border-main)] border">Đăng
+                    nhập</a>
+                <a href="https://joblaw.vn/dang-ky" title="Đăng ký"
+                    class="btn text-white hover:text-[var(--cl-text-main)] hover:bg-white transition-all duration-500 bg-[var(--cl-bg-main)] mb-2 lg:mb-0 mr-2 last:mr-0 border-solid border-[var(--border-main)] border">Đăng
+                    ký
+                </a>
+
+            </div>
+
+            <div class="flex items-center xl:hidden ml-auto">
+            </div>
+
+        </div>
+        <div
+            class="over-lay fixed block xl:hidden top-0 right-[-100%] w-full h-full z-50 bg-[rgba(0,0,0,.5)] transition-all duration-300">
+        </div>
+    </header>
+    <section class="xl:py-10 py-6 shadow-[0px_2px_25px_0px_rgba(0,0,0,.1)]">
+        <div class="container">
+            <div class="flex-wrap items-center block sm:flex">
+                <div class="flex-1 mb-4 sm:mb-0">
+                    <form action="https://joblaw.vn/tuyen-dung" method=" GET"
+                        class="form-search form-search-banner rounded-lg bg-white shadow-[0px_4px_25px_0px_rgba(0,0,0,.2)] px-2 py-2">
+                        <div class="flex flex-wrap items-center -mx-2">
+                            <div class="w-full lg:w-[88%] px-2 flex flex-wrap">
+                                <div class="w-full px-3 md:w-1/2 lg:w-1/4 lg:px-6 lg:last:pr-0 lg:py-0">
+                                    <div
+                                        class="relative flex items-center px-2 border-soli border-[1px] border-[#6b7280] lg:border-none rounded-md mb-3 lg:mb-0">
+                                        <button type="submit" class="">
+                                            <span class="inline-block w-6 h-6 bg-center bg-no-repeat bg-contain "
+                                                style=" background-image: url(theme/frontend/images/icon-search-form.svg);">
+                                            </span>
+                                        </button>
+                                        <input type="text" class="w-full p-4 border-none" name="s"
+                                            placeholder="Vị trí ứng tuyển">
+                                    </div>
+                                </div>
+                                <div class="w-full px-3 md:w-1/2 lg:w-1/4 lg:px-6 lg:last:pr-0 lg:py-0">
+                                    <div
+                                        class="relative flex items-center px-2  border-solid  border-[1px] border-[#6b7280] lg:border-none rounded-md mb-3 lg:mb-0">
+                                        <span class="inline-block w-6 h-6 bg-center bg-no-repeat bg-contain shrink-0"
+                                            style="background-image: url(theme/frontend/images/icon-job.svg);"></span>
+                                        <select
+                                            class="p-4 w-full text-[var(--cl-sub-title)] bg-white js-select-2 border-none select2-hidden-accessible"
+                                            name="career" data-select2-id="select2-data-1-p5aq" tabindex="-1"
+                                            aria-hidden="true">
+                                            <option selected="" disabled="" data-select2-id="select2-data-3-mor1">Tất cả
+                                                các nghề</option>
+                                            <option value="65">Vụ án hình sự</option>
+                                            <option value="66">Vụ án dân sự</option>
+                                            <option value="67">Vụ án hành chính</option>
+                                            <option value="68">Vụ án lao động</option>
+                                            <option value="69">Vụ án hôn nhân và gia đình</option>
+                                            <option value="70">Vụ án tranh chấp đất đai</option>
+                                            <option value="71">Vụ án án KDTM, kinh tế</option>
+                                            <option value="72">Tư vấn thành lập doanh nghiệp</option>
+                                            <option value="73">Tư vấn chia tách doanh nghiệp</option>
+                                            <option value="74">Tư vấn sáp nhập doanh nghiệp</option>
+                                            <option value="75">Tư vấn giải thể doanh nghiệp</option>
+                                            <option value="76">Tư vấn đăng ký SHTT</option>
+                                            <option value="77">Tư vấn xin giấy phép con</option>
+                                            <option value="50">Luật sư</option>
+                                            <option value="51">Công chứng viên</option>
+                                            <option value="52">Thừa phát lại</option>
+                                            <option value="53">Quản tài viên</option>
+                                            <option value="54">Đấu giá viên</option>
+                                            <option value="55">Thẩm định giá</option>
+                                            <option value="56">Thực tập sinh</option>
+                                            <option value="57">Pháp chế</option>
+                                            <option value="58">Chuyên viên pháp lý</option>
+                                            <option value="59">HCNS</option>
+                                            <option value="60">Thư ký, trợ lý</option>
+                                            <option value="61">Giảng viên</option>
+                                            <option value="62">Nghiên cứu viên</option>
+                                            <option value="63">Lĩnh vực khác</option>
+                                        </select><span class="select2 select2-container select2-container--default"
+                                            dir="ltr" data-select2-id="select2-data-2-lg9c"
+                                            style="width: 100.828px;"><span class="selection"><span
+                                                    class="select2-selection select2-selection--single" role="combobox"
+                                                    aria-haspopup="true" aria-expanded="false" tabindex="0"
+                                                    aria-disabled="false" aria-labelledby="select2-career-3d-container"
+                                                    aria-controls="select2-career-3d-container"><span
+                                                        class="select2-selection__rendered"
+                                                        id="select2-career-3d-container" role="textbox"
+                                                        aria-readonly="true" title="Tất cả các nghề">Tất cả các
+                                                        nghề</span><span class="select2-selection__arrow"
+                                                        role="presentation"><b
+                                                            role="presentation"></b></span></span></span><span
+                                                class="dropdown-wrapper" aria-hidden="true"></span></span>
+                                    </div>
+                                </div>
+                                <div class="w-full px-3 md:w-1/2 lg:w-1/4 lg:px-6 lg:last:pr-0 lg:py-0">
+                                    <div
+                                        class="relative flex items-center px-2  border-solid  border-[1px] border-[#6b7280] lg:border-none rounded-md mb-3 lg:mb-0">
+                                        <span class="inline-block w-6 h-6 bg-center bg-no-repeat bg-contain shrink-0"
+                                            style="background-image: url(theme/frontend/images/icon-city.svg);"></span>
+                                        <select
+                                            class="p-4 w-full text-[var(--cl-sub-title)] bg-white js-select-2 select2-hidden-accessible"
+                                            name="province" data-select2-id="select2-data-4-m6ll" tabindex="-1"
+                                            aria-hidden="true">
+                                            <option selected="" disabled="" data-select2-id="select2-data-6-sfdr">Tất cả
+                                                địa điểm</option>
+                                            <option value="2706">Hà Nội</option>
+                                            <option value="2710">Hồ Chí Minh</option>
+                                            <option value="2717">An Giang</option>
+                                            <option value="2749">Bà Rịa - Vũng Tàu</option>
+                                            <option value="2738">Bắc Giang</option>
+                                            <option value="2750">Bắc Kạn</option>
+                                            <option value="2735">Bạc Liêu</option>
+                                            <option value="2747">Bắc Ninh</option>
+                                            <option value="2715">Bến Tre</option>
+                                            <option value="2724">Bình Dương</option>
+                                            <option value="2708">Bình Định</option>
+                                            <option value="2756">Bình Phước</option>
+                                            <option value="2742">Bình Thuận</option>
+                                            <option value="2726">Cà Mau</option>
+                                            <option value="2728">Cần Thơ</option>
+                                            <option value="2765">Cao Bằng</option>
+                                            <option value="2770">Chưa cập nhật</option>
+                                            <option value="2741">Đà Nẵng</option>
+                                            <option value="2736">Đắk Lắk</option>
+                                            <option value="2755">Đắk Nông</option>
+                                            <option value="2737">Điện Biên</option>
+                                            <option value="2713">Đồng Nai</option>
+                                            <option value="2748">Đồng Tháp</option>
+                                            <option value="2714">Gia Lai</option>
+                                            <option value="2751">Hà Giang</option>
+                                            <option value="2746">Hà Nam</option>
+                                            <option value="2745">Hà Tĩnh</option>
+                                            <option value="2733">Hải Dương</option>
+                                            <option value="2734">Hải Phòng</option>
+                                            <option value="2768">Hậu Giang</option>
+                                            <option value="2763">Hòa Bình</option>
+                                            <option value="2718">Hưng Yên</option>
+                                            <option value="2719">Khánh Hòa</option>
+                                            <option value="2722">Kiên Giang</option>
+                                            <option value="2753">Lai Châu</option>
+                                            <option value="2730">Lâm Đồng</option>
+                                            <option value="2752">Lạng Sơn</option>
+                                            <option value="2762">Lào Cai</option>
+                                            <option value="2727">Long An</option>
+                                            <option value="2709">Miền Bắc</option>
+                                            <option value="2712">Miền Nam</option>
+                                            <option value="2731">Miền Trung</option>
+                                            <option value="2744">Nam Định</option>
+                                            <option value="2723">Nghệ An</option>
+                                            <option value="2743">Ninh Bình</option>
+                                            <option value="2760">Ninh Thuận</option>
+                                            <option value="2711">Phú Thọ</option>
+                                            <option value="2761">Quảng Bình</option>
+                                            <option value="2732">Quảng Nam</option>
+                                            <option value="2766">Quảng Ngãi</option>
+                                            <option value="2739">Quảng Ninh</option>
+                                            <option value="2764">Quảng Trị</option>
+                                            <option value="2729">Sóc Trăng</option>
+                                            <option value="2769">Sơn La</option>
+                                            <option value="2767">Tây Ninh</option>
+                                            <option value="2720">Thái Bình</option>
+                                            <option value="2758">Thái Nguyên</option>
+                                            <option value="2716">Thanh Hóa</option>
+                                            <option value="2740">Thừa Thiên Huế</option>
+                                            <option value="2725">Tiền Giang</option>
+                                            <option value="2707">Toàn Quốc</option>
+                                            <option value="2754">Trà Vinh</option>
+                                            <option value="2721">Vĩnh Long</option>
+                                            <option value="2757">Vĩnh Phúc</option>
+                                            <option value="2759">Yên Bái</option>
+                                        </select><span class="select2 select2-container select2-container--default"
+                                            dir="ltr" data-select2-id="select2-data-5-2nxd"
+                                            style="width: 101.484px;"><span class="selection"><span
+                                                    class="select2-selection select2-selection--single" role="combobox"
+                                                    aria-haspopup="true" aria-expanded="false" tabindex="0"
+                                                    aria-disabled="false"
+                                                    aria-labelledby="select2-province-lz-container"
+                                                    aria-controls="select2-province-lz-container"><span
+                                                        class="select2-selection__rendered"
+                                                        id="select2-province-lz-container" role="textbox"
+                                                        aria-readonly="true" title="Tất cả địa điểm">Tất cả địa
+                                                        điểm</span><span class="select2-selection__arrow"
+                                                        role="presentation"><b
+                                                            role="presentation"></b></span></span></span><span
+                                                class="dropdown-wrapper" aria-hidden="true"></span></span>
+                                    </div>
+                                </div>
+                                <div class="w-full px-3 md:w-1/2 lg:w-1/4 lg:px-6 lg:last:pr-0 lg:py-0">
+                                    <div
+                                        class="relative flex items-center px-2  border-solid border-[1px] border-[#6b7280] lg:border-none rounded-md mb-3 lg:mb-0">
+                                        <span class="inline-block w-6 h-6 bg-center bg-no-repeat bg-contain shrink-0"
+                                            style="background-image: url(theme/frontend/images/icon-salary.svg);"></span>
+                                        <select name="price_ranges[]" id=""
+                                            class="p-4 w-full text-[var(--cl-sub-title)] bg-white js-select-2 select2-hidden-accessible"
+                                            data-select2-id="select2-data-7-gt7c" tabindex="-1" aria-hidden="true">
+                                            <option selected="" disabled="" data-select2-id="select2-data-9-jkmm">Tất cả
+                                                mức lượng</option>
+                                            <option value="1">Dưới 7 triệu</option>
+                                            <option value="4">Từ 7 đến 10 triệu</option>
+                                            <option value="3">Từ 11 đến 15 triệu</option>
+                                            <option value="2">Từ 16 đến 20 triệu</option>
+                                            <option value="5">Trên 21 triệu</option>
+                                        </select><span class="select2 select2-container select2-container--default"
+                                            dir="ltr" data-select2-id="select2-data-8-jbap"
+                                            style="width: 113.281px;"><span class="selection"><span
+                                                    class="select2-selection select2-selection--single" role="combobox"
+                                                    aria-haspopup="true" aria-expanded="false" tabindex="0"
+                                                    aria-disabled="false" aria-labelledby="select2--container"
+                                                    aria-controls="select2--container"><span
+                                                        class="select2-selection__rendered" id="select2--container"
+                                                        role="textbox" aria-readonly="true" title="Tất cả mức lượng">Tất
+                                                        cả mức lượng</span><span class="select2-selection__arrow"
+                                                        role="presentation"><b
+                                                            role="presentation"></b></span></span></span><span
+                                                class="dropdown-wrapper" aria-hidden="true"></span></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-full lg:w-[12%] px-2 text-center lg:text-right">
+                                <button type="submit"
+                                    class="btn w-full inline-flex py-4 px-6 rounded bg-[#DD6B4D] hover:bg-[#ff8768] text-white font-bold">Tìm
+                                    kiếm</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <a href="ho-so-cua-ban" title="Tạo hồ sơ" class="ml-4 font-semibold rounded btn btn-blue shrink-0">Tạo
+                    hồ sợ</a>
+            </div>
+            <div class="flex mt-4 propose xl:mt-6">
+                <p class="title font-medium text-[#000] shrink-0 mr-4 pt-2 xl:pt-4">Đề xuất</p>
+                <ul class="flex flex-wrap ">
+                    <li class="mb-2 mr-4">
+                        <a href="https://joblaw.vn/tuyen-dung?career=50" title="Luật sư"
+                            class="block bg-white xl:py-4 xl:px-6 py-2 px-4 rounded text-[#000] hover:bg-[#DD6B4D] hover:text-white border border-solid border-[#a8aba8] hover:border-[#DD6B4D]">Luật
+                            sư</a>
+                    </li>
+                    <li class="mb-2 mr-4">
+                        <a href="https://joblaw.vn/tuyen-dung?career=51" title="Công chứng viên"
+                            class="block bg-white xl:py-4 xl:px-6 py-2 px-4 rounded text-[#000] hover:bg-[#DD6B4D] hover:text-white border border-solid border-[#a8aba8] hover:border-[#DD6B4D]">Công
+                            chứng viên</a>
+                    </li>
+                    <li class="mb-2 mr-4">
+                        <a href="https://joblaw.vn/tuyen-dung?career=52" title="Thừa phát lại"
+                            class="block bg-white xl:py-4 xl:px-6 py-2 px-4 rounded text-[#000] hover:bg-[#DD6B4D] hover:text-white border border-solid border-[#a8aba8] hover:border-[#DD6B4D]">Thừa
+                            phát lại</a>
+                    </li>
+                    <li class="mb-2 mr-4">
+                        <a href="https://joblaw.vn/tuyen-dung?career=53" title="Quản tài viên"
+                            class="block bg-white xl:py-4 xl:px-6 py-2 px-4 rounded text-[#000] hover:bg-[#DD6B4D] hover:text-white border border-solid border-[#a8aba8] hover:border-[#DD6B4D]">Quản
+                            tài viên</a>
+                    </li>
+                    <li class="mb-2 mr-4">
+                        <a href="https://joblaw.vn/tuyen-dung?career=54" title="Đấu giá viên"
+                            class="block bg-white xl:py-4 xl:px-6 py-2 px-4 rounded text-[#000] hover:bg-[#DD6B4D] hover:text-white border border-solid border-[#a8aba8] hover:border-[#DD6B4D]">Đấu
+                            giá viên</a>
+                    </li>
+                    <li class="mb-2 mr-4">
+                        <a href="https://joblaw.vn/tuyen-dung?career=55" title="Thẩm định giá"
+                            class="block bg-white xl:py-4 xl:px-6 py-2 px-4 rounded text-[#000] hover:bg-[#DD6B4D] hover:text-white border border-solid border-[#a8aba8] hover:border-[#DD6B4D]">Thẩm
+                            định giá</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="lg:py-10 py-6">
+        <div class="container">
+            <div class="flex flex-wrap -mx-2">
+                <div class="w-full lg:w-1/4 px-2">
+                    <div class="form-search__job ">
+                        <span class="close-filter__job absolute top-2 right-2 z-[1] block lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                                fill="none">
+                                <path d="M1 1L19 19M19 1L1 19" stroke="#454545" stroke-width="1.5"
+                                    stroke-linecap="round"></path>
+                            </svg>
+                        </span>
+                        <div
+                            class="box-filter__item border border-solid border-[#A8A8A8] rounded-lg 2xl:py-6 2xl:px-8 xl:p-6 p-4 mb-4 last:mb-0">
+                            <p
+                                class="title font-medium text-[#000] 2xl:text-[1.5rem] xl:text-[1.25rem] text-[1rem] mb-4">
+                                Ngành nghề
+                            </p>
+                            <label class="relative flex items-center gap-2 mb-4 checkbox__all last:mb-0" item_filter="">
+                                <input type="checkbox" name="careers[]" id="careers_65" class="ip-op-0 input-check"
+                                    value="65" filter="filter">
+                                <span
+                                    class="circle block w-[18px] h-[18px] rounded-[2px] border-[1px] border-solid border-[#A8A8A8]"></span>
+                                <p class="text text-[#000] text-[0.875rem]">Vụ án hình sự</p>
+                            </label>
+                            <label class="relative flex items-center gap-2 mb-4 checkbox__all last:mb-0" item_filter="">
+                                <input type="checkbox" name="careers[]" id="careers_66" class="ip-op-0 input-check"
+                                    value="66" filter="filter">
+                                <span
+                                    class="circle block w-[18px] h-[18px] rounded-[2px] border-[1px] border-solid border-[#A8A8A8]"></span>
+                                <p class="text text-[#000] text-[0.875rem]">Vụ án dân sự</p>
+                            </label>
+                            <label class="relative flex items-center gap-2 mb-4 checkbox__all last:mb-0" item_filter="">
+                                <input type="checkbox" name="careers[]" id="careers_67" class="ip-op-0 input-check"
+                                    value="67" filter="filter">
+                                <span
+                                    class="circle block w-[18px] h-[18px] rounded-[2px] border-[1px] border-solid border-[#A8A8A8]"></span>
+                                <p class="text text-[#000] text-[0.875rem]">Vụ án hành chính</p>
+                            </label>
+                            <label class="relative flex items-center gap-2 mb-4 checkbox__all last:mb-0" item_filter="">
+                                <input type="checkbox" name="careers[]" id="careers_68" class="ip-op-0 input-check"
+                                    value="68" filter="filter">
+                                <span
+                                    class="circle block w-[18px] h-[18px] rounded-[2px] border-[1px] border-solid border-[#A8A8A8]"></span>
+                                <p class="text text-[#000] text-[0.875rem]">Vụ án lao động</p>
+                            </label>
+                            <label class="relative flex items-center gap-2 mb-4 checkbox__all last:mb-0" item_filter="">
+                                <input type="checkbox" name="careers[]" id="careers_69" class="ip-op-0 input-check"
+                                    value="69" filter="filter">
+                                <span
+                                    class="circle block w-[18px] h-[18px] rounded-[2px] border-[1px] border-solid border-[#A8A8A8]"></span>
+                                <p class="text text-[#000] text-[0.875rem]">Vụ án hôn nhân và gia đình</p>
+                            </label>
+                            <label class="relative flex items-center gap-2 mb-4 checkbox__all last:mb-0" item_filter="">
+                                <input type="checkbox" name="careers[]" id="careers_70" class="ip-op-0 input-check"
+                                    value="70" filter="filter">
+                                <span
+                                    class="circle block w-[18px] h-[18px] rounded-[2px] border-[1px] border-solid border-[#A8A8A8]"></span>
+                                <p class="text text-[#000] text-[0.875rem]">Vụ án tranh chấp đất đai</p>
+                            </label>
+                            <label class="relative flex items-center gap-2 mb-4 checkbox__all last:mb-0" item_filter="">
+                                <input type="checkbox" name="careers[]" id="careers_71" class="ip-op-0 input-check"
+                                    value="71" filter="filter">
+                                <span
+                                    class="circle block w-[18px] h-[18px] rounded-[2px] border-[1px] border-solid border-[#A8A8A8]"></span>
+                                <p class="text text-[#000] text-[0.875rem]">Vụ án án KDTM, kinh tế</p>
+                            </label>
+                            <label class="relative flex items-center gap-2 mb-4 checkbox__all last:mb-0" item_filter="">
+                                <input type="checkbox" name="careers[]" id="careers_72" class="ip-op-0 input-check"
+                                    value="72" filter="filter">
+                                <span
+                                    class="circle block w-[18px] h-[18px] rounded-[2px] border-[1px] border-solid border-[#A8A8A8]"></span>
+                                <p class="text text-[#000] text-[0.875rem]">Tư vấn thành lập doanh nghiệp</p>
+                            </label>
+                            <label class="relative flex items-center gap-2 mb-4 checkbox__all last:mb-0" item_filter="">
+                                <input type="checkbox" name="careers[]" id="careers_73" class="ip-op-0 input-check"
+                                    value="73" filter="filter">
+                                <span
+                                    class="circle block w-[18px] h-[18px] rounded-[2px] border-[1px] border-solid border-[#A8A8A8]"></span>
+                                <p class="text text-[#000] text-[0.875rem]">Tư vấn chia tách doanh nghiệp</p>
+                            </label>
+                            <label class="relative flex items-center gap-2 mb-4 checkbox__all last:mb-0" item_filter="">
+                                <input type="checkbox" name="careers[]" id="careers_74" class="ip-op-0 input-check"
+                                    value="74" filter="filter">
+                                <span
+                                    class="circle block w-[18px] h-[18px] rounded-[2px] border-[1px] border-solid border-[#A8A8A8]"></span>
+                                <p class="text text-[#000] text-[0.875rem]">Tư vấn sáp nhập doanh nghiệp</p>
+                            </label>
+                            <label class="relative flex items-center gap-2 mb-4 checkbox__all last:mb-0" item_filter="">
+                                <input type="checkbox" name="careers[]" id="careers_75" class="ip-op-0 input-check"
+                                    value="75" filter="filter">
+                                <span
+                                    class="circle block w-[18px] h-[18px] rounded-[2px] border-[1px] border-solid border-[#A8A8A8]"></span>
+                                <p class="text text-[#000] text-[0.875rem]">Tư vấn giải thể doanh nghiệp</p>
+                            </label>
+                            <label class="relative flex items-center gap-2 mb-4 checkbox__all last:mb-0" item_filter="">
+                                <input type="checkbox" name="careers[]" id="careers_76" class="ip-op-0 input-check"
+                                    value="76" filter="filter">
+                                <span
+                                    class="circle block w-[18px] h-[18px] rounded-[2px] border-[1px] border-solid border-[#A8A8A8]"></span>
+                                <p class="text text-[#000] text-[0.875rem]">Tư vấn đăng ký SHTT</p>
+                            </label>
+                            <label class="relative flex items-center gap-2 mb-4 checkbox__all last:mb-0" item_filter="">
+                                <input type="checkbox" name="careers[]" id="careers_77" class="ip-op-0 input-check"
+                                    value="77" filter="filter">
+                                <span
+                                    class="circle block w-[18px] h-[18px] rounded-[2px] border-[1px] border-solid border-[#A8A8A8]"></span>
+                                <p class="text text-[#000] text-[0.875rem]">Tư vấn xin giấy phép con</p>
+                            </label>
+                            <label class="relative flex items-center gap-2 mb-4 checkbox__all last:mb-0" item_filter="">
+                                <input type="checkbox" name="careers[]" id="careers_50" class="ip-op-0 input-check"
+                                    value="50" filter="filter">
+                                <span
+                                    class="circle block w-[18px] h-[18px] rounded-[2px] border-[1px] border-solid border-[#A8A8A8]"></span>
+                                <p class="text text-[#000] text-[0.875rem]">Luật sư</p>
+                            </label>
+                            <label class="relative flex items-center gap-2 mb-4 checkbox__all last:mb-0" item_filter="">
+                                <input type="checkbox" name="careers[]" id="careers_51" class="ip-op-0 input-check"
+                                    value="51" filter="filter">
+                                <span
+                                    class="circle block w-[18px] h-[18px] rounded-[2px] border-[1px] border-solid border-[#A8A8A8]"></span>
+                                <p class="text text-[#000] text-[0.875rem]">Công chứng viên</p>
+                            </label>
+                            <label class="relative flex items-center gap-2 mb-4 checkbox__all last:mb-0" item_filter="">
+                                <input type="checkbox" name="careers[]" id="careers_52" class="ip-op-0 input-check"
+                                    value="52" filter="filter">
+                                <span
+                                    class="circle block w-[18px] h-[18px] rounded-[2px] border-[1px] border-solid border-[#A8A8A8]"></span>
+                                <p class="text text-[#000] text-[0.875rem]">Thừa phát lại</p>
+                            </label>
+                            <label class="relative flex items-center gap-2 mb-4 checkbox__all last:mb-0" item_filter="">
+                                <input type="checkbox" name="careers[]" id="careers_53" class="ip-op-0 input-check"
+                                    value="53" filter="filter">
+                                <span
+                                    class="circle block w-[18px] h-[18px] rounded-[2px] border-[1px] border-solid border-[#A8A8A8]"></span>
+                                <p class="text text-[#000] text-[0.875rem]">Quản tài viên</p>
+                            </label>
+                            <label class="relative flex items-center gap-2 mb-4 checkbox__all last:mb-0" item_filter="">
+                                <input type="checkbox" name="careers[]" id="careers_54" class="ip-op-0 input-check"
+                                    value="54" filter="filter">
+                                <span
+                                    class="circle block w-[18px] h-[18px] rounded-[2px] border-[1px] border-solid border-[#A8A8A8]"></span>
+                                <p class="text text-[#000] text-[0.875rem]">Đấu giá viên</p>
+                            </label>
+                            <label class="relative flex items-center gap-2 mb-4 checkbox__all last:mb-0" item_filter="">
+                                <input type="checkbox" name="careers[]" id="careers_55" class="ip-op-0 input-check"
+                                    value="55" filter="filter">
+                                <span
+                                    class="circle block w-[18px] h-[18px] rounded-[2px] border-[1px] border-solid border-[#A8A8A8]"></span>
+                                <p class="text text-[#000] text-[0.875rem]">Thẩm định giá</p>
+                            </label>
+                            <label class="relative flex items-center gap-2 mb-4 checkbox__all last:mb-0" item_filter="">
+                                <input type="checkbox" name="careers[]" id="careers_56" class="ip-op-0 input-check"
+                                    value="56" filter="filter">
+                                <span
+                                    class="circle block w-[18px] h-[18px] rounded-[2px] border-[1px] border-solid border-[#A8A8A8]"></span>
+                                <p class="text text-[#000] text-[0.875rem]">Thực tập sinh</p>
+                            </label>
+                            <label class="relative flex items-center gap-2 mb-4 checkbox__all last:mb-0" item_filter="">
+                                <input type="checkbox" name="careers[]" id="careers_57" class="ip-op-0 input-check"
+                                    value="57" filter="filter">
+                                <span
+                                    class="circle block w-[18px] h-[18px] rounded-[2px] border-[1px] border-solid border-[#A8A8A8]"></span>
+                                <p class="text text-[#000] text-[0.875rem]">Pháp chế</p>
+                            </label>
+                            <label class="relative flex items-center gap-2 mb-4 checkbox__all last:mb-0" item_filter="">
+                                <input type="checkbox" name="careers[]" id="careers_58" class="ip-op-0 input-check"
+                                    value="58" filter="filter">
+                                <span
+                                    class="circle block w-[18px] h-[18px] rounded-[2px] border-[1px] border-solid border-[#A8A8A8]"></span>
+                                <p class="text text-[#000] text-[0.875rem]">Chuyên viên pháp lý</p>
+                            </label>
+                            <label class="relative flex items-center gap-2 mb-4 checkbox__all last:mb-0" item_filter="">
+                                <input type="checkbox" name="careers[]" id="careers_59" class="ip-op-0 input-check"
+                                    value="59" filter="filter">
+                                <span
+                                    class="circle block w-[18px] h-[18px] rounded-[2px] border-[1px] border-solid border-[#A8A8A8]"></span>
+                                <p class="text text-[#000] text-[0.875rem]">HCNS</p>
+                            </label>
+                            <label class="relative flex items-center gap-2 mb-4 checkbox__all last:mb-0" item_filter="">
+                                <input type="checkbox" name="careers[]" id="careers_60" class="ip-op-0 input-check"
+                                    value="60" filter="filter">
+                                <span
+                                    class="circle block w-[18px] h-[18px] rounded-[2px] border-[1px] border-solid border-[#A8A8A8]"></span>
+                                <p class="text text-[#000] text-[0.875rem]">Thư ký, trợ lý</p>
+                            </label>
+                            <label class="relative flex items-center gap-2 mb-4 checkbox__all last:mb-0" item_filter="">
+                                <input type="checkbox" name="careers[]" id="careers_61" class="ip-op-0 input-check"
+                                    value="61" filter="filter">
+                                <span
+                                    class="circle block w-[18px] h-[18px] rounded-[2px] border-[1px] border-solid border-[#A8A8A8]"></span>
+                                <p class="text text-[#000] text-[0.875rem]">Giảng viên</p>
+                            </label>
+                            <label class="relative flex items-center gap-2 mb-4 checkbox__all last:mb-0" item_filter="">
+                                <input type="checkbox" name="careers[]" id="careers_62" class="ip-op-0 input-check"
+                                    value="62" filter="filter">
+                                <span
+                                    class="circle block w-[18px] h-[18px] rounded-[2px] border-[1px] border-solid border-[#A8A8A8]"></span>
+                                <p class="text text-[#000] text-[0.875rem]">Nghiên cứu viên</p>
+                            </label>
+                            <label class="relative flex items-center gap-2 mb-4 checkbox__all last:mb-0" item_filter="">
+                                <input type="checkbox" name="careers[]" id="careers_63" class="ip-op-0 input-check"
+                                    value="63" filter="filter">
+                                <span
+                                    class="circle block w-[18px] h-[18px] rounded-[2px] border-[1px] border-solid border-[#A8A8A8]"></span>
+                                <p class="text text-[#000] text-[0.875rem]">Lĩnh vực khác</p>
+                            </label>
+                        </div>
+                        <div
+                            class="box-filter__item border border-solid border-[#A8A8A8] rounded-lg 2xl:py-6 2xl:px-8 xl:p-6 p-4 mb-4 last:mb-0">
+                            <p
+                                class="title font-medium text-[#000] 2xl:text-[1.5rem] xl:text-[1.25rem] text-[1rem] mb-4">
+                                Cấp bậc
+                            </p>
+                            <label class="relative flex items-center gap-2 mb-4 checkbox__all last:mb-0" item_filter="">
+                                <input type="checkbox" name="level[]" id="level_76" class="ip-op-0 input-check"
+                                    value="76" filter="filter">
+                                <span
+                                    class="circle block w-[18px] h-[18px] rounded-[2px] border-[1px] border-solid border-[#A8A8A8]"></span>
+                                <p class="text text-[#000] text-[0.875rem]">Mới tốt nghiệp, Thực tập</p>
+                            </label>
+                            <label class="relative flex items-center gap-2 mb-4 checkbox__all last:mb-0" item_filter="">
+                                <input type="checkbox" name="level[]" id="level_75" class="ip-op-0 input-check"
+                                    value="75" filter="filter">
+                                <span
+                                    class="circle block w-[18px] h-[18px] rounded-[2px] border-[1px] border-solid border-[#A8A8A8]"></span>
+                                <p class="text text-[#000] text-[0.875rem]">Nhân viên, Có kinh nghiệm</p>
+                            </label>
+                            <label class="relative flex items-center gap-2 mb-4 checkbox__all last:mb-0" item_filter="">
+                                <input type="checkbox" name="level[]" id="level_74" class="ip-op-0 input-check"
+                                    value="74" filter="filter">
+                                <span
+                                    class="circle block w-[18px] h-[18px] rounded-[2px] border-[1px] border-solid border-[#A8A8A8]"></span>
+                                <p class="text text-[#000] text-[0.875rem]">Quản lý</p>
+                            </label>
+                            <label class="relative flex items-center gap-2 mb-4 checkbox__all last:mb-0" item_filter="">
+                                <input type="checkbox" name="level[]" id="level_73" class="ip-op-0 input-check"
+                                    value="73" filter="filter">
+                                <span
+                                    class="circle block w-[18px] h-[18px] rounded-[2px] border-[1px] border-solid border-[#A8A8A8]"></span>
+                                <p class="text text-[#000] text-[0.875rem]">Thư ký</p>
+                            </label>
+                            <label class="relative flex items-center gap-2 mb-4 checkbox__all last:mb-0" item_filter="">
+                                <input type="checkbox" name="level[]" id="level_72" class="ip-op-0 input-check"
+                                    value="72" filter="filter">
+                                <span
+                                    class="circle block w-[18px] h-[18px] rounded-[2px] border-[1px] border-solid border-[#A8A8A8]"></span>
+                                <p class="text text-[#000] text-[0.875rem]">Trưởng nhóm, ban</p>
+                            </label>
+                            <label class="relative flex items-center gap-2 mb-4 checkbox__all last:mb-0" item_filter="">
+                                <input type="checkbox" name="level[]" id="level_71" class="ip-op-0 input-check"
+                                    value="71" filter="filter">
+                                <span
+                                    class="circle block w-[18px] h-[18px] rounded-[2px] border-[1px] border-solid border-[#A8A8A8]"></span>
+                                <p class="text text-[#000] text-[0.875rem]">Cộng tác viên</p>
+                            </label>
+                            <label class="relative flex items-center gap-2 mb-4 checkbox__all last:mb-0" item_filter="">
+                                <input type="checkbox" name="level[]" id="level_70" class="ip-op-0 input-check"
+                                    value="70" filter="filter">
+                                <span
+                                    class="circle block w-[18px] h-[18px] rounded-[2px] border-[1px] border-solid border-[#A8A8A8]"></span>
+                                <p class="text text-[#000] text-[0.875rem]">Trưởng phòng, Quản lý cấp trung</p>
+                            </label>
+                            <label class="relative flex items-center gap-2 mb-4 checkbox__all last:mb-0" item_filter="">
+                                <input type="checkbox" name="level[]" id="level_69" class="ip-op-0 input-check"
+                                    value="69" filter="filter">
+                                <span
+                                    class="circle block w-[18px] h-[18px] rounded-[2px] border-[1px] border-solid border-[#A8A8A8]"></span>
+                                <p class="text text-[#000] text-[0.875rem]">Bán thời gian</p>
+                            </label>
+                            <label class="relative flex items-center gap-2 mb-4 checkbox__all last:mb-0" item_filter="">
+                                <input type="checkbox" name="level[]" id="level_68" class="ip-op-0 input-check"
+                                    value="68" filter="filter">
+                                <span
+                                    class="circle block w-[18px] h-[18px] rounded-[2px] border-[1px] border-solid border-[#A8A8A8]"></span>
+                                <p class="text text-[#000] text-[0.875rem]">Trợ lý kinh doanh</p>
+                            </label>
+                            <label class="relative flex items-center gap-2 mb-4 checkbox__all last:mb-0" item_filter="">
+                                <input type="checkbox" name="level[]" id="level_67" class="ip-op-0 input-check"
+                                    value="67" filter="filter">
+                                <span
+                                    class="circle block w-[18px] h-[18px] rounded-[2px] border-[1px] border-solid border-[#A8A8A8]"></span>
+                                <p class="text text-[#000] text-[0.875rem]">Phó giám đốc</p>
+                            </label>
+                            <label class="relative flex items-center gap-2 mb-4 checkbox__all last:mb-0" item_filter="">
+                                <input type="checkbox" name="level[]" id="level_66" class="ip-op-0 input-check"
+                                    value="66" filter="filter">
+                                <span
+                                    class="circle block w-[18px] h-[18px] rounded-[2px] border-[1px] border-solid border-[#A8A8A8]"></span>
+                                <p class="text text-[#000] text-[0.875rem]">Giám đốc, Quản lý cấp cao</p>
+                            </label>
+                            <label class="relative flex items-center gap-2 mb-4 checkbox__all last:mb-0" item_filter="">
+                                <input type="checkbox" name="level[]" id="level_65" class="ip-op-0 input-check"
+                                    value="65" filter="filter">
+                                <span
+                                    class="circle block w-[18px] h-[18px] rounded-[2px] border-[1px] border-solid border-[#A8A8A8]"></span>
+                                <p class="text text-[#000] text-[0.875rem]">Chuyên viên</p>
+                            </label>
+                        </div>
+                        <div
+                            class="box-filter__item border border-solid border-[#A8A8A8] rounded-lg 2xl:py-6 2xl:px-8 xl:p-6 p-4 mb-4 last:mb-0">
+                            <p
+                                class="title font-medium text-[#000] 2xl:text-[1.5rem] xl:text-[1.25rem] text-[1rem] mb-4">
+                                Mức lương
+                            </p>
+                            <label class="relative flex items-center gap-2 mb-4 checkbox__all last:mb-0" item_filter="">
+                                <input type="checkbox" value="1" name="price_ranges[]" id="price_ranges_1"
+                                    class="ip-op-0 input-check" filter="filter">
+                                <span
+                                    class="circle block w-[18px] h-[18px] rounded-[2px] border-[1px] border-solid border-[#A8A8A8]"></span>
+                                <p class="text text-[#000] text-[0.875rem]">Dưới 7 triệu</p>
+                            </label>
+                            <label class="relative flex items-center gap-2 mb-4 checkbox__all last:mb-0" item_filter="">
+                                <input type="checkbox" value="4" name="price_ranges[]" id="price_ranges_4"
+                                    class="ip-op-0 input-check" filter="filter">
+                                <span
+                                    class="circle block w-[18px] h-[18px] rounded-[2px] border-[1px] border-solid border-[#A8A8A8]"></span>
+                                <p class="text text-[#000] text-[0.875rem]">Từ 7 đến 10 triệu</p>
+                            </label>
+                            <label class="relative flex items-center gap-2 mb-4 checkbox__all last:mb-0" item_filter="">
+                                <input type="checkbox" value="3" name="price_ranges[]" id="price_ranges_3"
+                                    class="ip-op-0 input-check" filter="filter">
+                                <span
+                                    class="circle block w-[18px] h-[18px] rounded-[2px] border-[1px] border-solid border-[#A8A8A8]"></span>
+                                <p class="text text-[#000] text-[0.875rem]">Từ 11 đến 15 triệu</p>
+                            </label>
+                            <label class="relative flex items-center gap-2 mb-4 checkbox__all last:mb-0" item_filter="">
+                                <input type="checkbox" value="2" name="price_ranges[]" id="price_ranges_2"
+                                    class="ip-op-0 input-check" filter="filter">
+                                <span
+                                    class="circle block w-[18px] h-[18px] rounded-[2px] border-[1px] border-solid border-[#A8A8A8]"></span>
+                                <p class="text text-[#000] text-[0.875rem]">Từ 16 đến 20 triệu</p>
+                            </label>
+                            <label class="relative flex items-center gap-2 mb-4 checkbox__all last:mb-0" item_filter="">
+                                <input type="checkbox" value="5" name="price_ranges[]" id="price_ranges_5"
+                                    class="ip-op-0 input-check" filter="filter">
+                                <span
+                                    class="circle block w-[18px] h-[18px] rounded-[2px] border-[1px] border-solid border-[#A8A8A8]"></span>
+                                <p class="text text-[#000] text-[0.875rem]">Trên 21 triệu</p>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full lg:w-3/4 px-2">
+                    <div class="flex items-center justify-between head">
+                        <div
+                            class="head-title-all leading-[1.3] border-l-[5px] border-solid border-[#DD6B4D] pl-4 font-bold 2xl:text-[1.5rem] xl:text-[1.25rem] text-[1rem]">
+                            <span class="text-[var(--cl-blue)]">Tìm thấy <span
+                                    class="count-post text-[var(--cl-orange)]">1546</span> việc làm</span>
+                        </div>
+                        <div
+                            class="show-filter__job lg:hidden inline-flex items-center justify-center w-10 h-10 rounded bg-[#E1E1E1] text-[#000] cursor-pointer">
+                            <span class="w-6 h-6 bg-no-repeat bg-contain icon"
+                                style="background-image: url(theme/frontend/images/filter.png);"></span>
+                        </div>
+                    </div>
+                    <div class="list-job results_filter_post mt-4">
+                        <div
+                            class="item-filter block md:flex flex-wrap bg-[#F7F7F7] border border-solid border-[#A8A8A8] rounded-lg xl:px-5 xl:py-6 p-4 mb-4 relative">
+                            <div class="flex-1 items-center block mb-4 sm:flex md:mr-6 md:mb-0">
+                                <div class="avatar w-full sm:w-[110px] shrink-0 sm:mr-4 mb-2 sm:mb-0">
+                                    <div class="img c-img pt-[100%] rounded overflow-hidden">
+                                        <picture>
+                                            <source media="(min-width:0px)"
+                                                data-srcset="../theme/frontend/images/logo-viet-3.png"
+                                                srcset="../theme/frontend/images/logo-viet-3.png">
+                                            <img loading="lazy" src="../theme/frontend/images/logo-viet-3.png"
+                                                data-src="../theme/frontend/images/logo-viet-3.png"
+                                                alt="Luật sư， Chuyên viên luật" title="Luật sư， Chuyên viên luật"
+                                                class="img-fluid">
+                                        </picture>
+                                    </div>
+                                </div>
+                                <div class="flex-1 info-content">
+                                    <p class="name font-semibold text-[#000] text-[0.875rem] mb-2">Luật sư， Chuyên viên
+                                        luật</p>
+                                    <p class="company text-[#7d7d7d] text-[.875rem] mb-2">Công ty Luật TNHH Minh Tín</p>
+                                    <ul class="flex flex-wrap lis-info__detail ">
+                                        <li
+                                            class="flex items-center text-[#000] lg:text-[0.875rem] mr-4 last:mr-0 mb-4">
+                                            <i class="mr-1 fa-regular fa-user"></i>
+                                            Vị trí: Phó giám đốc
+                                        </li>
+                                        <li
+                                            class="flex items-center text-[#000] lg:text-[0.875rem] mr-4 last:mr-0 mb-4">
+                                            <i class="fa-regular fa-file-lines mr-1"></i>
+                                            Kinh nghiệm: 3 năm
+                                        </li>
+                                    </ul>
+                                    <div class="flex flex-wrap work-position">
+                                        <div
+                                            class="item mr-2 mb-2 text-[#000] text-[0.875rem] bg-[rgba(28,75,130,.2)] rounded-3xl py-2 px-4">
+                                            8M - 13M
+                                        </div>
+                                        <div
+                                            class="item mr-2 mb-2 text-[#000] text-[0.875rem] bg-[rgba(28,75,130,.2)] rounded-3xl py-2 px-4">
+                                            <span>Bình Phước</span>
+                                        </div>
+                                        <div
+                                            class="item mr-2 mb-2 text-[#000] text-[0.875rem] bg-[rgba(28,75,130,.2)] rounded-3xl py-2 px-4">
+                                            20/05/2024 08:39
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="luat-su-chuyen-vien-luat-1627" title="Xem chi tiết"
+                                class="btn btn-view mt-auto py-2 font-medium rounded border border-solid border-[#1C4B82] text-[#1C4B82] bg-[#DBECFF] hover:bg-[#1C4B82] hover:text-white shrink-0">Xem
+                                chi tiết</a>
+                            <a href="javascript:void(0)" title="Yêu thích" favourite-user=""
+                                class="btn-favourite  absolute z-[1] xl:top-6 xl:right-5 top-4 right-4 text-[#000] text-[1.25rem]">
+                                <i class="fa-regular fa-bookmark"></i>
+                            </a>
+                        </div>
+                        <div
+                            class="item-filter block md:flex flex-wrap bg-[#F7F7F7] border border-solid border-[#A8A8A8] rounded-lg xl:px-5 xl:py-6 p-4 mb-4 relative">
+                            <div class="flex-1 items-center block mb-4 sm:flex md:mr-6 md:mb-0">
+                                <div class="avatar w-full sm:w-[110px] shrink-0 sm:mr-4 mb-2 sm:mb-0">
+                                    <div class="img c-img pt-[100%] rounded overflow-hidden">
+                                        <img src="../theme/frontend/images/user_profile_default.png">
+                                    </div>
+                                </div>
+                                <div class="flex-1 info-content">
+                                    <p class="name font-semibold text-[#000] text-[0.875rem] mb-2">Chuyên viên</p>
+                                    <p class="company text-[#7d7d7d] text-[.875rem] mb-2">Công ty Luật TNHH Tâm Anh</p>
+                                    <ul class="flex flex-wrap lis-info__detail ">
+                                        <li
+                                            class="flex items-center text-[#000] lg:text-[0.875rem] mr-4 last:mr-0 mb-4">
+                                            <i class="mr-1 fa-regular fa-user"></i>
+                                            Vị trí: Chuyên viên
+                                        </li>
+                                        <li
+                                            class="flex items-center text-[#000] lg:text-[0.875rem] mr-4 last:mr-0 mb-4">
+                                            <i class="fa-regular fa-file-lines mr-1"></i>
+                                            Kinh nghiệm:
+                                        </li>
+                                    </ul>
+                                    <div class="flex flex-wrap work-position">
+                                        <div
+                                            class="item mr-2 mb-2 text-[#000] text-[0.875rem] bg-[rgba(28,75,130,.2)] rounded-3xl py-2 px-4">
+                                            6M - 8M
+                                        </div>
+                                        <div
+                                            class="item mr-2 mb-2 text-[#000] text-[0.875rem] bg-[rgba(28,75,130,.2)] rounded-3xl py-2 px-4">
+                                            <span>Hà Nội</span>
+                                        </div>
+                                        <div
+                                            class="item mr-2 mb-2 text-[#000] text-[0.875rem] bg-[rgba(28,75,130,.2)] rounded-3xl py-2 px-4">
+                                            02/05/2024 13:52
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="chuyen-vien" title="Xem chi tiết"
+                                class="btn btn-view mt-auto py-2 font-medium rounded border border-solid border-[#1C4B82] text-[#1C4B82] bg-[#DBECFF] hover:bg-[#1C4B82] hover:text-white shrink-0">Xem
+                                chi tiết</a>
+                            <a href="javascript:void(0)" title="Yêu thích" favourite-user=""
+                                class="btn-favourite  absolute z-[1] xl:top-6 xl:right-5 top-4 right-4 text-[#000] text-[1.25rem]">
+                                <i class="fa-regular fa-bookmark"></i>
+                            </a>
+                        </div>
+                        <div
+                            class="item-filter block md:flex flex-wrap bg-[#F7F7F7] border border-solid border-[#A8A8A8] rounded-lg xl:px-5 xl:py-6 p-4 mb-4 relative">
+                            <div class="flex-1 items-center block mb-4 sm:flex md:mr-6 md:mb-0">
+                                <div class="avatar w-full sm:w-[110px] shrink-0 sm:mr-4 mb-2 sm:mb-0">
+                                    <div class="img c-img pt-[100%] rounded overflow-hidden">
+                                        <picture>
+                                            <source media="(min-width:0px)"
+                                                data-srcset="../theme/frontend/images/set20ava-6.png"
+                                                srcset="../theme/frontend/images/set20ava-6.png">
+                                            <img loading="lazy" src="../theme/frontend/images/set20ava-6.png"
+                                                data-src="../theme/frontend/images/set20ava-6.png"
+                                                alt="Luật sư Cộng sự (Junior Associate)"
+                                                title="Luật sư Cộng sự (Junior Associate)" class="img-fluid">
+                                        </picture>
+                                    </div>
+                                </div>
+                                <div class="flex-1 info-content">
+                                    <p class="name font-semibold text-[#000] text-[0.875rem] mb-2">Luật sư Cộng sự
+                                        (Junior Associate)</p>
+                                    <p class="company text-[#7d7d7d] text-[.875rem] mb-2">Công ty Luật TNHH Asia Legal
+                                    </p>
+                                    <ul class="flex flex-wrap lis-info__detail ">
+                                        <li
+                                            class="flex items-center text-[#000] lg:text-[0.875rem] mr-4 last:mr-0 mb-4">
+                                            <i class="mr-1 fa-regular fa-user"></i>
+                                            Vị trí: Cộng tác viên
+                                        </li>
+                                        <li
+                                            class="flex items-center text-[#000] lg:text-[0.875rem] mr-4 last:mr-0 mb-4">
+                                            <i class="fa-regular fa-file-lines mr-1"></i>
+                                            Kinh nghiệm: 3 năm
+                                        </li>
+                                    </ul>
+                                    <div class="flex flex-wrap work-position">
+                                        <div
+                                            class="item mr-2 mb-2 text-[#000] text-[0.875rem] bg-[rgba(28,75,130,.2)] rounded-3xl py-2 px-4">
+                                            7M - 9M
+                                        </div>
+                                        <div
+                                            class="item mr-2 mb-2 text-[#000] text-[0.875rem] bg-[rgba(28,75,130,.2)] rounded-3xl py-2 px-4">
+                                            <span>Bình Định</span>
+                                        </div>
+                                        <div
+                                            class="item mr-2 mb-2 text-[#000] text-[0.875rem] bg-[rgba(28,75,130,.2)] rounded-3xl py-2 px-4">
+                                            02/05/2024 13:50
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="luat-su-cong-su-junior-associate-1591" title="Xem chi tiết"
+                                class="btn btn-view mt-auto py-2 font-medium rounded border border-solid border-[#1C4B82] text-[#1C4B82] bg-[#DBECFF] hover:bg-[#1C4B82] hover:text-white shrink-0">Xem
+                                chi tiết</a>
+                            <a href="javascript:void(0)" title="Yêu thích" favourite-user=""
+                                class="btn-favourite  absolute z-[1] xl:top-6 xl:right-5 top-4 right-4 text-[#000] text-[1.25rem]">
+                                <i class="fa-regular fa-bookmark"></i>
+                            </a>
+                        </div>
+                        <div
+                            class="item-filter block md:flex flex-wrap bg-[#F7F7F7] border border-solid border-[#A8A8A8] rounded-lg xl:px-5 xl:py-6 p-4 mb-4 relative">
+                            <div class="flex-1 items-center block mb-4 sm:flex md:mr-6 md:mb-0">
+                                <div class="avatar w-full sm:w-[110px] shrink-0 sm:mr-4 mb-2 sm:mb-0">
+                                    <div class="img c-img pt-[100%] rounded overflow-hidden">
+                                        <picture>
+                                            <source media="(min-width:0px)"
+                                                data-srcset="../theme/frontend/images/logo1-14.jpg"
+                                                srcset="../theme/frontend/images/logo1-14.jpg">
+                                            <img loading="lazy" src="../theme/frontend/images/logo1-14.jpg"
+                                                data-src="../theme/frontend/images/logo1-14.jpg" alt="Thực tập sinh Pháp lý"
+                                                title="Thực tập sinh Pháp lý" class="img-fluid">
+                                        </picture>
+                                    </div>
+                                </div>
+                                <div class="flex-1 info-content">
+                                    <p class="name font-semibold text-[#000] text-[0.875rem] mb-2">Thực tập sinh Pháp lý
+                                    </p>
+                                    <p class="company text-[#7d7d7d] text-[.875rem] mb-2">Công ty Luật TNHH Đại Nam</p>
+                                    <ul class="flex flex-wrap lis-info__detail ">
+                                        <li
+                                            class="flex items-center text-[#000] lg:text-[0.875rem] mr-4 last:mr-0 mb-4">
+                                            <i class="mr-1 fa-regular fa-user"></i>
+                                            Vị trí: Trưởng phòng, Quản lý cấp trung
+                                        </li>
+                                        <li
+                                            class="flex items-center text-[#000] lg:text-[0.875rem] mr-4 last:mr-0 mb-4">
+                                            <i class="fa-regular fa-file-lines mr-1"></i>
+                                            Kinh nghiệm: 3 năm
+                                        </li>
+                                    </ul>
+                                    <div class="flex flex-wrap work-position">
+                                        <div
+                                            class="item mr-2 mb-2 text-[#000] text-[0.875rem] bg-[rgba(28,75,130,.2)] rounded-3xl py-2 px-4">
+                                            7M - 18M
+                                        </div>
+                                        <div
+                                            class="item mr-2 mb-2 text-[#000] text-[0.875rem] bg-[rgba(28,75,130,.2)] rounded-3xl py-2 px-4">
+                                            <span>Thái Nguyên</span>
+                                        </div>
+                                        <div
+                                            class="item mr-2 mb-2 text-[#000] text-[0.875rem] bg-[rgba(28,75,130,.2)] rounded-3xl py-2 px-4">
+                                            02/05/2024 13:50
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="thuc-tap-sinh-phap-ly-1633" title="Xem chi tiết"
+                                class="btn btn-view mt-auto py-2 font-medium rounded border border-solid border-[#1C4B82] text-[#1C4B82] bg-[#DBECFF] hover:bg-[#1C4B82] hover:text-white shrink-0">Xem
+                                chi tiết</a>
+                            <a href="javascript:void(0)" title="Yêu thích" favourite-user=""
+                                class="btn-favourite  absolute z-[1] xl:top-6 xl:right-5 top-4 right-4 text-[#000] text-[1.25rem]">
+                                <i class="fa-regular fa-bookmark"></i>
+                            </a>
+                        </div>
+                        <div
+                            class="item-filter block md:flex flex-wrap bg-[#F7F7F7] border border-solid border-[#A8A8A8] rounded-lg xl:px-5 xl:py-6 p-4 mb-4 relative">
+                            <div class="flex-1 items-center block mb-4 sm:flex md:mr-6 md:mb-0">
+                                <div class="avatar w-full sm:w-[110px] shrink-0 sm:mr-4 mb-2 sm:mb-0">
+                                    <div class="img c-img pt-[100%] rounded overflow-hidden">
+                                        <picture>
+                                            <source media="(min-width:0px)"
+                                                data-srcset="../theme/frontend/images/nlnl-486.jpg"
+                                                srcset="../theme/frontend/images/nlnl-486.jpg">
+                                            <img loading="lazy" src="../theme/frontend/images/nlnl-486.jpg"
+                                                data-src="../theme/frontend/images/nlnl-486.jpg" alt="Thực tập sinh Luật"
+                                                title="Thực tập sinh Luật" class="img-fluid">
+                                        </picture>
+                                    </div>
+                                </div>
+                                <div class="flex-1 info-content">
+                                    <p class="name font-semibold text-[#000] text-[0.875rem] mb-2">Thực tập sinh Luật
+                                    </p>
+                                    <p class="company text-[#7d7d7d] text-[.875rem] mb-2">Công ty Luật TNHH QR Law</p>
+                                    <ul class="flex flex-wrap lis-info__detail ">
+                                        <li
+                                            class="flex items-center text-[#000] lg:text-[0.875rem] mr-4 last:mr-0 mb-4">
+                                            <i class="mr-1 fa-regular fa-user"></i>
+                                            Vị trí: Nhân viên, Có kinh nghiệm
+                                        </li>
+                                        <li
+                                            class="flex items-center text-[#000] lg:text-[0.875rem] mr-4 last:mr-0 mb-4">
+                                            <i class="fa-regular fa-file-lines mr-1"></i>
+                                            Kinh nghiệm: 5 năm
+                                        </li>
+                                    </ul>
+                                    <div class="flex flex-wrap work-position">
+                                        <div
+                                            class="item mr-2 mb-2 text-[#000] text-[0.875rem] bg-[rgba(28,75,130,.2)] rounded-3xl py-2 px-4">
+                                            5M - 22M
+                                        </div>
+                                        <div
+                                            class="item mr-2 mb-2 text-[#000] text-[0.875rem] bg-[rgba(28,75,130,.2)] rounded-3xl py-2 px-4">
+                                            <span>Hà Nội</span>
+                                        </div>
+                                        <div
+                                            class="item mr-2 mb-2 text-[#000] text-[0.875rem] bg-[rgba(28,75,130,.2)] rounded-3xl py-2 px-4">
+                                            17/04/2024 17:10
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="thuc-tap-sinh-luat-2700" title="Xem chi tiết"
+                                class="btn btn-view mt-auto py-2 font-medium rounded border border-solid border-[#1C4B82] text-[#1C4B82] bg-[#DBECFF] hover:bg-[#1C4B82] hover:text-white shrink-0">Xem
+                                chi tiết</a>
+                            <a href="javascript:void(0)" title="Yêu thích" favourite-user=""
+                                class="btn-favourite  absolute z-[1] xl:top-6 xl:right-5 top-4 right-4 text-[#000] text-[1.25rem]">
+                                <i class="fa-regular fa-bookmark"></i>
+                            </a>
+                        </div>
+                        <div
+                            class="item-filter block md:flex flex-wrap bg-[#F7F7F7] border border-solid border-[#A8A8A8] rounded-lg xl:px-5 xl:py-6 p-4 mb-4 relative">
+                            <div class="flex-1 items-center block mb-4 sm:flex md:mr-6 md:mb-0">
+                                <div class="avatar w-full sm:w-[110px] shrink-0 sm:mr-4 mb-2 sm:mb-0">
+                                    <div class="img c-img pt-[100%] rounded overflow-hidden">
+                                        <picture>
+                                            <source media="(min-width:0px)"
+                                                data-srcset="../theme/frontend/images/logo-662.jpg"
+                                                srcset="../theme/frontend/images/logo-662.jpg">
+                                            <img loading="lazy" src="../theme/frontend/images/logo-662.jpg"
+                                                data-src="../theme/frontend/images/logo-662.jpg"
+                                                alt="Nhân viên Hành chính nhân sự tổng hợp"
+                                                title="Nhân viên Hành chính nhân sự tổng hợp" class="img-fluid">
+                                        </picture>
+                                    </div>
+                                </div>
+                                <div class="flex-1 info-content">
+                                    <p class="name font-semibold text-[#000] text-[0.875rem] mb-2">Nhân viên Hành chính
+                                        nhân sự tổng hợp</p>
+                                    <p class="company text-[#7d7d7d] text-[.875rem] mb-2">Công ty Cổ phần sản xuất
+                                        thương mại thiết kế Bình Minh</p>
+                                    <ul class="flex flex-wrap lis-info__detail ">
+                                        <li
+                                            class="flex items-center text-[#000] lg:text-[0.875rem] mr-4 last:mr-0 mb-4">
+                                            <i class="mr-1 fa-regular fa-user"></i>
+                                            Vị trí: Bán thời gian
+                                        </li>
+                                        <li
+                                            class="flex items-center text-[#000] lg:text-[0.875rem] mr-4 last:mr-0 mb-4">
+                                            <i class="fa-regular fa-file-lines mr-1"></i>
+                                            Kinh nghiệm: 2 năm
+                                        </li>
+                                    </ul>
+                                    <div class="flex flex-wrap work-position">
+                                        <div
+                                            class="item mr-2 mb-2 text-[#000] text-[0.875rem] bg-[rgba(28,75,130,.2)] rounded-3xl py-2 px-4">
+                                            6M - 15M
+                                        </div>
+                                        <div
+                                            class="item mr-2 mb-2 text-[#000] text-[0.875rem] bg-[rgba(28,75,130,.2)] rounded-3xl py-2 px-4">
+                                            <span>Lâm Đồng</span>
+                                        </div>
+                                        <div
+                                            class="item mr-2 mb-2 text-[#000] text-[0.875rem] bg-[rgba(28,75,130,.2)] rounded-3xl py-2 px-4">
+                                            05/04/2024 14:37
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="nhan-vien-hanh-chinh-nhan-su-tong-hop-3086" title="Xem chi tiết"
+                                class="btn btn-view mt-auto py-2 font-medium rounded border border-solid border-[#1C4B82] text-[#1C4B82] bg-[#DBECFF] hover:bg-[#1C4B82] hover:text-white shrink-0">Xem
+                                chi tiết</a>
+                            <a href="javascript:void(0)" title="Yêu thích" favourite-user=""
+                                class="btn-favourite  absolute z-[1] xl:top-6 xl:right-5 top-4 right-4 text-[#000] text-[1.25rem]">
+                                <i class="fa-regular fa-bookmark"></i>
+                            </a>
+                        </div>
+                        <div
+                            class="item-filter block md:flex flex-wrap bg-[#F7F7F7] border border-solid border-[#A8A8A8] rounded-lg xl:px-5 xl:py-6 p-4 mb-4 relative">
+                            <div class="flex-1 items-center block mb-4 sm:flex md:mr-6 md:mb-0">
+                                <div class="avatar w-full sm:w-[110px] shrink-0 sm:mr-4 mb-2 sm:mb-0">
+                                    <div class="img c-img pt-[100%] rounded overflow-hidden">
+                                        <picture>
+                                            <source media="(min-width:0px)"
+                                                data-srcset="../theme/frontend/images/logo-702.png"
+                                                srcset="../theme/frontend/images/logo-702.png">
+                                            <img loading="lazy" src="../theme/frontend/images/logo-702.png"
+                                                data-src="../theme/frontend/images/logo-702.png"
+                                                alt="Cần tuyển 02 Thư ký Nghiệp vụ (01 nam, 01 nữ)"
+                                                title="Cần tuyển 02 Thư ký Nghiệp vụ (01 nam, 01 nữ)" class="img-fluid">
+                                        </picture>
+                                    </div>
+                                </div>
+                                <div class="flex-1 info-content">
+                                    <p class="name font-semibold text-[#000] text-[0.875rem] mb-2">Cần tuyển 02 Thư ký
+                                        Nghiệp vụ (01 nam, 01 nữ)</p>
+                                    <p class="company text-[#7d7d7d] text-[.875rem] mb-2">Văn phòng Công chứng Nguyễn
+                                        Văn Nam</p>
+                                    <ul class="flex flex-wrap lis-info__detail ">
+                                        <li
+                                            class="flex items-center text-[#000] lg:text-[0.875rem] mr-4 last:mr-0 mb-4">
+                                            <i class="mr-1 fa-regular fa-user"></i>
+                                            Vị trí: Nhân viên, Có kinh nghiệm
+                                        </li>
+                                        <li
+                                            class="flex items-center text-[#000] lg:text-[0.875rem] mr-4 last:mr-0 mb-4">
+                                            <i class="fa-regular fa-file-lines mr-1"></i>
+                                            Kinh nghiệm: 3 năm
+                                        </li>
+                                    </ul>
+                                    <div class="flex flex-wrap work-position">
+                                        <div
+                                            class="item mr-2 mb-2 text-[#000] text-[0.875rem] bg-[rgba(28,75,130,.2)] rounded-3xl py-2 px-4">
+                                            15M - 28M
+                                        </div>
+                                        <div
+                                            class="item mr-2 mb-2 text-[#000] text-[0.875rem] bg-[rgba(28,75,130,.2)] rounded-3xl py-2 px-4">
+                                            <span>Miền Bắc</span>
+                                        </div>
+                                        <div
+                                            class="item mr-2 mb-2 text-[#000] text-[0.875rem] bg-[rgba(28,75,130,.2)] rounded-3xl py-2 px-4">
+                                            05/04/2024 14:32
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="can-tuyen-02-thu-ky-nghiep-vu-01-nam-01-nu-1924" title="Xem chi tiết"
+                                class="btn btn-view mt-auto py-2 font-medium rounded border border-solid border-[#1C4B82] text-[#1C4B82] bg-[#DBECFF] hover:bg-[#1C4B82] hover:text-white shrink-0">Xem
+                                chi tiết</a>
+                            <a href="javascript:void(0)" title="Yêu thích" favourite-user=""
+                                class="btn-favourite  absolute z-[1] xl:top-6 xl:right-5 top-4 right-4 text-[#000] text-[1.25rem]">
+                                <i class="fa-regular fa-bookmark"></i>
+                            </a>
+                        </div>
+                        <div
+                            class="item-filter block md:flex flex-wrap bg-[#F7F7F7] border border-solid border-[#A8A8A8] rounded-lg xl:px-5 xl:py-6 p-4 mb-4 relative">
+                            <div class="flex-1 items-center block mb-4 sm:flex md:mr-6 md:mb-0">
+                                <div class="avatar w-full sm:w-[110px] shrink-0 sm:mr-4 mb-2 sm:mb-0">
+                                    <div class="img c-img pt-[100%] rounded overflow-hidden">
+                                        <picture>
+                                            <source media="(min-width:0px)"
+                                                data-srcset="../theme/frontend/images/set20ava-2.png"
+                                                srcset="../theme/frontend/images/set20ava-2.png">
+                                            <img loading="lazy" src="../theme/frontend/images/set20ava-2.png"
+                                                data-src="../theme/frontend/images/set20ava-2.png"
+                                                alt="Luật sư Cộng sự (Junior Associate)"
+                                                title="Luật sư Cộng sự (Junior Associate)" class="img-fluid">
+                                        </picture>
+                                    </div>
+                                </div>
+                                <div class="flex-1 info-content">
+                                    <p class="name font-semibold text-[#000] text-[0.875rem] mb-2">Luật sư Cộng sự
+                                        (Junior Associate)</p>
+                                    <p class="company text-[#7d7d7d] text-[.875rem] mb-2">Công ty Luật TNHH Asia Legal
+                                    </p>
+                                    <ul class="flex flex-wrap lis-info__detail ">
+                                        <li
+                                            class="flex items-center text-[#000] lg:text-[0.875rem] mr-4 last:mr-0 mb-4">
+                                            <i class="mr-1 fa-regular fa-user"></i>
+                                            Vị trí: Bán thời gian
+                                        </li>
+                                        <li
+                                            class="flex items-center text-[#000] lg:text-[0.875rem] mr-4 last:mr-0 mb-4">
+                                            <i class="fa-regular fa-file-lines mr-1"></i>
+                                            Kinh nghiệm: 3 năm
+                                        </li>
+                                    </ul>
+                                    <div class="flex flex-wrap work-position">
+                                        <div
+                                            class="item mr-2 mb-2 text-[#000] text-[0.875rem] bg-[rgba(28,75,130,.2)] rounded-3xl py-2 px-4">
+                                            2M - 10M
+                                        </div>
+                                        <div
+                                            class="item mr-2 mb-2 text-[#000] text-[0.875rem] bg-[rgba(28,75,130,.2)] rounded-3xl py-2 px-4">
+                                            <span>Thái Bình</span>
+                                        </div>
+                                        <div
+                                            class="item mr-2 mb-2 text-[#000] text-[0.875rem] bg-[rgba(28,75,130,.2)] rounded-3xl py-2 px-4">
+                                            03/04/2024 14:50
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="luat-su-cong-su-junior-associate-1644" title="Xem chi tiết"
+                                class="btn btn-view mt-auto py-2 font-medium rounded border border-solid border-[#1C4B82] text-[#1C4B82] bg-[#DBECFF] hover:bg-[#1C4B82] hover:text-white shrink-0">Xem
+                                chi tiết</a>
+                            <a href="javascript:void(0)" title="Yêu thích" favourite-user=""
+                                class="btn-favourite  absolute z-[1] xl:top-6 xl:right-5 top-4 right-4 text-[#000] text-[1.25rem]">
+                                <i class="fa-regular fa-bookmark"></i>
+                            </a>
+                        </div>
+                        <div
+                            class="item-filter block md:flex flex-wrap bg-[#F7F7F7] border border-solid border-[#A8A8A8] rounded-lg xl:px-5 xl:py-6 p-4 mb-4 relative">
+                            <div class="flex-1 items-center block mb-4 sm:flex md:mr-6 md:mb-0">
+                                <div class="avatar w-full sm:w-[110px] shrink-0 sm:mr-4 mb-2 sm:mb-0">
+                                    <div class="img c-img pt-[100%] rounded overflow-hidden">
+                                        <picture>
+                                            <source media="(min-width:0px)"
+                                                data-srcset="../theme/frontend/images/logo-786.jpg"
+                                                srcset="../theme/frontend/images/logo-786.jpg">
+                                            <img loading="lazy" src="../theme/frontend/images/logo-786.jpg"
+                                                data-src="../theme/frontend/images/logo-786.jpg"
+                                                alt="Thực tập sinh (Thủ tục hợp đồng)"
+                                                title="Thực tập sinh (Thủ tục hợp đồng)" class="img-fluid">
+                                        </picture>
+                                    </div>
+                                </div>
+                                <div class="flex-1 info-content">
+                                    <p class="name font-semibold text-[#000] text-[0.875rem] mb-2">Thực tập sinh (Thủ
+                                        tục hợp đồng)</p>
+                                    <p class="company text-[#7d7d7d] text-[.875rem] mb-2">Văn phòng đại diện Công ty
+                                        TNHH Oh Vacation tại Thành phố Hồ Chí Minh</p>
+                                    <ul class="flex flex-wrap lis-info__detail ">
+                                        <li
+                                            class="flex items-center text-[#000] lg:text-[0.875rem] mr-4 last:mr-0 mb-4">
+                                            <i class="mr-1 fa-regular fa-user"></i>
+                                            Vị trí: Giám đốc, Quản lý cấp cao
+                                        </li>
+                                        <li
+                                            class="flex items-center text-[#000] lg:text-[0.875rem] mr-4 last:mr-0 mb-4">
+                                            <i class="fa-regular fa-file-lines mr-1"></i>
+                                            Kinh nghiệm: 5 năm
+                                        </li>
+                                    </ul>
+                                    <div class="flex flex-wrap work-position">
+                                        <div
+                                            class="item mr-2 mb-2 text-[#000] text-[0.875rem] bg-[rgba(28,75,130,.2)] rounded-3xl py-2 px-4">
+                                            5M - 25M
+                                        </div>
+                                        <div
+                                            class="item mr-2 mb-2 text-[#000] text-[0.875rem] bg-[rgba(28,75,130,.2)] rounded-3xl py-2 px-4">
+                                            <span>Hà Nội</span>
+                                        </div>
+                                        <div
+                                            class="item mr-2 mb-2 text-[#000] text-[0.875rem] bg-[rgba(28,75,130,.2)] rounded-3xl py-2 px-4">
+                                            03/04/2024 14:48
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="thuc-tap-sinh-thu-tuc-hop-dong-2811" title="Xem chi tiết"
+                                class="btn btn-view mt-auto py-2 font-medium rounded border border-solid border-[#1C4B82] text-[#1C4B82] bg-[#DBECFF] hover:bg-[#1C4B82] hover:text-white shrink-0">Xem
+                                chi tiết</a>
+                            <a href="javascript:void(0)" title="Yêu thích" favourite-user=""
+                                class="btn-favourite  absolute z-[1] xl:top-6 xl:right-5 top-4 right-4 text-[#000] text-[1.25rem]">
+                                <i class="fa-regular fa-bookmark"></i>
+                            </a>
+                        </div>
+                        <div
+                            class="item-filter block md:flex flex-wrap bg-[#F7F7F7] border border-solid border-[#A8A8A8] rounded-lg xl:px-5 xl:py-6 p-4 mb-4 relative">
+                            <div class="flex-1 items-center block mb-4 sm:flex md:mr-6 md:mb-0">
+                                <div class="avatar w-full sm:w-[110px] shrink-0 sm:mr-4 mb-2 sm:mb-0">
+                                    <div class="img c-img pt-[100%] rounded overflow-hidden">
+                                        <picture>
+                                            <source media="(min-width:0px)"
+                                                data-srcset="../theme/frontend/images/modern20business20marketing20agency20facebook20post20cover-1.png"
+                                                srcset="../theme/frontend/images/modern20business20marketing20agency20facebook20post20cover-1.png">
+                                            <img loading="lazy"
+                                                src="../theme/frontend/images/modern20business20marketing20agency20facebook20post20cover-1.png"
+                                                data-src="../theme/frontend/images/modern20business20marketing20agency20facebook20post20cover-1.png"
+                                                alt="Chuyên viên Pháp chế" title="Chuyên viên Pháp chế"
+                                                class="img-fluid">
+                                        </picture>
+                                    </div>
+                                </div>
+                                <div class="flex-1 info-content">
+                                    <p class="name font-semibold text-[#000] text-[0.875rem] mb-2">Chuyên viên Pháp chế
+                                    </p>
+                                    <p class="company text-[#7d7d7d] text-[.875rem] mb-2">Phòng khám Quốc tế Careplus -
+                                        Chi nhánh Công ty TNHH Cityclinic Việt Nam</p>
+                                    <ul class="flex flex-wrap lis-info__detail ">
+                                        <li
+                                            class="flex items-center text-[#000] lg:text-[0.875rem] mr-4 last:mr-0 mb-4">
+                                            <i class="mr-1 fa-regular fa-user"></i>
+                                            Vị trí: Nhân viên, Có kinh nghiệm
+                                        </li>
+                                        <li
+                                            class="flex items-center text-[#000] lg:text-[0.875rem] mr-4 last:mr-0 mb-4">
+                                            <i class="fa-regular fa-file-lines mr-1"></i>
+                                            Kinh nghiệm: 3 năm
+                                        </li>
+                                    </ul>
+                                    <div class="flex flex-wrap work-position">
+                                        <div
+                                            class="item mr-2 mb-2 text-[#000] text-[0.875rem] bg-[rgba(28,75,130,.2)] rounded-3xl py-2 px-4">
+                                            6M - 12M
+                                        </div>
+                                        <div
+                                            class="item mr-2 mb-2 text-[#000] text-[0.875rem] bg-[rgba(28,75,130,.2)] rounded-3xl py-2 px-4">
+                                            <span>Lạng Sơn</span>
+                                        </div>
+                                        <div
+                                            class="item mr-2 mb-2 text-[#000] text-[0.875rem] bg-[rgba(28,75,130,.2)] rounded-3xl py-2 px-4">
+                                            27/03/2024 14:40
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="chuyen-vien-phap-che-2504" title="Xem chi tiết"
+                                class="btn btn-view mt-auto py-2 font-medium rounded border border-solid border-[#1C4B82] text-[#1C4B82] bg-[#DBECFF] hover:bg-[#1C4B82] hover:text-white shrink-0">Xem
+                                chi tiết</a>
+                            <a href="javascript:void(0)" title="Yêu thích" favourite-user=""
+                                class="btn-favourite  absolute z-[1] xl:top-6 xl:right-5 top-4 right-4 text-[#000] text-[1.25rem]">
+                                <i class="fa-regular fa-bookmark"></i>
+                            </a>
+                        </div>
+                        <div
+                            class="item-filter block md:flex flex-wrap bg-[#F7F7F7] border border-solid border-[#A8A8A8] rounded-lg xl:px-5 xl:py-6 p-4 mb-4 relative">
+                            <div class="flex-1 items-center block mb-4 sm:flex md:mr-6 md:mb-0">
+                                <div class="avatar w-full sm:w-[110px] shrink-0 sm:mr-4 mb-2 sm:mb-0">
+                                    <div class="img c-img pt-[100%] rounded overflow-hidden">
+                                        <picture>
+                                            <source media="(min-width:0px)"
+                                                data-srcset="../theme/frontend/images/z3088261237922-382db041b470e0fa25b5f90e9806176a-23.jpg"
+                                                srcset="../theme/frontend/images/z3088261237922-382db041b470e0fa25b5f90e9806176a-23.jpg">
+                                            <img loading="lazy"
+                                                src="../theme/frontend/images/z3088261237922-382db041b470e0fa25b5f90e9806176a-23.jpg"
+                                                data-src="../theme/frontend/images/z3088261237922-382db041b470e0fa25b5f90e9806176a-23.jpg"
+                                                alt="Chuyên viên Pháp lý (Hà Nội)" title="Chuyên viên Pháp lý (Hà Nội)"
+                                                class="img-fluid">
+                                        </picture>
+                                    </div>
+                                </div>
+                                <div class="flex-1 info-content">
+                                    <p class="name font-semibold text-[#000] text-[0.875rem] mb-2">Chuyên viên Pháp lý
+                                        (Hà Nội)</p>
+                                    <p class="company text-[#7d7d7d] text-[.875rem] mb-2">Công ty Luật Trách Nhiệm Hữu
+                                        Hạn ACC</p>
+                                    <ul class="flex flex-wrap lis-info__detail ">
+                                        <li
+                                            class="flex items-center text-[#000] lg:text-[0.875rem] mr-4 last:mr-0 mb-4">
+                                            <i class="mr-1 fa-regular fa-user"></i>
+                                            Vị trí: Trợ lý kinh doanh
+                                        </li>
+                                        <li
+                                            class="flex items-center text-[#000] lg:text-[0.875rem] mr-4 last:mr-0 mb-4">
+                                            <i class="fa-regular fa-file-lines mr-1"></i>
+                                            Kinh nghiệm: 3 năm
+                                        </li>
+                                    </ul>
+                                    <div class="flex flex-wrap work-position">
+                                        <div
+                                            class="item mr-2 mb-2 text-[#000] text-[0.875rem] bg-[rgba(28,75,130,.2)] rounded-3xl py-2 px-4">
+                                            14M - 28M
+                                        </div>
+                                        <div
+                                            class="item mr-2 mb-2 text-[#000] text-[0.875rem] bg-[rgba(28,75,130,.2)] rounded-3xl py-2 px-4">
+                                            <span>Kiên Giang</span>
+                                        </div>
+                                        <div
+                                            class="item mr-2 mb-2 text-[#000] text-[0.875rem] bg-[rgba(28,75,130,.2)] rounded-3xl py-2 px-4">
+                                            27/03/2024 14:07
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="chuyen-vien-phap-ly-ha-noi-1545" title="Xem chi tiết"
+                                class="btn btn-view mt-auto py-2 font-medium rounded border border-solid border-[#1C4B82] text-[#1C4B82] bg-[#DBECFF] hover:bg-[#1C4B82] hover:text-white shrink-0">Xem
+                                chi tiết</a>
+                            <a href="javascript:void(0)" title="Yêu thích" favourite-user=""
+                                class="btn-favourite  absolute z-[1] xl:top-6 xl:right-5 top-4 right-4 text-[#000] text-[1.25rem]">
+                                <i class="fa-regular fa-bookmark"></i>
+                            </a>
+                        </div>
+                        <div
+                            class="item-filter block md:flex flex-wrap bg-[#F7F7F7] border border-solid border-[#A8A8A8] rounded-lg xl:px-5 xl:py-6 p-4 mb-4 relative">
+                            <div class="flex-1 items-center block mb-4 sm:flex md:mr-6 md:mb-0">
+                                <div class="avatar w-full sm:w-[110px] shrink-0 sm:mr-4 mb-2 sm:mb-0">
+                                    <div class="img c-img pt-[100%] rounded overflow-hidden">
+                                        <img src="../theme/frontend/images/user_profile_default.png">
+                                    </div>
+                                </div>
+                                <div class="flex-1 info-content">
+                                    <p class="name font-semibold text-[#000] text-[0.875rem] mb-2">Giám đốc</p>
+                                    <p class="company text-[#7d7d7d] text-[.875rem] mb-2">Công ty Luật TNHH Tâm Anh</p>
+                                    <ul class="flex flex-wrap lis-info__detail ">
+                                        <li
+                                            class="flex items-center text-[#000] lg:text-[0.875rem] mr-4 last:mr-0 mb-4">
+                                            <i class="mr-1 fa-regular fa-user"></i>
+                                            Vị trí: Giám đốc, Quản lý cấp cao
+                                        </li>
+                                        <li
+                                            class="flex items-center text-[#000] lg:text-[0.875rem] mr-4 last:mr-0 mb-4">
+                                            <i class="fa-regular fa-file-lines mr-1"></i>
+                                            Kinh nghiệm:
+                                        </li>
+                                    </ul>
+                                    <div class="flex flex-wrap work-position">
+                                        <div
+                                            class="item mr-2 mb-2 text-[#000] text-[0.875rem] bg-[rgba(28,75,130,.2)] rounded-3xl py-2 px-4">
+                                            6M - 8M
+                                        </div>
+                                        <div
+                                            class="item mr-2 mb-2 text-[#000] text-[0.875rem] bg-[rgba(28,75,130,.2)] rounded-3xl py-2 px-4">
+                                            <span>Hà Nội</span>
+                                        </div>
+                                        <div
+                                            class="item mr-2 mb-2 text-[#000] text-[0.875rem] bg-[rgba(28,75,130,.2)] rounded-3xl py-2 px-4">
+                                            25/03/2024 16:06
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="giam-doc" title="Xem chi tiết"
+                                class="btn btn-view mt-auto py-2 font-medium rounded border border-solid border-[#1C4B82] text-[#1C4B82] bg-[#DBECFF] hover:bg-[#1C4B82] hover:text-white shrink-0">Xem
+                                chi tiết</a>
+                            <a href="javascript:void(0)" title="Yêu thích" favourite-user=""
+                                class="btn-favourite  absolute z-[1] xl:top-6 xl:right-5 top-4 right-4 text-[#000] text-[1.25rem]">
+                                <i class="fa-regular fa-bookmark"></i>
+                            </a>
+                        </div>
+                        <div
+                            class="item-filter block md:flex flex-wrap bg-[#F7F7F7] border border-solid border-[#A8A8A8] rounded-lg xl:px-5 xl:py-6 p-4 mb-4 relative">
+                            <div class="flex-1 items-center block mb-4 sm:flex md:mr-6 md:mb-0">
+                                <div class="avatar w-full sm:w-[110px] shrink-0 sm:mr-4 mb-2 sm:mb-0">
+                                    <div class="img c-img pt-[100%] rounded overflow-hidden">
+                                        <picture>
+                                            <source media="(min-width:0px)"
+                                                data-srcset="../theme/frontend/images/logo-661.jpg"
+                                                srcset="../theme/frontend/images/logo-661.jpg">
+                                            <img loading="lazy" src="../theme/frontend/images/logo-661.jpg"
+                                                data-src="../theme/frontend/images/logo-661.jpg"
+                                                alt="Trưởng bộ phận Hành chính nhân sự"
+                                                title="Trưởng bộ phận Hành chính nhân sự" class="img-fluid">
+                                        </picture>
+                                    </div>
+                                </div>
+                                <div class="flex-1 info-content">
+                                    <p class="name font-semibold text-[#000] text-[0.875rem] mb-2">Trưởng bộ phận Hành
+                                        chính nhân sự</p>
+                                    <p class="company text-[#7d7d7d] text-[.875rem] mb-2">Công ty Cổ phần Thực phẩm TNT
+                                    </p>
+                                    <ul class="flex flex-wrap lis-info__detail ">
+                                        <li
+                                            class="flex items-center text-[#000] lg:text-[0.875rem] mr-4 last:mr-0 mb-4">
+                                            <i class="mr-1 fa-regular fa-user"></i>
+                                            Vị trí: Trưởng nhóm, ban
+                                        </li>
+                                        <li
+                                            class="flex items-center text-[#000] lg:text-[0.875rem] mr-4 last:mr-0 mb-4">
+                                            <i class="fa-regular fa-file-lines mr-1"></i>
+                                            Kinh nghiệm: 2 năm
+                                        </li>
+                                    </ul>
+                                    <div class="flex flex-wrap work-position">
+                                        <div
+                                            class="item mr-2 mb-2 text-[#000] text-[0.875rem] bg-[rgba(28,75,130,.2)] rounded-3xl py-2 px-4">
+                                            2M - 18M
+                                        </div>
+                                        <div
+                                            class="item mr-2 mb-2 text-[#000] text-[0.875rem] bg-[rgba(28,75,130,.2)] rounded-3xl py-2 px-4">
+                                            <span>Hà Nội</span>
+                                        </div>
+                                        <div
+                                            class="item mr-2 mb-2 text-[#000] text-[0.875rem] bg-[rgba(28,75,130,.2)] rounded-3xl py-2 px-4">
+                                            25/03/2024 16:06
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="truong-bo-phan-hanh-chinh-nhan-su-3087" title="Xem chi tiết"
+                                class="btn btn-view mt-auto py-2 font-medium rounded border border-solid border-[#1C4B82] text-[#1C4B82] bg-[#DBECFF] hover:bg-[#1C4B82] hover:text-white shrink-0">Xem
+                                chi tiết</a>
+                            <a href="javascript:void(0)" title="Yêu thích" favourite-user=""
+                                class="btn-favourite  absolute z-[1] xl:top-6 xl:right-5 top-4 right-4 text-[#000] text-[1.25rem]">
+                                <i class="fa-regular fa-bookmark"></i>
+                            </a>
+                        </div>
+                        <div
+                            class="item-filter block md:flex flex-wrap bg-[#F7F7F7] border border-solid border-[#A8A8A8] rounded-lg xl:px-5 xl:py-6 p-4 mb-4 relative">
+                            <div class="flex-1 items-center block mb-4 sm:flex md:mr-6 md:mb-0">
+                                <div class="avatar w-full sm:w-[110px] shrink-0 sm:mr-4 mb-2 sm:mb-0">
+                                    <div class="img c-img pt-[100%] rounded overflow-hidden">
+                                        <picture>
+                                            <source media="(min-width:0px)"
+                                                data-srcset="../theme/frontend/images/logo-470.png"
+                                                srcset="../theme/frontend/images/logo-470.png">
+                                            <img loading="lazy" src="../theme/frontend/images/logo-470.png"
+                                                data-src="../theme/frontend/images/logo-470.png"
+                                                alt="Chuyên viên hành chính (Kiêm Lễ tân)"
+                                                title="Chuyên viên hành chính (Kiêm Lễ tân)" class="img-fluid">
+                                        </picture>
+                                    </div>
+                                </div>
+                                <div class="flex-1 info-content">
+                                    <p class="name font-semibold text-[#000] text-[0.875rem] mb-2">Chuyên viên hành
+                                        chính (Kiêm Lễ tân)</p>
+                                    <p class="company text-[#7d7d7d] text-[.875rem] mb-2">Công ty TNHH Menas</p>
+                                    <ul class="flex flex-wrap lis-info__detail ">
+                                        <li
+                                            class="flex items-center text-[#000] lg:text-[0.875rem] mr-4 last:mr-0 mb-4">
+                                            <i class="mr-1 fa-regular fa-user"></i>
+                                            Vị trí: Bán thời gian
+                                        </li>
+                                        <li
+                                            class="flex items-center text-[#000] lg:text-[0.875rem] mr-4 last:mr-0 mb-4">
+                                            <i class="fa-regular fa-file-lines mr-1"></i>
+                                            Kinh nghiệm: 2 năm
+                                        </li>
+                                    </ul>
+                                    <div class="flex flex-wrap work-position">
+                                        <div
+                                            class="item mr-2 mb-2 text-[#000] text-[0.875rem] bg-[rgba(28,75,130,.2)] rounded-3xl py-2 px-4">
+                                            8M - 20M
+                                        </div>
+                                        <div
+                                            class="item mr-2 mb-2 text-[#000] text-[0.875rem] bg-[rgba(28,75,130,.2)] rounded-3xl py-2 px-4">
+                                            <span>Đồng Nai</span>
+                                        </div>
+                                        <div
+                                            class="item mr-2 mb-2 text-[#000] text-[0.875rem] bg-[rgba(28,75,130,.2)] rounded-3xl py-2 px-4">
+                                            25/03/2024 16:06
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="chuyen-vien-hanh-chinh-kiem-le-tan-3085" title="Xem chi tiết"
+                                class="btn btn-view mt-auto py-2 font-medium rounded border border-solid border-[#1C4B82] text-[#1C4B82] bg-[#DBECFF] hover:bg-[#1C4B82] hover:text-white shrink-0">Xem
+                                chi tiết</a>
+                            <a href="javascript:void(0)" title="Yêu thích" favourite-user=""
+                                class="btn-favourite  absolute z-[1] xl:top-6 xl:right-5 top-4 right-4 text-[#000] text-[1.25rem]">
+                                <i class="fa-regular fa-bookmark"></i>
+                            </a>
+                        </div>
+                        <div
+                            class="item-filter block md:flex flex-wrap bg-[#F7F7F7] border border-solid border-[#A8A8A8] rounded-lg xl:px-5 xl:py-6 p-4 mb-4 relative">
+                            <div class="flex-1 items-center block mb-4 sm:flex md:mr-6 md:mb-0">
+                                <div class="avatar w-full sm:w-[110px] shrink-0 sm:mr-4 mb-2 sm:mb-0">
+                                    <div class="img c-img pt-[100%] rounded overflow-hidden">
+                                        <picture>
+                                            <source media="(min-width:0px)"
+                                                data-srcset="../theme/frontend/images/logo-663.jpg"
+                                                srcset="../theme/frontend/images/logo-663.jpg">
+                                            <img loading="lazy" src="../theme/frontend/images/logo-663.jpg"
+                                                data-src="../theme/frontend/images/logo-663.jpg" alt="Nhân viên Nhân sự"
+                                                title="Nhân viên Nhân sự" class="img-fluid">
+                                        </picture>
+                                    </div>
+                                </div>
+                                <div class="flex-1 info-content">
+                                    <p class="name font-semibold text-[#000] text-[0.875rem] mb-2">Nhân viên Nhân sự</p>
+                                    <p class="company text-[#7d7d7d] text-[.875rem] mb-2">Công ty Trách Nhiệm Hữu Hạn
+                                        CNC Vina.</p>
+                                    <ul class="flex flex-wrap lis-info__detail ">
+                                        <li
+                                            class="flex items-center text-[#000] lg:text-[0.875rem] mr-4 last:mr-0 mb-4">
+                                            <i class="mr-1 fa-regular fa-user"></i>
+                                            Vị trí: Nhân viên, Có kinh nghiệm
+                                        </li>
+                                        <li
+                                            class="flex items-center text-[#000] lg:text-[0.875rem] mr-4 last:mr-0 mb-4">
+                                            <i class="fa-regular fa-file-lines mr-1"></i>
+                                            Kinh nghiệm: 2 năm
+                                        </li>
+                                    </ul>
+                                    <div class="flex flex-wrap work-position">
+                                        <div
+                                            class="item mr-2 mb-2 text-[#000] text-[0.875rem] bg-[rgba(28,75,130,.2)] rounded-3xl py-2 px-4">
+                                            4M - 23M
+                                        </div>
+                                        <div
+                                            class="item mr-2 mb-2 text-[#000] text-[0.875rem] bg-[rgba(28,75,130,.2)] rounded-3xl py-2 px-4">
+                                            <span>Bình Dương</span>
+                                        </div>
+                                        <div
+                                            class="item mr-2 mb-2 text-[#000] text-[0.875rem] bg-[rgba(28,75,130,.2)] rounded-3xl py-2 px-4">
+                                            25/03/2024 16:06
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="nhan-vien-nhan-su-3084" title="Xem chi tiết"
+                                class="btn btn-view mt-auto py-2 font-medium rounded border border-solid border-[#1C4B82] text-[#1C4B82] bg-[#DBECFF] hover:bg-[#1C4B82] hover:text-white shrink-0">Xem
+                                chi tiết</a>
+                            <a href="javascript:void(0)" title="Yêu thích" favourite-user=""
+                                class="btn-favourite  absolute z-[1] xl:top-6 xl:right-5 top-4 right-4 text-[#000] text-[1.25rem]">
+                                <i class="fa-regular fa-bookmark"></i>
+                            </a>
+                        </div>
+                        <div
+                            class="item-filter block md:flex flex-wrap bg-[#F7F7F7] border border-solid border-[#A8A8A8] rounded-lg xl:px-5 xl:py-6 p-4 mb-4 relative">
+                            <div class="flex-1 items-center block mb-4 sm:flex md:mr-6 md:mb-0">
+                                <div class="avatar w-full sm:w-[110px] shrink-0 sm:mr-4 mb-2 sm:mb-0">
+                                    <div class="img c-img pt-[100%] rounded overflow-hidden">
+                                        <picture>
+                                            <source media="(min-width:0px)"
+                                                data-srcset="../theme/frontend/images/logo-664.jpg"
+                                                srcset="../theme/frontend/images/logo-664.jpg">
+                                            <img loading="lazy" src="../theme/frontend/images/logo-664.jpg"
+                                                data-src="../theme/frontend/images/logo-664.jpg"
+                                                alt="Trưởng bộ phận Nhân sự" title="Trưởng bộ phận Nhân sự"
+                                                class="img-fluid">
+                                        </picture>
+                                    </div>
+                                </div>
+                                <div class="flex-1 info-content">
+                                    <p class="name font-semibold text-[#000] text-[0.875rem] mb-2">Trưởng bộ phận Nhân
+                                        sự</p>
+                                    <p class="company text-[#7d7d7d] text-[.875rem] mb-2">Công ty Trách Nhiệm Hữu Hạn
+                                        CNC Vina.</p>
+                                    <ul class="flex flex-wrap lis-info__detail ">
+                                        <li
+                                            class="flex items-center text-[#000] lg:text-[0.875rem] mr-4 last:mr-0 mb-4">
+                                            <i class="mr-1 fa-regular fa-user"></i>
+                                            Vị trí: Bán thời gian
+                                        </li>
+                                        <li
+                                            class="flex items-center text-[#000] lg:text-[0.875rem] mr-4 last:mr-0 mb-4">
+                                            <i class="fa-regular fa-file-lines mr-1"></i>
+                                            Kinh nghiệm: 2 năm
+                                        </li>
+                                    </ul>
+                                    <div class="flex flex-wrap work-position">
+                                        <div
+                                            class="item mr-2 mb-2 text-[#000] text-[0.875rem] bg-[rgba(28,75,130,.2)] rounded-3xl py-2 px-4">
+                                            3M - 7M
+                                        </div>
+                                        <div
+                                            class="item mr-2 mb-2 text-[#000] text-[0.875rem] bg-[rgba(28,75,130,.2)] rounded-3xl py-2 px-4">
+                                            <span>Vĩnh Phúc</span>
+                                        </div>
+                                        <div
+                                            class="item mr-2 mb-2 text-[#000] text-[0.875rem] bg-[rgba(28,75,130,.2)] rounded-3xl py-2 px-4">
+                                            25/03/2024 16:06
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="truong-bo-phan-nhan-su-3083" title="Xem chi tiết"
+                                class="btn btn-view mt-auto py-2 font-medium rounded border border-solid border-[#1C4B82] text-[#1C4B82] bg-[#DBECFF] hover:bg-[#1C4B82] hover:text-white shrink-0">Xem
+                                chi tiết</a>
+                            <a href="javascript:void(0)" title="Yêu thích" favourite-user=""
+                                class="btn-favourite  absolute z-[1] xl:top-6 xl:right-5 top-4 right-4 text-[#000] text-[1.25rem]">
+                                <i class="fa-regular fa-bookmark"></i>
+                            </a>
+                        </div>
+                        <div
+                            class="item-filter block md:flex flex-wrap bg-[#F7F7F7] border border-solid border-[#A8A8A8] rounded-lg xl:px-5 xl:py-6 p-4 mb-4 relative">
+                            <div class="flex-1 items-center block mb-4 sm:flex md:mr-6 md:mb-0">
+                                <div class="avatar w-full sm:w-[110px] shrink-0 sm:mr-4 mb-2 sm:mb-0">
+                                    <div class="img c-img pt-[100%] rounded overflow-hidden">
+                                        <picture>
+                                            <source media="(min-width:0px)"
+                                                data-srcset="../theme/frontend/images/5ac31dfbed7a7-1522736635-140x140-3.png"
+                                                srcset="../theme/frontend/images/5ac31dfbed7a7-1522736635-140x140-3.png">
+                                            <img loading="lazy"
+                                                src="../theme/frontend/images/5ac31dfbed7a7-1522736635-140x140-3.png"
+                                                data-src="../theme/frontend/images/5ac31dfbed7a7-1522736635-140x140-3.png"
+                                                alt="Chuyên viên nhân sự" title="Chuyên viên nhân sự" class="img-fluid">
+                                        </picture>
+                                    </div>
+                                </div>
+                                <div class="flex-1 info-content">
+                                    <p class="name font-semibold text-[#000] text-[0.875rem] mb-2">Chuyên viên nhân sự
+                                    </p>
+                                    <p class="company text-[#7d7d7d] text-[.875rem] mb-2">Công ty TNHH Di Đại Hưng</p>
+                                    <ul class="flex flex-wrap lis-info__detail ">
+                                        <li
+                                            class="flex items-center text-[#000] lg:text-[0.875rem] mr-4 last:mr-0 mb-4">
+                                            <i class="mr-1 fa-regular fa-user"></i>
+                                            Vị trí: Bán thời gian
+                                        </li>
+                                        <li
+                                            class="flex items-center text-[#000] lg:text-[0.875rem] mr-4 last:mr-0 mb-4">
+                                            <i class="fa-regular fa-file-lines mr-1"></i>
+                                            Kinh nghiệm: 2 năm
+                                        </li>
+                                    </ul>
+                                    <div class="flex flex-wrap work-position">
+                                        <div
+                                            class="item mr-2 mb-2 text-[#000] text-[0.875rem] bg-[rgba(28,75,130,.2)] rounded-3xl py-2 px-4">
+                                            19M - 25M
+                                        </div>
+                                        <div
+                                            class="item mr-2 mb-2 text-[#000] text-[0.875rem] bg-[rgba(28,75,130,.2)] rounded-3xl py-2 px-4">
+                                            <span>Hưng Yên</span>
+                                        </div>
+                                        <div
+                                            class="item mr-2 mb-2 text-[#000] text-[0.875rem] bg-[rgba(28,75,130,.2)] rounded-3xl py-2 px-4">
+                                            25/03/2024 16:06
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="chuyen-vien-nhan-su-3082" title="Xem chi tiết"
+                                class="btn btn-view mt-auto py-2 font-medium rounded border border-solid border-[#1C4B82] text-[#1C4B82] bg-[#DBECFF] hover:bg-[#1C4B82] hover:text-white shrink-0">Xem
+                                chi tiết</a>
+                            <a href="javascript:void(0)" title="Yêu thích" favourite-user=""
+                                class="btn-favourite  absolute z-[1] xl:top-6 xl:right-5 top-4 right-4 text-[#000] text-[1.25rem]">
+                                <i class="fa-regular fa-bookmark"></i>
+                            </a>
+                        </div>
+                        <div
+                            class="item-filter block md:flex flex-wrap bg-[#F7F7F7] border border-solid border-[#A8A8A8] rounded-lg xl:px-5 xl:py-6 p-4 mb-4 relative">
+                            <div class="flex-1 items-center block mb-4 sm:flex md:mr-6 md:mb-0">
+                                <div class="avatar w-full sm:w-[110px] shrink-0 sm:mr-4 mb-2 sm:mb-0">
+                                    <div class="img c-img pt-[100%] rounded overflow-hidden">
+                                        <picture>
+                                            <source media="(min-width:0px)"
+                                                data-srcset="../theme/frontend/images/logo-471.png"
+                                                srcset="../theme/frontend/images/logo-471.png">
+                                            <img loading="lazy" src="../theme/frontend/images/logo-471.png"
+                                                data-src="../theme/frontend/images/logo-471.png" alt="Hành chính nhân sự"
+                                                title="Hành chính nhân sự" class="img-fluid">
+                                        </picture>
+                                    </div>
+                                </div>
+                                <div class="flex-1 info-content">
+                                    <p class="name font-semibold text-[#000] text-[0.875rem] mb-2">Hành chính nhân sự
+                                    </p>
+                                    <p class="company text-[#7d7d7d] text-[.875rem] mb-2">Công ty Cổ phần AZB</p>
+                                    <ul class="flex flex-wrap lis-info__detail ">
+                                        <li
+                                            class="flex items-center text-[#000] lg:text-[0.875rem] mr-4 last:mr-0 mb-4">
+                                            <i class="mr-1 fa-regular fa-user"></i>
+                                            Vị trí: Trợ lý kinh doanh
+                                        </li>
+                                        <li
+                                            class="flex items-center text-[#000] lg:text-[0.875rem] mr-4 last:mr-0 mb-4">
+                                            <i class="fa-regular fa-file-lines mr-1"></i>
+                                            Kinh nghiệm: 2 năm
+                                        </li>
+                                    </ul>
+                                    <div class="flex flex-wrap work-position">
+                                        <div
+                                            class="item mr-2 mb-2 text-[#000] text-[0.875rem] bg-[rgba(28,75,130,.2)] rounded-3xl py-2 px-4">
+                                            14M - 22M
+                                        </div>
+                                        <div
+                                            class="item mr-2 mb-2 text-[#000] text-[0.875rem] bg-[rgba(28,75,130,.2)] rounded-3xl py-2 px-4">
+                                            <span>Bắc Ninh</span>
+                                        </div>
+                                        <div
+                                            class="item mr-2 mb-2 text-[#000] text-[0.875rem] bg-[rgba(28,75,130,.2)] rounded-3xl py-2 px-4">
+                                            25/03/2024 16:06
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="hanh-chinh-nhan-su-3081" title="Xem chi tiết"
+                                class="btn btn-view mt-auto py-2 font-medium rounded border border-solid border-[#1C4B82] text-[#1C4B82] bg-[#DBECFF] hover:bg-[#1C4B82] hover:text-white shrink-0">Xem
+                                chi tiết</a>
+                            <a href="javascript:void(0)" title="Yêu thích" favourite-user=""
+                                class="btn-favourite  absolute z-[1] xl:top-6 xl:right-5 top-4 right-4 text-[#000] text-[1.25rem]">
+                                <i class="fa-regular fa-bookmark"></i>
+                            </a>
+                        </div>
+                        <div
+                            class="item-filter block md:flex flex-wrap bg-[#F7F7F7] border border-solid border-[#A8A8A8] rounded-lg xl:px-5 xl:py-6 p-4 mb-4 relative">
+                            <div class="flex-1 items-center block mb-4 sm:flex md:mr-6 md:mb-0">
+                                <div class="avatar w-full sm:w-[110px] shrink-0 sm:mr-4 mb-2 sm:mb-0">
+                                    <div class="img c-img pt-[100%] rounded overflow-hidden">
+                                        <picture>
+                                            <source media="(min-width:0px)"
+                                                data-srcset="../theme/frontend/images/logo-665.jpg"
+                                                srcset="../theme/frontend/images/logo-665.jpg">
+                                            <img loading="lazy" src="../theme/frontend/images/logo-665.jpg"
+                                                data-src="../theme/frontend/images/logo-665.jpg"
+                                                alt="Phó phòng Hành chính， nhân sự"
+                                                title="Phó phòng Hành chính， nhân sự" class="img-fluid">
+                                        </picture>
+                                    </div>
+                                </div>
+                                <div class="flex-1 info-content">
+                                    <p class="name font-semibold text-[#000] text-[0.875rem] mb-2">Phó phòng Hành chính，
+                                        nhân sự</p>
+                                    <p class="company text-[#7d7d7d] text-[.875rem] mb-2">Công ty Cổ phần Maika</p>
+                                    <ul class="flex flex-wrap lis-info__detail ">
+                                        <li
+                                            class="flex items-center text-[#000] lg:text-[0.875rem] mr-4 last:mr-0 mb-4">
+                                            <i class="mr-1 fa-regular fa-user"></i>
+                                            Vị trí: Phó giám đốc
+                                        </li>
+                                        <li
+                                            class="flex items-center text-[#000] lg:text-[0.875rem] mr-4 last:mr-0 mb-4">
+                                            <i class="fa-regular fa-file-lines mr-1"></i>
+                                            Kinh nghiệm: 2 năm
+                                        </li>
+                                    </ul>
+                                    <div class="flex flex-wrap work-position">
+                                        <div
+                                            class="item mr-2 mb-2 text-[#000] text-[0.875rem] bg-[rgba(28,75,130,.2)] rounded-3xl py-2 px-4">
+                                            5M - 17M
+                                        </div>
+                                        <div
+                                            class="item mr-2 mb-2 text-[#000] text-[0.875rem] bg-[rgba(28,75,130,.2)] rounded-3xl py-2 px-4">
+                                            <span>Quảng Trị</span>
+                                        </div>
+                                        <div
+                                            class="item mr-2 mb-2 text-[#000] text-[0.875rem] bg-[rgba(28,75,130,.2)] rounded-3xl py-2 px-4">
+                                            25/03/2024 16:06
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="pho-phong-hanh-chinh-nhan-su-3080" title="Xem chi tiết"
+                                class="btn btn-view mt-auto py-2 font-medium rounded border border-solid border-[#1C4B82] text-[#1C4B82] bg-[#DBECFF] hover:bg-[#1C4B82] hover:text-white shrink-0">Xem
+                                chi tiết</a>
+                            <a href="javascript:void(0)" title="Yêu thích" favourite-user=""
+                                class="btn-favourite  absolute z-[1] xl:top-6 xl:right-5 top-4 right-4 text-[#000] text-[1.25rem]">
+                                <i class="fa-regular fa-bookmark"></i>
+                            </a>
+                        </div>
+                        <div
+                            class="item-filter block md:flex flex-wrap bg-[#F7F7F7] border border-solid border-[#A8A8A8] rounded-lg xl:px-5 xl:py-6 p-4 mb-4 relative">
+                            <div class="flex-1 items-center block mb-4 sm:flex md:mr-6 md:mb-0">
+                                <div class="avatar w-full sm:w-[110px] shrink-0 sm:mr-4 mb-2 sm:mb-0">
+                                    <div class="img c-img pt-[100%] rounded overflow-hidden">
+                                        <picture>
+                                            <source media="(min-width:0px)"
+                                                data-srcset="../theme/frontend/images/logo-472.png"
+                                                srcset="../theme/frontend/images/logo-472.png">
+                                            <img loading="lazy" src="../theme/frontend/images/logo-472.png"
+                                                data-src="../theme/frontend/images/logo-472.png"
+                                                alt="Nhân viên tuân thủ (Compliance Specialist)"
+                                                title="Nhân viên tuân thủ (Compliance Specialist)" class="img-fluid">
+                                        </picture>
+                                    </div>
+                                </div>
+                                <div class="flex-1 info-content">
+                                    <p class="name font-semibold text-[#000] text-[0.875rem] mb-2">Nhân viên tuân thủ
+                                        (Compliance Specialist)</p>
+                                    <p class="company text-[#7d7d7d] text-[.875rem] mb-2">Công ty Cổ phần Dệt may Liên
+                                        Phương</p>
+                                    <ul class="flex flex-wrap lis-info__detail ">
+                                        <li
+                                            class="flex items-center text-[#000] lg:text-[0.875rem] mr-4 last:mr-0 mb-4">
+                                            <i class="mr-1 fa-regular fa-user"></i>
+                                            Vị trí: Giám đốc, Quản lý cấp cao
+                                        </li>
+                                        <li
+                                            class="flex items-center text-[#000] lg:text-[0.875rem] mr-4 last:mr-0 mb-4">
+                                            <i class="fa-regular fa-file-lines mr-1"></i>
+                                            Kinh nghiệm: 2 năm
+                                        </li>
+                                    </ul>
+                                    <div class="flex flex-wrap work-position">
+                                        <div
+                                            class="item mr-2 mb-2 text-[#000] text-[0.875rem] bg-[rgba(28,75,130,.2)] rounded-3xl py-2 px-4">
+                                            18M - 21M
+                                        </div>
+                                        <div
+                                            class="item mr-2 mb-2 text-[#000] text-[0.875rem] bg-[rgba(28,75,130,.2)] rounded-3xl py-2 px-4">
+                                            <span>Quảng Trị</span>
+                                        </div>
+                                        <div
+                                            class="item mr-2 mb-2 text-[#000] text-[0.875rem] bg-[rgba(28,75,130,.2)] rounded-3xl py-2 px-4">
+                                            25/03/2024 16:06
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="nhan-vien-tuan-thu-compliance-specialist-3079" title="Xem chi tiết"
+                                class="btn btn-view mt-auto py-2 font-medium rounded border border-solid border-[#1C4B82] text-[#1C4B82] bg-[#DBECFF] hover:bg-[#1C4B82] hover:text-white shrink-0">Xem
+                                chi tiết</a>
+                            <a href="javascript:void(0)" title="Yêu thích" favourite-user=""
+                                class="btn-favourite  absolute z-[1] xl:top-6 xl:right-5 top-4 right-4 text-[#000] text-[1.25rem]">
+                                <i class="fa-regular fa-bookmark"></i>
+                            </a>
+                        </div>
+                        <div class="pagination" pagination-filter="">
+
+
+                            <strong>1</strong>
+                            <a href="https://joblaw.vn/tuyen-dung?page=2" data-page="2">2</a>
+                            <a href="https://joblaw.vn/tuyen-dung?page=3" data-page="3">3</a>
+                            <a href="https://joblaw.vn/tuyen-dung?page=4" data-page="4">4</a>
+
+                            <span style="pointer-events: none"> ... </span>
+                            <a href="https://joblaw.vn/tuyen-dung?page=78" data-page="78">78</a>
+                            <a href="https://joblaw.vn/tuyen-dung?page=2" data-page="2"><i
+                                    class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div
+            class="over-lay-sidebar fixed lg:hidden w-full h-full z-50 block top-0 right-[-100%] bg-[rgba(0,0,0,.6)] transition-all duration-300">
+        </div>
+        <span
+            class="show-sidebar-post lg:hidden flex items-center justify-center w-10 h-10 rounded-tl-lg rounded-bl-lg bg-white shadow-[0_4px_10px_rgba(0,0,0,.3)] text-[var(--cl-text-main)] fixed top-[20%] right-0 z-10">
+            <i class="fa-solid fa-filter"></i>
+        </span>
+    </section>
+
+
+    <footer class="footer_upgrade" >
+        <div class="container">
+            <div class="main-footer 2xl:py-14 xl:py-10 py-6 border-b-[1px] border-solid border-[#fff]">
+                <div class="flex flex-wrap lg:justify-between -mx-2">
+                    <div class="w-full lg:w-[25%] px-2 mb-4 lg:mb-0">
+                        <a href="https://joblaw.vn" title="JobLaw TUYỂN DỤNG VIỆC LÀM PHÁP LUẬT"
+                            class="logo-footer block max-w-[200px] md:max-w-[390px]">
+                            <picture>
+                                <source media="(min-width:0px)"
+                                    data-srcset="../theme/frontend/images//logo-footer.png"
+                                    srcset="../theme/frontend/images//logo-footer.png">
+                                <img loading="lazy" src="../theme/frontend/images//logo-footer.png"
+                                    data-src="../theme/frontend/images//logo-footer.png" alt="" title=""
+                                    class="img-fluid">
+                            </picture>
+                        </a>
+                        <div class="footer-contact text-white lg:mt-6 mt-4">
+                            <p class="title flex items-center font-semibold lg:text-[1.125rem] ">
+                                <svg class="mr-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24" fill="none">
+                                    <path
+                                        d="M21.9994 16.9201V19.9201C22.0006 20.1986 21.9435 20.4743 21.832 20.7294C21.7204 20.9846 21.5567 21.2137 21.3515 21.402C21.1463 21.5902 20.904 21.7336 20.6402 21.8228C20.3764 21.912 20.0968 21.9452 19.8194 21.9201C16.7423 21.5857 13.7864 20.5342 11.1894 18.8501C8.77327 17.3148 6.72478 15.2663 5.18945 12.8501C3.49942 10.2413 2.44769 7.27109 2.11944 4.1801C2.09446 3.90356 2.12732 3.62486 2.21595 3.36172C2.30457 3.09859 2.44702 2.85679 2.63421 2.65172C2.82141 2.44665 3.04925 2.28281 3.30324 2.17062C3.55722 2.05843 3.83179 2.00036 4.10945 2.0001H7.10945C7.59475 1.99532 8.06524 2.16718 8.43321 2.48363C8.80118 2.80008 9.04152 3.23954 9.10944 3.7201C9.23607 4.68016 9.47089 5.62282 9.80945 6.5301C9.94399 6.88802 9.97311 7.27701 9.89335 7.65098C9.8136 8.02494 9.62831 8.36821 9.35944 8.6401L8.08945 9.9101C9.513 12.4136 11.5859 14.4865 14.0894 15.9101L15.3594 14.6401C15.6313 14.3712 15.9746 14.1859 16.3486 14.1062C16.7225 14.0264 17.1115 14.0556 17.4694 14.1901C18.3767 14.5286 19.3194 14.7635 20.2794 14.8901C20.7652 14.9586 21.2088 15.2033 21.526 15.5776C21.8431 15.9519 22.0116 16.4297 21.9994 16.9201Z"
+                                        stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    </path>
+                                </svg>
+                                Liên hệ:
+                            </p>
+                            <div class="content mt-4 mb-3">
+                                Hệ thống Hotline hỗ trợ 24/7. Nếu cần hỗ trợ vui lòng liên hệ:
+                                <a href="tel:024.62872777" title="hotline" class="link font-bold">024.62872777</a>
+                                <span> - </span>
+                                <a href="tel:091.121.9099" title="hotline" class="link font-bold">091.121.9099</a>
+                                <span></span>
+                            </div>
+                            <p>
+                                <i class="fa fa-globe" aria-hidden="true"></i>
+                                <span>Website: </span>
+                                <a href="https://joblaw.vn" target="_blank" title="hotline"
+                                    class="link font-bold">https://joblaw.vn</a>
+                            </p>
+                            <p>
+                                <i class="fa fa-globe" aria-hidden="true"></i>
+                                <span>Website: </span>
+                                <a href="https://luattamanh.com.vn" target="_blank" title="hotline"
+                                    class="link font-bold">https://luattamanh.com.vn</a>
+                            </p>
+                        </div>
+                        <div class="footer-social lg:mt-6 mt-4">
+                            <p class="title font-semibold text-white mb-4">Cộng đồng JobLaw</p>
+                            <ul class="f-social flex flex-wrap items-center">
+                                <li class="xl:mr-8 mr-4 last:mr-0">
+                                    <a href="https://www.facebook.com/luattamanh.com.vn" title="Facebook"
+                                        target="_blank" class="w-10 h-10 img_full img-h-full img-contain">
+                                        <img src="../theme/frontend/images/logos_facebook.svg" alt="facebook">
+                                    </a>
+                                </li>
+                                <li class="xl:mr-8 mr-4 last:mr-0">
+                                    <a href="https://zalo.me/0911219099" title="Facebook" target="_blank"
+                                        class="w-10 h-10 img_full img-h-full img-contain">
+                                        <img src="../theme/frontend/images/zalo.png" style="width: 41px;"
+                                            alt="facebook">
+                                    </a>
+                                </li>
+                                <li class="xl:mr-8 mr-4 last:mr-0">
+                                    <a href="https://www.instagram.com/" title="Instagram" target="_blank"
+                                        class="w-10 h-10 img_full img-h-full img-contain">
+                                        <img src="../theme/frontend/images/skill-icons_instagram.png" alt="instagram">
+                                    </a>
+                                </li>
+                                <li class="xl:mr-8 mr-4 last:mr-0">
+                                    <a href="https://twitter.com/?lang=vi" title="Twitter" target="_blank"
+                                        class="w-10 h-10 img_full img-h-full img-contain">
+                                        <img src="../theme/frontend/images/formkit_twitter.png" alt="twitter">
+                                    </a>
+                                </li>
+                                <li class="xl:mr-8 mr-4 last:mr-0">
+                                    <a href="https://twitter.com/?lang=vi" title="linkedin" target="_blank"
+                                        class="w-10 h-10 img_full img-h-full img-contain">
+                                        <img src="../theme/frontend/images/skill-icons_linkedin.png" alt="linkedin">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="w-full lg:w-[70%] px-2">
+                        <div class="flex flex-wrap -mx-2">
+                            <div class="w-full sm:w-1/2 lg:w-1/3 px-2 mb-4">
+                                <p
+                                    class="title-footer font-semibold text-white 2xl:text-[1.5rem] lg:text-[1.25rem] text-[1rem] mb-4">
+                                    Về chúng tôi
+                                </p>
+                                <div class="nav-footer">
+                                    <ul>
+                                        <li><a href="huong-dan-su-dung" title="Hướng dẫn sử dụng">Hướng dẫn sử dụng</a>
+                                        </li>
+                                        <li><a href="mau-hop-dong-dich-vu" title="Mẫu hợp đồng dịch vụ">Mẫu hợp đồng
+                                                dịch vụ</a></li>
+                                        <li><a href="quy-che-hoat-dong" title="Quy chế hoạt động">Quy chế hoạt động</a>
+                                        </li>
+                                        <li><a href="quy-trinh-tiep-nhan-va-giai-quyet-khieu-nai-tranh-chap"
+                                                title="Quy trình tiếp nhận và giải quyết khiếu nại, tranh chấp">Quy
+                                                trình tiếp nhận và giải quyết khiếu nại, tranh chấp</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="w-full sm:w-1/2 lg:w-1/3 px-2 mb-4">
+                                <p
+                                    class="title-footer font-semibold text-white 2xl:text-[1.5rem] lg:text-[1.25rem] text-[1rem] mb-4">
+                                    Trợ giúp &amp; dịch vụ
+                                </p>
+                                <div class="nav-footer">
+                                    <ul>
+                                        <li><a href="chinh-sach-bao-mat-thong-tin"
+                                                title="Chính sách bảo mật thông tin">Chính sách bảo mật thông tin</a>
+                                        </li>
+                                        <li><a href="quy-che-bao-ve-dlcn" title="Quy chế bảo vệ dữ liệu cá nhân">Quy chế
+                                                bảo vệ dữ liệu cá nhân</a></li>
+                                        <li><a href="thoa-thuan-bao-ve-dlcn"
+                                                title="Thoả thuận bảo vệ dữ liệu cá nhân">Thoả thuận bảo vệ dữ liệu cá
+                                                nhân</a></li>
+                                        <li><a href="bao-phi-dich-vu" title="Báo phí dịch vụ">Báo phí dịch vụ</a></li>
+                                        <li><a href="lien-he" title="Liên hệ">Liên hệ</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="w-full sm:w-1/2 lg:w-1/3 px-2 mb-4">
+                                <p
+                                    class="title-footer font-semibold text-white 2xl:text-[1.5rem] lg:text-[1.25rem] text-[1rem] mb-4">
+                                    Hồ sơ &amp; CV
+                                </p>
+                                <div class="nav-footer">
+                                    <ul>
+                                        <li><a href="#" title="Nhà tuyển dụng xem hồ sơ của bạn">Nhà tuyển dụng xem hồ
+                                                sơ của bạn</a></li>
+                                        <li><a href="#" title="Quản lý việc đã làm">Quản lý việc đã làm</a></li>
+                                        <li><a href="#" title="Quản lý CV của bạn">Quản lý CV của bạn</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="w-full sm:w-1/2 lg:w-1/3 px-2 mb-4">
+                                <p
+                                    class="title-footer font-semibold text-white 2xl:text-[1.5rem] lg:text-[1.25rem] text-[1rem] mb-4">
+                                    Khám phá
+                                </p>
+                                <div class="nav-footer">
+                                    <ul>
+                                        <li><a href="#" title="Định hướng ngành luật">Định hướng ngành luật</a></li>
+                                        <li><a href="#" title="Công cụ tính thuế thu nhập cá nhân">Công cụ tính thuế thu
+                                                nhập cá nhân</a></li>
+                                        <li><a href="#" title="Hỏi - đáp ngành luật">Hỏi - đáp ngành luật</a></li>
+                                        <li><a href="#" title="Tính lương Gross - Net">Tính lương Gross - Net</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="w-full sm:w-1/2 lg:w-1/3 px-2 mb-4">
+                                <p
+                                    class="title-footer font-semibold text-white 2xl:text-[1.5rem] lg:text-[1.25rem] text-[1rem] mb-4">
+                                    Phát triển bản thân
+                                </p>
+                                <div class="nav-footer">
+                                    <ul>
+                                        <li><a href="#" title="Việc làm lương cao">Việc làm lương cao</a></li>
+                                        <li><a href="#" title="Việc làm tốt nhất">Việc làm tốt nhất</a></li>
+                                        <li><a href="#" title="Định hướng ngành luật">Định hướng ngành luật</a></li>
+                                        <li><a href="#" title="Tính lương Gross - Net">Tính lương Gross - Net</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="w-full sm:w-1/2 lg:w-1/3 px-2 mb-4">
+                                <p
+                                    class="title-footer font-semibold text-white 2xl:text-[1.5rem] lg:text-[1.25rem] text-[1rem] mb-4">
+                                    Luật sư
+                                </p>
+                                <div class="nav-footer">
+                                    <ul>
+                                        <li><a href="dang-ky-luat-su" title="Đăng ký luật sư">Đăng ký luật sư</a></li>
+                                        <li><a href="dang-nhap-luat-su" title="Đăng nhập luật sư">Đăng nhập luật sư</a>
+                                        </li>
+                                        <li><a href="danh-ba-luat-su" title="Danh bạ luật sư">Danh bạ luật sư</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-middle xl:py-8 py-6">
+                <div class="flex flex-wrap -mx-2 lg:justify-between">
+                    <div class="w-full lg:w-[60%] px-2 mb-4 lg:mb-0">
+                        <p class="address flex items-center text-white mb-3">
+                            <i class="fa fa-building mr-2 text-[1.5rem] relative" aria-hidden="true"></i>
+                            <span class="company_name">CÔNG TY TNHH JOBLAW - MST: 0110475863</span>
+                        </p>
+                        <p class="address flex items-center text-white mb-3">
+                            <i class="fa-solid fa-house-chimney mr-2 text-[1.5rem] relative "></i>
+                            Nhà liền kề số 14 - Manor 1 Str Sunrise A – Khu đô thị The Manor Central Park đường Nguyễn
+                            Xiển, Phường Đại Kim, Quận Hoàng Mai, Thành phố Hà Nội, Việt Nam
+                        </p>
+                        <p class="address flex items-center text-white mb-3">
+                            <i class="fa-solid fa-location-dot mr-2 text-[1.5rem] relative"></i>
+                            <a href="https://www.google.com/maps/place/LU%E1%BA%ACT+T%C3%82M+ANH/@20.9751544,105.8131586,17z/data=!3m1!4b1!4m6!3m5!1s0x3135adb5be55818d:0x38b5f41ebc1148b2!8m2!3d20.9751544!4d105.8131586!16s%2Fg%2F11vbylgn2r?entry=ttu"
+                                target="_blank">Link google map</a>
+                        </p>
+                        <p class="address flex items-center text-white mb-3">
+                            <i class="fa-regular fa-envelope mr-2 text-[1.5rem] relative "></i>
+                            <a href="mailto:joblawpro@gmail.com" class="link">Gmail: joblawpro@gmail.com</a>
+                        </p>
+                        <p class="address flex items-center text-white mb-3">
+                            <i class="fa-solid fa-credit-card mr-2 text-[1.5rem] relative"></i>
+                            Số tài khoản: 9911219099 - Techcombank - CN Hà Thành Hà Nội
+                        </p>
+                    </div>
+                    <div class="w-full lg:w-[26%] px-2">
+                        <p class="title text-white font-semibold mb-4">Nhận thông tin việc làm</p>
+                        <div class="form-send-mail">
+                            <form action="https://joblaw.vn/gui-lien-he" method="POST" class="form-validate"
+                                data-success="NOTIFICATION.toastrMessageReload" accept-charset="utf8" absolute=""
+                                clear="">
+                                <input type="hidden" name="_token" value="CHa9xw1jQ6FDVi0kiSrUE0BehICCIbkBtKfwZvBB">
+                                <input type="hidden" name="type" value="1">
+                                <div class="w-full">
+                                    <input class="outline-none" type="email" placeholder="Nhập email..." name="email"
+                                        aria-required="true">
+                                </div>
+                                <button type="submit">Gửi</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom py-4 flex flex-wrap justify-center text-white text-[.875rem]">
+                <div
+                    class="item w-full lg:w-auto text-center lg:pr-4 lg:mr-4 last:pr-0 last:mr-0 lg:border-r-[1px] border-solid border-white last:border-r-[0px]">
+                    Copyright © 2022 JOBLAW Việt Nam </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../theme/frontend/js/jquery-3.7.0.min.js?v=1686826683" defer=""></script>
+    <script src="../theme/frontend/js/wow.min.js?v=1669823382" defer=""></script>
+    <script src="../theme/frontend/js/base.js?v=1712131214" defer=""></script>
+    <script src="../theme/frontend/js/fslightbox.js?v=1698467970" defer=""></script>
+    <script src="../theme/frontend/js/swiper-bundle.min.js?v=1701135452" defer=""></script>
+    <script src="../theme/frontend/js/tabs.js?v=1669823382" defer=""></script>
+    <script src="../theme/frontend/js/select2.min.js?v=1700040752" defer=""></script>
+    
+    <script src="../theme/frontend/js/slider.js?v=1705056749" defer=""></script>
+    <script src="../theme/frontend/js/script.js" defer=""></script>
+
+
+</body>
+
+</html>

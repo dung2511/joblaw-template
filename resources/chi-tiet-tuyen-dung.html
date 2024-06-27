@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../theme/frontend/css//fontawesome-free-6.4.0-web/css/all.css" rel="stylesheet">
+    <link href="../theme/frontend/css/toastify.css" rel="stylesheet">
+    <link href="../theme/frontend/css/animate.min.css" rel="stylesheet">
+    <link href="../theme/frontend/css/swiper-bundle.min.css" rel="stylesheet">
+    <link href="../theme/frontend/css/lightbox.css" rel="stylesheet">
+    <link href="../theme/frontend/css/select2.min.css" rel="stylesheet">
+    <link href="../theme/frontend/css/output.css" rel="stylesheet">
+    <link href="../theme/frontend/css/main.css" rel="stylesheet">
+    <link href="../theme/frontend/css/sub.css" rel="stylesheet">
+    <link href="../theme/frontend/css/add.css" rel="stylesheet">
+    <link href="../theme/frontend/css/style.css" rel="stylesheet">
+    <title>Trang chi tiết tuyển dụng</title>
+</head>
+
+<body>
+    <header class="header bg-[var(--cl-blue)] xl:py-0 py-2 fixed">
+        <div class="2xl:px-10 xl:py-0 px-5 py-4 flex items-center !max-w-[1920px] mx-auto">
+            <span class="show-menu-mobile text-white block xl:hidden text-[20px] mr-4"><i
+                    class="fa-solid fa-bars"></i></span>
+            <a href="https://joblaw.vn" title="JobLaw TUYỂN DỤNG VIỆC LÀM PHÁP LUẬT"
+                class="h-logo max-w-[125px] lg:max-w-[135px] shrink-0 xl:mr-2">
+                <picture>
+                    <source media="(min-width:0px)" data-srcset="../theme/frontend/images/logo-joblaw.png"
+                        srcset="../theme/frontend/images/logo-joblaw.png">
+                    <img loading="auto" src="../theme/frontend/images/logo-joblaw.png"
+                        data-src="../theme/frontend/images/logo-joblaw.png" alt="Logo" title="Logo" class="img-fluid">
+                </picture>
+            </a>
+            <div class="menu flex-1 xl:flex items-center justify-end">
+                <a href="https://joblaw.vn" title="JobLaw TUYỂN DỤNG VIỆC LÀM PHÁP LUẬT"
+                    class="logo-mobile block xl:hidden max-w-[176px] mx-auto my-4">
+                    <picture>
+                        <source media="(min-width:0px)" data-srcset="../theme/frontend/images/logo-joblaw.png"
+                            srcset="../theme/frontend/images/logo-joblaw.png">
+                        <img loading="auto" src="../theme/frontend/images/logo-joblaw.png"
+                            data-src="../theme/frontend/images/logo-joblaw.png" alt="Logo" title="Logo"
+                            class="img-fluid">
+                    </picture>
+                </a>
+                <ul class="">
+                    <li><a href="tuyen-dung" title="Tuyển dụng" class=" ">Tuyển dụng</a></li>
+                    <li><a href="tim-ung-vien-moi" title="Ứng viên" class=" ">Ứng viên</a></li>
+                    <li><a href="phap-luat-lao-dong" title="Pháp luật lao động" class=" ">Pháp luật lao động</a>
+                        <ul class="">
+                            <li><a href="hoi-dap-nganh-luat" title="Hỏi - Đáp ngành luật" class=" ">Hỏi - Đáp ngành
+                                    luật</a></li>
+                            <li><a href="dinh-huong-nganh-luat" title="Định hướng ngành luật" class=" ">Định hướng ngành
+                                    luật</a></li>
+                            <li><a href="ki-nang-nganh-luat" title="Kĩ năng ngành luật" class=" ">Kĩ năng ngành luật</a>
+                            </li>
+                            <li><a href="tuyen-dung-cong-chuc" title="Tuyển dụng công chức" class=" ">Tuyển dụng công
+                                    chức</a></li>
+                        </ul><span class="btn-dropdown-menu"><i class="fa fa-angle-down text-[var(--cl-text-main)]"
+                                aria-hidden="true"></i></span>
+                    </li>
+                    <li><a href="tien-ich" title="Tiện ích" class=" ">Tiện ích</a>
+                        <ul class="">
+                            <li><a href="cong-cu-tinh-luong-gross-net" title="Công cụ tính lương Gross/Net"
+                                    class=" ">Công cụ tính lương Gross/Net</a></li>
+                            <li><a href="cong-cu-tinh-thue-tncn" title="Công cụ tính thuế TNCN" class=" ">Công cụ tính
+                                    thuế TNCN</a></li>
+                        </ul><span class="btn-dropdown-menu"><i class="fa fa-angle-down text-[var(--cl-text-main)]"
+                                aria-hidden="true"></i></span>
+                    </li>
+                    <li><a href="dich-vu-cua-chung-toi" title="Dịch vụ" class=" ">Dịch vụ</a></li>
+                    <li><a href="huong-dan-su-dung" title="Hướng dẫn sử dụng" class=" ">Hướng dẫn sử dụng</a></li>
+                    <li><a href="danh-ba-luat-su" title="Danh bạ luật sư" class=" ">Danh bạ luật sư</a></li>
+                    <li><a href="lien-he" title="Liên hệ" class=" ">Liên hệ</a></li>
+                </ul>
+                <div class="box-actions flex flex-wrap">
+                    <a href="https://joblaw.vn/dang-ky" title="Đăng ký"
+                        class="btn text-white py-4 px-6 bg-transparent hover:text-white rounded-[1rem] hover:bg-[var(--cl-orange)] transition-all duration-300 border border-solid border-white hover:border-[var(--cl-orange)] mr-4 last:mr-0 xl:min-w-[132px] text-center">Đăng
+                        ký</a>
+                    <a href="https://joblaw.vn/dang-nhap" title="Đăng nhập"
+                        class="btn text-white py-4 px-6 bg-transparent hover:text-white rounded-[1rem]  hover:bg-[var(--cl-orange)] transition-all duration-300 border border-solid border-white hover:border-[var(--cl-orange)] mr-4 last:mr-0 xl:min-w-[132px] text-center">Đăng
+                        nhập</a>
+
+                </div>
+
+            </div>
+            <div class="box-actions flex xl:hidden flex-1 justify-end flex-wrap">
+                <a href="https://joblaw.vn/dang-nhap" title="Đăng nhập"
+                    class="btn text-white hover:text-[var(--cl-text-main)] hover:bg-white transition-all duration-500 bg-[var(--cl-bg-main)] mb-2 lg:mb-0 mr-2 last:mr-0 border-solid border-[var(--border-main)] border">Đăng
+                    nhập</a>
+                <a href="https://joblaw.vn/dang-ky" title="Đăng ký"
+                    class="btn text-white hover:text-[var(--cl-text-main)] hover:bg-white transition-all duration-500 bg-[var(--cl-bg-main)] mb-2 lg:mb-0 mr-2 last:mr-0 border-solid border-[var(--border-main)] border">Đăng
+                    ký
+                </a>
+
+            </div>
+
+            <div class="flex items-center xl:hidden ml-auto">
+            </div>
+
+        </div>
+        <div
+            class="over-lay fixed block xl:hidden top-0 right-[-100%] w-full h-full z-50 bg-[rgba(0,0,0,.5)] transition-all duration-300">
+        </div>
+    </header>
+
+    <section class="py-6 xl:py-10 section-job__detail">
+        <div class="container">
+            <div class="flex flex-wrap items-center mb-6 -mx-2">
+                <div class="w-full px-2 mb-4 lg:w-3/4 lg:mb-0">
+                    <div class="job-info bg-[#FAFAFA] rounded-lg xl:p-6 p-4">
+                        <div class="items-center block md:flex">
+                            <div class="logo-company w-full md:w-[150px] shrink-0 md:mr-4 mb-4 md:mb-0">
+                                <div class="image c-img pt-[100%]">
+                                    <picture>
+                                        <source media="(min-width:0px)"
+                                            data-srcset="../theme/frontend/images/logo-viet-3.png"
+                                            srcset="../theme/frontend/images/logo-viet-3.png">
+                                        <img loading="lazy" src="../theme/frontend/images/logo-viet-3.png"
+                                            data-src="../theme/frontend/images/logo-viet-3.png"
+                                            alt="Luật sư， Chuyên viên luật" title="Luật sư， Chuyên viên luật"
+                                            class="img-fluid">
+                                    </picture>
+                                </div>
+                            </div>
+                            <div class="flex-1 content">
+                                <h3 class="title font-semibold text-[#000] 2xl:text-[1.5rem] text-[1.25rem] mb-1">
+                                    Luật sư， Chuyên viên luật
+                                </h3>
+                                <p class="text-[0.875rem] text-[#7d7d7d] uppercase mb-2">Công ty Luật TNHH Minh Tín</p>
+                                <div class="flex flex-wrap -mx-2 lg:justify-between ">
+                                    <div class="w-full px-2 sm:w-1/2 lg:w-1/3">
+                                        <p class="text-[0.875rem] font-medium text-[#000] flex items-center mb-3">
+                                            <span class="w-4 h-4 mr-2 bg-no-repeat bg-contain icon shrink-0"
+                                                style="background-image: url(../theme/frontend/images/dollar-sign.png);"></span>
+                                            Mức lương: 8M - 13M
+                                        </p>
+                                        <p class="text-[0.875rem] font-medium text-[#000] flex items-center mb-3">
+                                            <span class="w-4 h-4 mr-2 bg-no-repeat bg-contain icon shrink-0"
+                                                style="background-image: url(../theme/frontend/images/file-text.png);"></span>
+                                            Kinh nghiệm: 3 năm
+                                        </p>
+                                        <p class="text-[0.875rem] font-medium text-[#000] flex items-center mb-3">
+                                            <span class="w-4 h-4 mr-2 bg-no-repeat bg-contain icon shrink-0"
+                                                style="background-image: url(../theme/frontend/images/user_.png);"></span>
+                                            Vị trí:
+                                            Phó giám đốc
+                                        </p>
+
+                                        <p class="text-[0.875rem] font-medium text-[#000] flex items-center mb-3">
+                                            <span class="w-4 h-4 mr-2 bg-no-repeat bg-contain icon shrink-0"
+                                                style="background-image: url(../theme/frontend/images/map-pin.png);"></span>
+                                            Nơi làm việc: Bình Phước
+                                        </p>
+                                    </div>
+                                    <div class="w-full px-2 sm:w-1/2 lg:w-1/3">
+                                        <p class="text-[0.875rem] font-medium text-[#000] flex items-center mb-3">
+                                            <span class="w-4 h-4 mr-2 bg-no-repeat bg-contain icon shrink-0"
+                                                style="background-image: url(../theme/frontend/images/clock_.png);"></span>
+                                            Hạn nộp:
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full px-2 lg:w-1/4">
+                    <a href="javascript:void(0)" title="Hủy nộp đơn"
+                        class="readmore mb-4 flex items-center justify-center xl:py-4 px-6 py-2 rounded text-[0.875rem] text-white bg-[#DD6B4D] hover:bg-[#ff8768] hover:text-white">
+                        <i class="mr-2 fa-regular fa-paper-plane"></i>
+                        Hủy nộp đơn
+                    </a>
+                    <a href="https://joblaw.vn/dang-nhap" title="Lưu việc làm"
+                        class="save-news flex items-center justify-center xl:py-4 px-6 py-2 rounded text-[0.875rem] border border-solid border-[#1C4B82] text-[#1C4B82] bg-white hover:bg-[#1C4B82] hover:text-white">
+                        <i class="mr-2 fa-regular fa-heart"></i>
+                        <span>Lưu tin</span>
+                    </a>
+                </div>
+            </div>
+            <div class="flex flex-wrap -mx-2">
+                <div class="w-full px-2 mb-4 lg:w-3/4 lg:mb-0">
+                    <div class="info-detail bg-[#FAFAFA] rounded-lg xl:p-6 p-4 mb-6">
+                        <div class="flex mb-6 nav-tab-job">
+                            <button
+                                class=" tablinks flex-auto font-medium text-[#7d7d7d] 2xl:text-[1.125rem] hover:text-[#DD6B4D] p-2 text-center border-b-[3px] lg:border-b-[5px] relative z-[1] border-solid border-transparent active"
+                                data-electronic="tab-job-1" data-target="tab-job">
+                                Mô tả công việc
+                            </button>
+                            <button
+                                class="tablinks flex-auto font-medium text-[#7d7d7d] 2xl:text-[1.125rem] hover:text-[#DD6B4D] p-2 text-center border-b-[3px] lg:border-b-[5px] relative z-[1] border-solid border-transparent "
+                                data-electronic="tab-job-2" data-target="tab-job">
+                                Giới thiệu về công ty
+                            </button>
+                            <button
+                                class="tablinks flex-auto font-medium text-[#7d7d7d] 2xl:text-[1.125rem] hover:text-[#DD6B4D] p-2 text-center border-b-[3px] lg:border-b-[5px] relative z-[1] border-solid border-transparent hidden"
+                                data-electronic="tab-job-3" data-target="tab-job">
+                                Thông tin liên hệ
+                            </button>
+                        </div>
+                        <div class="wrapper-tabcontent">
+                            <div class="tabcontent active" data-target="tab-job" id="tab-job-1">
+                                <div class="s-content">
+                                    - Trực tiếp giải quyết các vụ việc hoặc hỗ trợ các Luật sư và đồng nghiệp trong các
+                                    lĩnh vực Dân sự, Kinh doanh Thương mại, Thi hành án, Hành chính, Hình sự, Ly hôn…
+
+                                    - Tư vấn các thủ tục pháp lý về doanh nghiệp - đầu tư, đất đai, đại diện theo ủy
+                                    quyền tham gia tố tụng tại Tòa án cho khách hàng;
+
+                                    - Thực hiện các công việc theo sự phân công của Luật sư;
+
+                                    - Công việc cụ thể sẽ được trao đổi chi tiết hơn khi phỏng vấn.
+                                </div>
+                            </div>
+                            <div class="tabcontent" data-target="tab-job" id="tab-job-2">
+                                <div
+                                    class="xl:mt-8 mt-6 bg-white lg:p-8 p-4 rounded-md shadow-[0px_4px_10px_rgba(0,0,0,.3)]">
+                                    <h3
+                                        class="font-semibold xl:text-2xl text-lg text-[var(--cl-text-main-2)] uppercase mb-4">
+                                        Công ty Luật TNHH Minh Tín</h3>
+                                    <div class="infomation">
+                                        <div class="flex flex-wrap md:-mx-2">
+                                            <div class="w-full md:w-1/4 px-2 mb-4 md:mb-0">
+                                                <div class="c-img pt-[100%] rounded-md overflow-hidden">
+                                                    <picture>
+                                                        <source media="(min-width:0px)"
+                                                            data-srcset="../theme/frontend/images/logo-viet-4.png"
+                                                            srcset="../theme/frontend/images/logo-viet-4.png">
+                                                        <img loading="lazy"
+                                                            src="../theme/frontend/images/logo-viet-4.png"
+                                                            data-src="../theme/frontend/images/logo-viet-4.png"
+                                                            alt="Công ty Luật TNHH Minh Tín"
+                                                            title="Công ty Luật TNHH Minh Tín" class="img-fluid">
+                                                    </picture>
+                                                </div>
+                                            </div>
+                                            <div class="w-full md:w-3/4 px-2 flex">
+                                                <div class="flex flex-col flex-1">
+                                                    <div class="w-full flex flex-wrap info-job xl:mt-8 mt-4 -mx-2">
+                                                        <div class="w-full md:w-1/2 px-2 lg:pr-10">
+                                                            <div class="flex items-center mb-5">
+                                                                <span
+                                                                    class="w-6 h-6 inline-block bg-no-repeat shrink-0 bg-contain bg-center"
+                                                                    style="background-image: url(../theme/frontend/images/icon-website-company.svg);"></span>
+                                                                <span
+                                                                    class="ml-2 text-[var(--cl-sub-title)] text-sm">http://luatminhtin.vn/</span>
+                                                            </div>
+                                                            <div class="flex items-center mb-5">
+                                                                <span
+                                                                    class="w-6 h-6 inline-block bg-no-repeat shrink-0 bg-contain bg-center"
+                                                                    style="background-image: url(../theme/frontend/images/icon-address-company.svg);"></span>
+                                                                <span
+                                                                    class="ml-2 text-[var(--cl-sub-title)] text-sm">Tầng
+                                                                    4, Tòa nhà Hà Thành Plaza, số 102 phố Thái Thịnh -
+                                                                    Phường Trung Liệt - Quận Đống đa - Hà Nội.</span>
+                                                            </div>
+                                                            <div class="flex flex-wrap items-center">
+                                                                <div class="flex items-center mr-6 last:mr-0 mb-2">
+                                                                    <span
+                                                                        class="w-6 h-6 inline-block bg-no-repeat shrink-0 bg-contain bg-center"
+                                                                        style="background-image: url(../theme/frontend/images/icon-staff-size.svg);"></span>
+                                                                    <span
+                                                                        class="ml-2 text-[var(--cl-sub-title)] text-sm">5</span>
+                                                                </div>
+                                                                <div class="flex items-center mr-6 last:mr-0 mb-2">
+                                                                    <span
+                                                                        class="w-6 h-6 inline-block bg-no-repeat shrink-0 bg-contain bg-center"
+                                                                        style="background-image: url(../theme/frontend/images/icon-posted-company.svg);"></span>
+                                                                    <span
+                                                                        class="ml-2 text-[var(--cl-sub-title)] text-sm">5</span>
+                                                                </div>
+                                                                <div class="flex items-center mr-6 last:mr-0 mb-2">
+                                                                    <span
+                                                                        class="w-6 h-6 inline-block bg-no-repeat shrink-0 bg-contain bg-center"
+                                                                        style="background-image: url(../theme/frontend/images/icon-flow-company.svg);"></span>
+                                                                    <span
+                                                                        class="ml-2 text-[var(--cl-sub-title)] text-sm">5</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="w-full md:w-1/2 mt-4 md:mt-0 px-2">
+                                                            <p
+                                                                class="text-[var(--cl-text-main-2)] lg:text-2xl text-lg font-semibold text-left">
+                                                                MST: 0104734686</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="s-content mb-4">
+                                        MinhTinlaw (tên viết tắt của Công ty Luật TNHH Minh Tín) hoạt động theo giấy
+                                        phép số 01070549 / TP / ĐKHĐ do Sở tư pháp thành phố Hà Nội cấp. Được thành lập
+                                        và điều hành bởi các Luật sư có kinh nghiệm chuyên ngành tài chính, bất động
+                                        sản, kinh doanh thương mại.<br>
+                                        <br>
+                                        Đội ngũ cán bộ nhân viên của Công ty Luật TNHH Minh Tín chiếm đa số là các luật
+                                        sư, thạc sỹ luật đã từng làm việc tại các Công ty Luật nổi tiếng tại Việt Nam và
+                                        hoặc đã được trải nghiệm với tư cách là luật sư quản lý, lãnh đạo tại các tổ
+                                        chức hành nghề luật. Do đó, chúng tôi tự hào cung cấp cho khách hàng những giải
+                                        pháp đã được đúc kết từ những trải nghiệm thực tế. Đây chính là thế mạnh vượt
+                                        trội và sự khác biệt so với các tổ chức tư vấn luật khác tại Việt Nam.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tabcontent" data-target="tab-job" id="tab-job-3">
+                                <p class="title font-bold text-[#000] text-[1.25rem] mb-1">Thông tin liên hệ</p>
+                                <ul class="info_contact_post">
+                                    <li>
+                                        <span>Người tuyển dụng:</span>
+                                        <strong></strong>
+                                    </li>
+                                    <li>
+                                        <span>Email tuyển dụng:</span>
+                                        <strong></strong>
+                                    </li>
+                                    <li>
+                                        <span>Điện thoại tuyển dụng:</span>
+                                        <strong></strong>
+                                    </li>
+                                    <li>
+                                        <span>Địa chỉ tuyển dụng:</span>
+                                        <strong></strong>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full px-2 lg:w-1/4">
+                    <div class="info-detail__sidebar bg-[#FAFAFA] rounded-lg">
+                        <p
+                            class="head lg:p-6 p-4 text-[#1C4B82] lg:text-[1.125rem] font-bold border-b-[1px] border-solid border-[#A8A8A8]">
+                            Thông tin thêm về công việc</p>
+                        <div class="p-4 content lg:p-6">
+
+                            <div class="mb-5 item last:mb-0">
+                                <p class="title font-bold text-[#000] mb-2">Nơi làm việc</p>
+
+                                <p class="font-medium lg:text-[0.875rem] text-[#000]">
+                                    Bình Phước
+                                </p>
+                            </div>
+                            <div class="mb-5 item last:mb-0">
+                                <p class="title font-bold text-[#000] mb-2">Cấp bậc</p>
+                                <p class="font-medium lg:text-[0.875rem] text-[#000]">
+                                    Phó giám đốc
+                                </p>
+                            </div>
+                            <div class="mb-5 item last:mb-0">
+                                <p class="title font-bold text-[#000] mb-2">Ngành nghề</p>
+                                <p class="font-medium lg:text-[0.875rem] text-[#000]">
+                                    Luật sư
+                                </p>
+                            </div>
+                            <div class="mb-5 item last:mb-0">
+                                <p class="title font-bold text-[#000] mb-2">Kỹ năng</p>
+                                <p class="font-medium lg:text-[0.875rem] text-[#000]"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer_upgrade" >
+        <div class="container">
+            <div class="main-footer 2xl:py-14 xl:py-10 py-6 border-b-[1px] border-solid border-[#fff]">
+                <div class="flex flex-wrap lg:justify-between -mx-2">
+                    <div class="w-full lg:w-[25%] px-2 mb-4 lg:mb-0">
+                        <a href="https://joblaw.vn" title="JobLaw TUYỂN DỤNG VIỆC LÀM PHÁP LUẬT"
+                            class="logo-footer block max-w-[200px] md:max-w-[390px]">
+                            <picture>
+                                <source media="(min-width:0px)"
+                                    data-srcset="../theme/frontend/images//logo-footer.png"
+                                    srcset="../theme/frontend/images//logo-footer.png">
+                                <img loading="lazy" src="../theme/frontend/images//logo-footer.png"
+                                    data-src="../theme/frontend/images//logo-footer.png" alt="" title=""
+                                    class="img-fluid">
+                            </picture>
+                        </a>
+                        <div class="footer-contact text-white lg:mt-6 mt-4">
+                            <p class="title flex items-center font-semibold lg:text-[1.125rem] ">
+                                <svg class="mr-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24" fill="none">
+                                    <path
+                                        d="M21.9994 16.9201V19.9201C22.0006 20.1986 21.9435 20.4743 21.832 20.7294C21.7204 20.9846 21.5567 21.2137 21.3515 21.402C21.1463 21.5902 20.904 21.7336 20.6402 21.8228C20.3764 21.912 20.0968 21.9452 19.8194 21.9201C16.7423 21.5857 13.7864 20.5342 11.1894 18.8501C8.77327 17.3148 6.72478 15.2663 5.18945 12.8501C3.49942 10.2413 2.44769 7.27109 2.11944 4.1801C2.09446 3.90356 2.12732 3.62486 2.21595 3.36172C2.30457 3.09859 2.44702 2.85679 2.63421 2.65172C2.82141 2.44665 3.04925 2.28281 3.30324 2.17062C3.55722 2.05843 3.83179 2.00036 4.10945 2.0001H7.10945C7.59475 1.99532 8.06524 2.16718 8.43321 2.48363C8.80118 2.80008 9.04152 3.23954 9.10944 3.7201C9.23607 4.68016 9.47089 5.62282 9.80945 6.5301C9.94399 6.88802 9.97311 7.27701 9.89335 7.65098C9.8136 8.02494 9.62831 8.36821 9.35944 8.6401L8.08945 9.9101C9.513 12.4136 11.5859 14.4865 14.0894 15.9101L15.3594 14.6401C15.6313 14.3712 15.9746 14.1859 16.3486 14.1062C16.7225 14.0264 17.1115 14.0556 17.4694 14.1901C18.3767 14.5286 19.3194 14.7635 20.2794 14.8901C20.7652 14.9586 21.2088 15.2033 21.526 15.5776C21.8431 15.9519 22.0116 16.4297 21.9994 16.9201Z"
+                                        stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    </path>
+                                </svg>
+                                Liên hệ:
+                            </p>
+                            <div class="content mt-4 mb-3">
+                                Hệ thống Hotline hỗ trợ 24/7. Nếu cần hỗ trợ vui lòng liên hệ:
+                                <a href="tel:024.62872777" title="hotline" class="link font-bold">024.62872777</a>
+                                <span> - </span>
+                                <a href="tel:091.121.9099" title="hotline" class="link font-bold">091.121.9099</a>
+                                <span></span>
+                            </div>
+                            <p>
+                                <i class="fa fa-globe" aria-hidden="true"></i>
+                                <span>Website: </span>
+                                <a href="https://joblaw.vn" target="_blank" title="hotline"
+                                    class="link font-bold">https://joblaw.vn</a>
+                            </p>
+                            <p>
+                                <i class="fa fa-globe" aria-hidden="true"></i>
+                                <span>Website: </span>
+                                <a href="https://luattamanh.com.vn" target="_blank" title="hotline"
+                                    class="link font-bold">https://luattamanh.com.vn</a>
+                            </p>
+                        </div>
+                        <div class="footer-social lg:mt-6 mt-4">
+                            <p class="title font-semibold text-white mb-4">Cộng đồng JobLaw</p>
+                            <ul class="f-social flex flex-wrap items-center">
+                                <li class="xl:mr-8 mr-4 last:mr-0">
+                                    <a href="https://www.facebook.com/luattamanh.com.vn" title="Facebook"
+                                        target="_blank" class="w-10 h-10 img_full img-h-full img-contain">
+                                        <img src="../theme/frontend/images/logos_facebook.svg" alt="facebook">
+                                    </a>
+                                </li>
+                                <li class="xl:mr-8 mr-4 last:mr-0">
+                                    <a href="https://zalo.me/0911219099" title="Facebook" target="_blank"
+                                        class="w-10 h-10 img_full img-h-full img-contain">
+                                        <img src="../theme/frontend/images/zalo.png" style="width: 41px;"
+                                            alt="facebook">
+                                    </a>
+                                </li>
+                                <li class="xl:mr-8 mr-4 last:mr-0">
+                                    <a href="https://www.instagram.com/" title="Instagram" target="_blank"
+                                        class="w-10 h-10 img_full img-h-full img-contain">
+                                        <img src="../theme/frontend/images/skill-icons_instagram.png" alt="instagram">
+                                    </a>
+                                </li>
+                                <li class="xl:mr-8 mr-4 last:mr-0">
+                                    <a href="https://twitter.com/?lang=vi" title="Twitter" target="_blank"
+                                        class="w-10 h-10 img_full img-h-full img-contain">
+                                        <img src="../theme/frontend/images/formkit_twitter.png" alt="twitter">
+                                    </a>
+                                </li>
+                                <li class="xl:mr-8 mr-4 last:mr-0">
+                                    <a href="https://twitter.com/?lang=vi" title="linkedin" target="_blank"
+                                        class="w-10 h-10 img_full img-h-full img-contain">
+                                        <img src="../theme/frontend/images/skill-icons_linkedin.png" alt="linkedin">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="w-full lg:w-[70%] px-2">
+                        <div class="flex flex-wrap -mx-2">
+                            <div class="w-full sm:w-1/2 lg:w-1/3 px-2 mb-4">
+                                <p
+                                    class="title-footer font-semibold text-white 2xl:text-[1.5rem] lg:text-[1.25rem] text-[1rem] mb-4">
+                                    Về chúng tôi
+                                </p>
+                                <div class="nav-footer">
+                                    <ul>
+                                        <li><a href="huong-dan-su-dung" title="Hướng dẫn sử dụng">Hướng dẫn sử dụng</a>
+                                        </li>
+                                        <li><a href="mau-hop-dong-dich-vu" title="Mẫu hợp đồng dịch vụ">Mẫu hợp đồng
+                                                dịch vụ</a></li>
+                                        <li><a href="quy-che-hoat-dong" title="Quy chế hoạt động">Quy chế hoạt động</a>
+                                        </li>
+                                        <li><a href="quy-trinh-tiep-nhan-va-giai-quyet-khieu-nai-tranh-chap"
+                                                title="Quy trình tiếp nhận và giải quyết khiếu nại, tranh chấp">Quy
+                                                trình tiếp nhận và giải quyết khiếu nại, tranh chấp</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="w-full sm:w-1/2 lg:w-1/3 px-2 mb-4">
+                                <p
+                                    class="title-footer font-semibold text-white 2xl:text-[1.5rem] lg:text-[1.25rem] text-[1rem] mb-4">
+                                    Trợ giúp &amp; dịch vụ
+                                </p>
+                                <div class="nav-footer">
+                                    <ul>
+                                        <li><a href="chinh-sach-bao-mat-thong-tin"
+                                                title="Chính sách bảo mật thông tin">Chính sách bảo mật thông tin</a>
+                                        </li>
+                                        <li><a href="quy-che-bao-ve-dlcn" title="Quy chế bảo vệ dữ liệu cá nhân">Quy chế
+                                                bảo vệ dữ liệu cá nhân</a></li>
+                                        <li><a href="thoa-thuan-bao-ve-dlcn"
+                                                title="Thoả thuận bảo vệ dữ liệu cá nhân">Thoả thuận bảo vệ dữ liệu cá
+                                                nhân</a></li>
+                                        <li><a href="bao-phi-dich-vu" title="Báo phí dịch vụ">Báo phí dịch vụ</a></li>
+                                        <li><a href="lien-he" title="Liên hệ">Liên hệ</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="w-full sm:w-1/2 lg:w-1/3 px-2 mb-4">
+                                <p
+                                    class="title-footer font-semibold text-white 2xl:text-[1.5rem] lg:text-[1.25rem] text-[1rem] mb-4">
+                                    Hồ sơ &amp; CV
+                                </p>
+                                <div class="nav-footer">
+                                    <ul>
+                                        <li><a href="#" title="Nhà tuyển dụng xem hồ sơ của bạn">Nhà tuyển dụng xem hồ
+                                                sơ của bạn</a></li>
+                                        <li><a href="#" title="Quản lý việc đã làm">Quản lý việc đã làm</a></li>
+                                        <li><a href="#" title="Quản lý CV của bạn">Quản lý CV của bạn</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="w-full sm:w-1/2 lg:w-1/3 px-2 mb-4">
+                                <p
+                                    class="title-footer font-semibold text-white 2xl:text-[1.5rem] lg:text-[1.25rem] text-[1rem] mb-4">
+                                    Khám phá
+                                </p>
+                                <div class="nav-footer">
+                                    <ul>
+                                        <li><a href="#" title="Định hướng ngành luật">Định hướng ngành luật</a></li>
+                                        <li><a href="#" title="Công cụ tính thuế thu nhập cá nhân">Công cụ tính thuế thu
+                                                nhập cá nhân</a></li>
+                                        <li><a href="#" title="Hỏi - đáp ngành luật">Hỏi - đáp ngành luật</a></li>
+                                        <li><a href="#" title="Tính lương Gross - Net">Tính lương Gross - Net</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="w-full sm:w-1/2 lg:w-1/3 px-2 mb-4">
+                                <p
+                                    class="title-footer font-semibold text-white 2xl:text-[1.5rem] lg:text-[1.25rem] text-[1rem] mb-4">
+                                    Phát triển bản thân
+                                </p>
+                                <div class="nav-footer">
+                                    <ul>
+                                        <li><a href="#" title="Việc làm lương cao">Việc làm lương cao</a></li>
+                                        <li><a href="#" title="Việc làm tốt nhất">Việc làm tốt nhất</a></li>
+                                        <li><a href="#" title="Định hướng ngành luật">Định hướng ngành luật</a></li>
+                                        <li><a href="#" title="Tính lương Gross - Net">Tính lương Gross - Net</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="w-full sm:w-1/2 lg:w-1/3 px-2 mb-4">
+                                <p
+                                    class="title-footer font-semibold text-white 2xl:text-[1.5rem] lg:text-[1.25rem] text-[1rem] mb-4">
+                                    Luật sư
+                                </p>
+                                <div class="nav-footer">
+                                    <ul>
+                                        <li><a href="dang-ky-luat-su" title="Đăng ký luật sư">Đăng ký luật sư</a></li>
+                                        <li><a href="dang-nhap-luat-su" title="Đăng nhập luật sư">Đăng nhập luật sư</a>
+                                        </li>
+                                        <li><a href="danh-ba-luat-su" title="Danh bạ luật sư">Danh bạ luật sư</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-middle xl:py-8 py-6">
+                <div class="flex flex-wrap -mx-2 lg:justify-between">
+                    <div class="w-full lg:w-[60%] px-2 mb-4 lg:mb-0">
+                        <p class="address flex items-center text-white mb-3">
+                            <i class="fa fa-building mr-2 text-[1.5rem] relative" aria-hidden="true"></i>
+                            <span class="company_name">CÔNG TY TNHH JOBLAW - MST: 0110475863</span>
+                        </p>
+                        <p class="address flex items-center text-white mb-3">
+                            <i class="fa-solid fa-house-chimney mr-2 text-[1.5rem] relative "></i>
+                            Nhà liền kề số 14 - Manor 1 Str Sunrise A – Khu đô thị The Manor Central Park đường Nguyễn
+                            Xiển, Phường Đại Kim, Quận Hoàng Mai, Thành phố Hà Nội, Việt Nam
+                        </p>
+                        <p class="address flex items-center text-white mb-3">
+                            <i class="fa-solid fa-location-dot mr-2 text-[1.5rem] relative"></i>
+                            <a href="https://www.google.com/maps/place/LU%E1%BA%ACT+T%C3%82M+ANH/@20.9751544,105.8131586,17z/data=!3m1!4b1!4m6!3m5!1s0x3135adb5be55818d:0x38b5f41ebc1148b2!8m2!3d20.9751544!4d105.8131586!16s%2Fg%2F11vbylgn2r?entry=ttu"
+                                target="_blank">Link google map</a>
+                        </p>
+                        <p class="address flex items-center text-white mb-3">
+                            <i class="fa-regular fa-envelope mr-2 text-[1.5rem] relative "></i>
+                            <a href="mailto:joblawpro@gmail.com" class="link">Gmail: joblawpro@gmail.com</a>
+                        </p>
+                        <p class="address flex items-center text-white mb-3">
+                            <i class="fa-solid fa-credit-card mr-2 text-[1.5rem] relative"></i>
+                            Số tài khoản: 9911219099 - Techcombank - CN Hà Thành Hà Nội
+                        </p>
+                    </div>
+                    <div class="w-full lg:w-[26%] px-2">
+                        <p class="title text-white font-semibold mb-4">Nhận thông tin việc làm</p>
+                        <div class="form-send-mail">
+                            <form action="https://joblaw.vn/gui-lien-he" method="POST" class="form-validate"
+                                data-success="NOTIFICATION.toastrMessageReload" accept-charset="utf8" absolute=""
+                                clear="">
+                                <input type="hidden" name="_token" value="CHa9xw1jQ6FDVi0kiSrUE0BehICCIbkBtKfwZvBB">
+                                <input type="hidden" name="type" value="1">
+                                <div class="w-full">
+                                    <input class="outline-none" type="email" placeholder="Nhập email..." name="email"
+                                        aria-required="true">
+                                </div>
+                                <button type="submit">Gửi</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom py-4 flex flex-wrap justify-center text-white text-[.875rem]">
+                <div
+                    class="item w-full lg:w-auto text-center lg:pr-4 lg:mr-4 last:pr-0 last:mr-0 lg:border-r-[1px] border-solid border-white last:border-r-[0px]">
+                    Copyright © 2022 JOBLAW Việt Nam </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../theme/frontend/js/jquery-3.7.0.min.js?v=1686826683" defer=""></script>
+    <script src="../theme/frontend/js/wow.min.js?v=1669823382" defer=""></script>
+    <script src="../theme/frontend/js/base.js?v=1712131214" defer=""></script>
+    <script src="../theme/frontend/js/fslightbox.js?v=1698467970" defer=""></script>
+    <script src="../theme/frontend/js/swiper-bundle.min.js?v=1701135452" defer=""></script>
+    <script src="../theme/frontend/js/tabs.js?v=1669823382" defer=""></script>
+    <script src="../theme/frontend/js/select2.min.js?v=1700040752" defer=""></script>
+    
+    <script src="../theme/frontend/js/slider.js?v=1705056749" defer=""></script>
+    <script src="../theme/frontend/js/script.js" defer=""></script>
+
+
+</body>
+
+</html>

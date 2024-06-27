@@ -1,0 +1,1135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../../../theme/frontend/css//fontawesome-free-6.4.0-web/css/all.css" rel="stylesheet">
+    <link href="../../../theme/frontend/css/toastify.css" rel="stylesheet">
+    <link href="../../../theme/frontend/css/animate.min.css" rel="stylesheet">
+    <link href="../../../theme/frontend/css/swiper-bundle.min.css" rel="stylesheet">
+    <link href="../../../theme/frontend/css/lightbox.css" rel="stylesheet">
+    <link href="../../../theme/frontend/css/select2.min.css" rel="stylesheet">
+    <link href="../../../theme/frontend/css/output.css" rel="stylesheet">
+    <link href="../../../theme/frontend/css/main.css" rel="stylesheet">
+    <link href="../../../theme/frontend/css/sub.css" rel="stylesheet">
+    <link href="../../../theme/frontend/css/add.css" rel="stylesheet">
+    <link href="../../../theme/frontend/css/style.css" rel="stylesheet">
+    <title>Tài khoản nhà tuyển dụng</title>
+</head>
+
+<body>
+    <header class="header bg-[var(--cl-blue)] xl:py-0 py-2 fixed">
+        <div class="2xl:px-10 xl:py-0 px-5 py-4 flex items-center !max-w-[1920px] mx-auto">
+            <span class="show-menu-mobile text-white block xl:hidden text-[20px] mr-4"><i
+                    class="fa-solid fa-bars"></i></span>
+            <a href="https://joblaw.vn" title="JobLaw TUYỂN DỤNG VIỆC LÀM PHÁP LUẬT"
+                class="h-logo max-w-[125px] lg:max-w-[135px] shrink-0 xl:mr-2">
+                <picture>
+                    <source media="(min-width:0px)" data-srcset="../../../theme/frontend/images/logo-joblaw.png"
+                        srcset="../../../theme/frontend/images/logo-joblaw.png">
+                    <img loading="auto" src="../../../theme/frontend/images/logo-joblaw.png"
+                        data-src="../../../theme/frontend/images/logo-joblaw.png" alt="Logo" title="Logo"
+                        class="img-fluid">
+                </picture>
+            </a>
+            <div class="menu flex-1 xl:flex items-center justify-end">
+                <a href="https://joblaw.vn" title="JobLaw TUYỂN DỤNG VIỆC LÀM PHÁP LUẬT"
+                    class="logo-mobile block xl:hidden max-w-[176px] mx-auto my-4">
+                    <picture>
+                        <source media="(min-width:0px)" data-srcset="../../../theme/frontend/images/logo-joblaw.png"
+                            srcset="../../../theme/frontend/images/logo-joblaw.png">
+                        <img loading="auto" src="../../../theme/frontend/images/logo-joblaw.png"
+                            data-src="../../../theme/frontend/images/logo-joblaw.png" alt="Logo" title="Logo"
+                            class="img-fluid">
+                    </picture>
+                </a>
+                <ul class="">
+                    <li><a href="tuyen-dung" title="Tuyển dụng" class=" ">Tuyển dụng</a></li>
+                    <li><a href="tim-ung-vien-moi" title="Ứng viên" class=" ">Ứng viên</a></li>
+                    <li><a href="phap-luat-lao-dong" title="Pháp luật lao động" class=" ">Pháp luật lao động</a>
+                        <ul class="">
+                            <li><a href="hoi-dap-nganh-luat" title="Hỏi - Đáp ngành luật" class=" ">Hỏi - Đáp ngành
+                                    luật</a></li>
+                            <li><a href="dinh-huong-nganh-luat" title="Định hướng ngành luật" class=" ">Định hướng ngành
+                                    luật</a></li>
+                            <li><a href="ki-nang-nganh-luat" title="Kĩ năng ngành luật" class=" ">Kĩ năng ngành luật</a>
+                            </li>
+                            <li><a href="tuyen-dung-cong-chuc" title="Tuyển dụng công chức" class=" ">Tuyển dụng công
+                                    chức</a></li>
+                        </ul><span class="btn-dropdown-menu"><i class="fa fa-angle-down text-[var(--cl-text-main)]"
+                                aria-hidden="true"></i></span>
+                    </li>
+                    <li><a href="tien-ich" title="Tiện ích" class=" ">Tiện ích</a>
+                        <ul class="">
+                            <li><a href="cong-cu-tinh-luong-gross-net" title="Công cụ tính lương Gross/Net"
+                                    class=" ">Công cụ tính lương Gross/Net</a></li>
+                            <li><a href="cong-cu-tinh-thue-tncn" title="Công cụ tính thuế TNCN" class=" ">Công cụ tính
+                                    thuế TNCN</a></li>
+                        </ul><span class="btn-dropdown-menu"><i class="fa fa-angle-down text-[var(--cl-text-main)]"
+                                aria-hidden="true"></i></span>
+                    </li>
+                    <li><a href="dich-vu-cua-chung-toi" title="Dịch vụ" class=" ">Dịch vụ</a></li>
+                    <li><a href="huong-dan-su-dung" title="Hướng dẫn sử dụng" class=" ">Hướng dẫn sử dụng</a></li>
+                    <li><a href="danh-ba-luat-su" title="Danh bạ luật sư" class=" ">Danh bạ luật sư</a></li>
+                    <li><a href="lien-he" title="Liên hệ" class=" ">Liên hệ</a></li>
+                </ul>
+                <a href="https://joblaw.vn/thong-bao-cua-nha-tuyen-dung" title="Thông báo"
+                    class="relative w-6 h-6 img_full img-h-full img-contain hidden mr-2 lg:mr-3 h-notifi lg:inline-block">
+                    <img src="../../../theme/frontend/images/noti.svg" class="brightness-[100]" alt="Thông báo">
+                    <span
+                        class="count min-w-[14px] h-[14px] rounded-full bg-[#DD6B4D] inline-flex items-center justify-center text-white text-[10px] absolute -top-1 -right-1 z-[1]">0</span>
+                </a>
+                <div class="relative items-center hidden gap-1 cursor-pointer xl:flex h-user">
+                    <a class="lg:w-12 lg:h-12 w-10 h-10 overflow-hidden rounded-full ava shrink-0 img-h-full img_full img-cover border-[1px] border-[#ebebeb]"
+                        href="https://joblaw.vn/thong-tin-tai-khoan-ntd" title="Nguyễn Văn C">
+                        <img src="../../../theme/frontend/images/user_profile_default.png">
+                    </a>
+                    <a href="https://joblaw.vn/thong-tin-tai-khoan-ntd" title="Nguyễn Văn C"
+                        class="name-user hidden text-white ml-2 lg:block font-semibold">Nguyễn Văn C</a>
+                    <i class="fa-solid fa-angle-down text-white ml-2"></i>
+
+                    <div class="hidden overflow-hidden rounded user-content lg:block">
+                        <div class="box bg-[#fff] relative">
+                            <a class="link block border-b-[1px] border-solid border-[#ebebeb] py-2 px-6"
+                                href="https://joblaw.vn/thong-tin-tai-khoan-ntd" title="Thông tin tài khoản">
+                                <i class="mr-2 fa-regular fa-circle-user"></i>
+                                Thông tin tài khoản
+                            </a>
+                            <a class="link flex items-center border-b-[1px] border-solid border-[#ebebeb] py-2 px-6"
+                                href="https://joblaw.vn/quan-ly-dich-vu/all" title="Thông tin tài khoản">
+                                <svg class="mr-2 shrink-0" stroke="currentColor" fill="currentColor" stroke-width="0"
+                                    viewBox="0 0 512 512" height="15" width="15" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="448" height="256" x="32" y="80" fill="none" stroke-linejoin="round"
+                                        stroke-width="32" rx="16" ry="16" transform="rotate(180 256 208)"></rect>
+                                    <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"
+                                        d="M64 384h384M96 432h320">
+                                    </path>
+                                    <circle cx="256" cy="208" r="80" fill="none" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="32">
+                                    </circle>
+                                    <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"
+                                        d="M480 160a80 80 0 01-80-80M32 160a80 80 0 0080-80m368 176a80 80 0 00-80 80M32 256a80 80 0 0180 80">
+                                    </path>
+                                </svg>
+                                Quản lý dịch vụ
+                            </a>
+                            <a class="link block border-b-[1px] border-solid border-[#ebebeb] py-2 px-6"
+                                href="https://joblaw.vn/danh-sach-tin-da-dang" title="Thông tin tài khoản">
+                                <i class="mr-2 fa-regular fa-file-lines"></i>
+                                Danh sách tin đăng
+                            </a>
+                            <a class="link block border-b-[1px] border-solid border-[#ebebeb] py-2 px-6"
+                                href="https://joblaw.vn/dang-tin-tuyen-dung" title="Thông tin tài khoản">
+                                <i class="mr-2 fa-regular fa-file-lines"></i>
+                                Đăng tin
+                            </a>
+                            <a class="link block border-b-[1px] border-solid border-[#ebebeb] py-2 px-6"
+                                href="https://joblaw.vn/dang-xuat" title="Đăng xuất">
+                                <i class="mr-2 fa-solid fa-arrow-right-from-bracket"></i>
+                                Đăng xuất
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="flex items-center xl:hidden ml-auto">
+                <a href="https://joblaw.vn/thong-bao-cua-nha-tuyen-dung" title="Thông báo"
+                    class="relative w-6 h-6 img_full img-h-full img-contain mr-2 lg:mr-3 h-notifi inline-block">
+                    <img src="theme/frontend/images/noti.svg" class="brightness-[100]" alt="Thông báo">
+                    <span
+                        class="count min-w-[14px] h-[14px] rounded-full bg-[#DD6B4D] inline-flex items-center justify-center text-white text-[10px] absolute -top-1 -right-1 z-[1]">0</span>
+                </a>
+                <div class="relative items-center gap-1 cursor-pointer flex h-user ml-2">
+                    <a class="lg:w-12 lg:h-12 w-10 h-10 overflow-hidden rounded-full ava shrink-0 img-h-full img_full img-cover border-[1px] border-[#ebebeb]"
+                        href="https://joblaw.vn/thong-tin-tai-khoan-ntd" title="Nguyễn Văn C">
+                        <picture>
+                            <source media="(min-width:0px)" data-srcset="../../../theme/frontend/images/noimage.png"
+                                srcset="../../../theme/frontend/images/noimage.png">
+                            <img loading="lazy" src="../../../theme/frontend/images/noimage.png"
+                                data-src="../../../theme/frontend/images/noimage.png" alt="Nguyễn Văn C"
+                                title="Nguyễn Văn C" class="img-fluid" admin="" images="" noimage.png="">
+                        </picture>
+                    </a>
+                    <a href="https://joblaw.vn/thong-tin-tai-khoan-ntd" title="Nguyễn Văn C"
+                        class="name-user text-white ml-2 line-clamp-1 max-w-[5rem] font-semibold">Nguyễn Văn C</a>
+                    <i class="fa-solid fa-angle-down text-white ml-2"></i>
+                </div>
+            </div>
+
+        </div>
+        <div
+            class="over-lay fixed block xl:hidden top-0 right-[-100%] w-full h-full z-50 bg-[rgba(0,0,0,.5)] transition-all duration-300">
+        </div>
+    </header>
+    <div class="main-breadcrumb pt-2 pb-4 lg:pb-6">
+        <div class="container">
+            <ul class="breacrumb">
+                <li><a href="https://joblaw.vn" title="">Trang chủ</a></li>
+                <li><a href="https://joblaw.vn/thong-tin-tai-khoan-ntd" title="" class="active">Tài khoản nhà tuyển
+                        dụng</a></li>
+            </ul>
+
+        </div>
+    </div>
+    <section class="mt-4 bg-[#F0F0F3]">
+        <div class="container">
+            <div
+                class="head-title-all leading-[1.3] mb-4 border-l-[5px] border-solid border-[#DD6B4D] pl-4 font-bold 2xl:text-[2rem] xl:text-[1.5rem] text-[1.25rem]">
+                <span class="text-[var(--cl-blue)]">Tài khoản nhà tuyển dụng</span>
+            </div>
+            <div class="flex flex-wrap -mx-2">
+                <div class="w-full lg:w-[22%] px-2 mb-4 lg:mb-0">
+                    <ul class="nav-menu p-2 border border-solid border-[#EBEBEB] rounded-[10px]">
+                        <li class="mb-2 last:mb-0">
+                            <a href="https://joblaw.vn/thong-tin-tai-khoan-ntd"
+                                class="flex items-center pl-2 py-2 text-gray-700 rounded-md hover:bg-gray-200 active">
+                                <svg class="mr-2" stroke="currentColor" fill="currentColor" stroke-width="0"
+                                    viewBox="0 0 512 512" height="22" width="22" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="176" height="176" x="48" y="48" fill="none" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="32" rx="20" ry="20"></rect>
+                                    <rect width="176" height="176" x="288" y="48" fill="none" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="32" rx="20" ry="20"></rect>
+                                    <rect width="176" height="176" x="48" y="288" fill="none" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="32" rx="20" ry="20"></rect>
+                                    <rect width="176" height="176" x="288" y="288" fill="none" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="32" rx="20" ry="20"></rect>
+                                </svg>
+                                <span class="font-medium">Thông tin tài khoản</span>
+                            </a>
+                        </li>
+                        <li class="mb-2 last:mb-0">
+                            <a href="https://joblaw.vn/danh-sach-tin-da-dang"
+                                class="flex items-center pl-2 py-2 text-gray-700 rounded-md hover:bg-gray-200   ">
+                                <svg class="mr-2 shrink-0" stroke="currentColor" fill="currentColor" stroke-width="0"
+                                    viewBox="0 0 512 512" height="22" width="22" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="448" height="256" x="32" y="80" fill="none" stroke-linejoin="round"
+                                        stroke-width="32" rx="16" ry="16" transform="rotate(180 256 208)"></rect>
+                                    <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"
+                                        d="M64 384h384M96 432h320">
+                                    </path>
+                                    <circle cx="256" cy="208" r="80" fill="none" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="32">
+                                    </circle>
+                                    <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"
+                                        d="M480 160a80 80 0 01-80-80M32 160a80 80 0 0080-80m368 176a80 80 0 00-80 80M32 256a80 80 0 0180 80">
+                                    </path>
+                                </svg>
+                                <span class="font-medium">Quản lý tin đăng</span>
+                            </a>
+                            <ul class="nav-menu mt-2 ">
+                                <li class="mb-2 last:mb-0">
+                                    <a href="https://joblaw.vn/dang-tin-tuyen-dung"
+                                        class="flex items-center pl-2 py-2 text-gray-700 rounded-md hover:bg-gray-200">
+                                        <span class="font-medium">Đăng tin</span>
+                                    </a>
+                                </li>
+                                <li class="mb-2 last:mb-0">
+                                    <a href="https://joblaw.vn/danh-sach-tin-da-dang"
+                                        class="flex items-center pl-2 py-2 text-gray-700 rounded-md hover:bg-gray-200">
+                                        <span class="font-medium">Danh sách tin đăng</span>
+                                    </a>
+                                </li>
+                                <li class="mb-2 last:mb-0">
+                                    <a href="https://joblaw.vn/quan-ly-ung-vien"
+                                        class="flex items-center pl-2 py-2 text-gray-700 rounded-md hover:bg-gray-200">
+                                        <span class="font-medium">Danh sách ứng viên</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <span class="btn-dropdown-menu"><i class="fa fa-angle-down" aria-hidden="true"></i></span>
+                        </li>
+                        <li class="mb-2 last:mb-0">
+                            <a href="https://joblaw.vn/quan-ly-dich-vu/all"
+                                class="flex items-center pl-2 py-2 text-gray-700 rounded-md hover:bg-gray-200 ">
+                                <svg class="mr-2 shrink-0" stroke="currentColor" fill="currentColor" stroke-width="0"
+                                    viewBox="0 0 512 512" height="22" width="22" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="448" height="256" x="32" y="80" fill="none" stroke-linejoin="round"
+                                        stroke-width="32" rx="16" ry="16" transform="rotate(180 256 208)"></rect>
+                                    <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"
+                                        d="M64 384h384M96 432h320">
+                                    </path>
+                                    <circle cx="256" cy="208" r="80" fill="none" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="32">
+                                    </circle>
+                                    <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"
+                                        d="M480 160a80 80 0 01-80-80M32 160a80 80 0 0080-80m368 176a80 80 0 00-80 80M32 256a80 80 0 0180 80">
+                                    </path>
+                                </svg>
+                                <span class="font-medium">Quản lý dịch vụ</span>
+                            </a>
+                            <ul class="nav-menu mt-2 ">
+                                <li class="mb-2 last:mb-0">
+                                    <a href="https://joblaw.vn/quan-ly-dich-vu/use"
+                                        class="flex items-center pl-2 py-2 text-gray-700 rounded-md hover:bg-gray-200">
+                                        <span class="font-medium">Dịch vụ đang dùng</span>
+                                    </a>
+                                </li>
+                                <li class="mb-2 last:mb-0">
+                                    <a href="https://joblaw.vn/quan-ly-dich-vu/expired"
+                                        class="flex items-center pl-2 py-2 text-gray-700 rounded-md hover:bg-gray-200">
+                                        <span class="font-medium">Dịch vụ hết hạn</span>
+                                    </a>
+                                </li>
+                                <li class="mb-2 last:mb-0">
+                                    <a href="https://joblaw.vn/dich-vu-cua-chung-toi"
+                                        class="flex items-center pl-2 py-2 text-gray-700 rounded-md hover:bg-gray-200">
+                                        <span class="font-medium">Gói dịch vụ</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <span class="btn-dropdown-menu"><i class="fa fa-angle-down" aria-hidden="true"></i></span>
+                        </li>
+                        <li class="mb-2 last:mb-0">
+                            <a href="https://joblaw.vn/dang-xuat"
+                                class="flex items-center pl-2 py-2 text-gray-700 rounded-md hover:bg-gray-200">
+                                <svg class="mr-2 shrink-0 text-red-500" stroke="currentColor" fill="currentColor"
+                                    stroke-width="0" viewBox="0 0 512 512" height="22" width="22"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"
+                                        d="M304 336v40a40 40 0 01-40 40H104a40 40 0 01-40-40V136a40 40 0 0140-40h152c22.09 0 48 17.91 48 40v40m64 160l80-80-80-80m-192 80h256">
+                                    </path>
+                                </svg>
+                                <span class="font-medium">Đăng xuất</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="w-full lg:w-[78%] px-2">
+                    <div class="tab-link mt-4 border-b border-[#EBEBEB] border-solid">
+                        <button
+                            class="tablinks xl:text-[1.125rem] text-[0.875rem] text-[#888888] font-semibold pb-2 ml-8 first:ml-0"
+                            data-electronic="tab-lesson-1" data-target="tab-lesson">Thông tin tài khoản</button>
+                        <button
+                            class="tablinks xl:text-[1.125rem] text-[0.875rem] text-[#888888] font-semibold pb-2 ml-8 first:ml-0 active"
+                            data-electronic="tab-lesson-2" data-target="tab-lesson">Thông tin công ty</button>
+                    </div>
+                    <div class="tab-form wrapper_tabcontent my-4">
+                        <form action="https://joblaw.vn/thay-doi-thong-tin-tai-khoan-ntd" method="POST"
+                            class="info-acc tabcontent form-all form-validate"
+                            data-success="NOTIFICATION.toastrMessageRedirect" data-target="tab-lesson" id="tab-lesson-1"
+                            enctype="multipart/form-data" clear="">
+                            <input type="hidden" name="_token" value="UcmVA5JsAAbibZB9bRjbdnDRnijNTWCPmQHuV9eH">
+                            <div class="flex flex-wrap border-b border-solid border-[#EBEBEB] lg:-mx-2 mb-4">
+                                <div class="w-full lg:w-1/2 lg:px-2 mb-4 lg:mb-0">
+                                    <p class="tittle text-[var(--cl-text-main-2)] font-semibold mb-4">
+                                        Thông tin đăng nhập
+                                    </p>
+                                    <div class="flex flex-wrap items-center mb-4">
+                                        <p class="w-full lg:w-1/4 mb-2 lg:mb-0">
+                                            Địa chỉ email <span class=" text-[#D90909]">*</span>
+                                        </p>
+                                        <div
+                                            class="w-full lg:w-3/4 box-pass relative flex justify-between items-center border-solid rounded-[5px] border">
+                                            <input type="text" name="email" value="kythuat5.211@gmail.com"
+                                                placeholder="tuyendung@gmail.com" class="bg-white">
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-wrap items-center mb-4">
+                                        <p class="w-full lg:w-1/4 mb-2 lg:mb-0">
+                                            Mật khẩu <span class=" text-[#D90909]">*</span>
+                                        </p>
+                                        <div
+                                            class="w-full lg:w-3/4 box-pass relative flex justify-between items-center border-solid rounded-[5px] border">
+                                            <input type="password" disabled=""
+                                                value="$2y$10$1RhcfPZeapjCwxXWqdeQB.7v1dN.MzrKXG1qotZr2uwKcamj9kxhq"
+                                                class="bg-white" placeholder="tuyendung@gmail.com">
+                                        </div>
+                                    </div>
+                                    <div class="flex lg:justify-end">
+                                        <a href="javascript:void(0)" onclick="MORE_FUNCTION.showModal(this);"
+                                            data-modal="changePassword" title="Thay đổi mật khẩu"
+                                            class="block w-full lg:w-3/4 ml-auto mt-2 text-[var(--cl-text-main)] font-medium">Thay
+                                            đổi mật khẩu</a>
+                                    </div>
+                                </div>
+                                <div class="w-full lg:w-1/2 lg:px-2">
+                                    <p class="font-semibold text-[var(--cl-text-main-2)]">
+                                        Ảnh đại diện
+                                    </p>
+                                    <div class="mt-4">
+                                        <div class="flex items-center flex-nowrap">
+                                            <div class="lg:mr-[1.5rem] mr-[1rem]">
+                                                <div for="avatar"
+                                                    class="img-ava rounded-md overflow-hidden w-28 h-28 c-img pt-0 bg-[#D9D9D9]">
+                                                    <img src="../../../theme/frontend/images/noimage.png"
+                                                        alt="Nguyễn Văn C" id="output">
+                                                </div>
+                                            </div>
+                                            <div class="">
+                                                <label for="avatar"
+                                                    class="relative inline-flex rounded-md overflow-hidden border-solid border border-[var(--border-main)] px-5 py-2.5 !text-[var(--cl-text-main)] font-medium text-sm">
+                                                    <input type="file" name="avatar"
+                                                        class="absolute top-0 right-0 w-full h-full opacity-0 input-avatars"
+                                                        accept="image/*"
+                                                        onchange="document.getElementById('output').src = window.URL.createObjectURL(this.files[0])">
+                                                    Thay đổi ảnh
+                                                </label>
+                                                <div class="note text-[var(--cl-sub-title)] mt-2 max-w-sm w-full">
+                                                    Cho phép tải ảnh JPG, GIF hoặc PNG, dung
+                                                    lượng tối đa 800kB
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-full lg:w-1/2">
+                                <p class="tittle text-[var(--cl-text-main-2)] font-semibold mb-4">Thông tin liên hệ</p>
+                                <div class="flex flex-wrap items-center mb-4">
+                                    <p class="w-full lg:w-1/4 mb-2 lg:mb-0">
+                                        Họ và tên <span class=" text-[#D90909]">*</span>
+                                    </p>
+                                    <div
+                                        class="w-full lg:w-3/4 box-pass relative flex justify-between items-center border-solid rounded-[5px] border border-[#B9B9B9] bg-[#F0F0F3]">
+                                        <input type="text" name="name" value="Nguyễn Văn C" class="bg-[#F0F0F3]"
+                                            placeholder="tuyendung">
+                                    </div>
+                                </div>
+                                <div class="mt-4">
+                                    <div class="flex flex-wrap items-center mb-4">
+                                        <p class="w-full lg:w-1/4 mb-2 lg:mb-0">
+                                            Số điện thoại <span class=" text-[#D90909]">*</span>
+                                        </p>
+                                        <div
+                                            class="w-full lg:w-3/4 box-pass relative flex justify-between items-center border-solid rounded-[5px] border border-[#B9B9B9] bg-[#F0F0F3]">
+                                            <input type="text" name="phone" disabled="" value="0389851108"
+                                                class="bg-[#F0F0F3]" placeholder="0234 456 778">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex flex-wrap items-center mb-4">
+                                    <p class="w-full lg:w-1/4 mb-2 lg:mb-0">
+                                        Email liên hệ
+                                    </p>
+                                    <div
+                                        class="w-full lg:w-3/4 box-pass relative flex justify-between items-center border-solid rounded-[5px] border border-[#B9B9B9] bg-[#F0F0F3]">
+                                        <input type="text" name="contact_email" value="" class="bg-[#F0F0F3]"
+                                            placeholder="tuyendung@gmail.com">
+                                    </div>
+                                </div>
+                                <div class="flex flex-wrap items-center mb-4 ">
+                                    <p class="w-full lg:w-1/4 mb-2 lg:mb-0">
+                                        Địa chỉ liên hệ
+                                    </p>
+                                    <div
+                                        class="w-full lg:w-3/4 box-pass relative flex justify-between items-center border-solid rounded-[5px] border border-[#B9B9B9] bg-[#F0F0F3]">
+                                        <input type="text" name="address" value="" class="bg-[#F0F0F3]"
+                                            placeholder="Số 19 Ngõ 68 Lưu Hữu Phước, Mỹ Đình 1, Nam Từ Liêm, Hà Nội">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-full text-center">
+                                <button type="submit" title="Cập nhập"
+                                    class="lg:mt-8 mt-4 text-white text-center  bg-[var(--cl-bg-main)] rounded-md border border-solid border-[var(--border-main)] hover:text-[var(--cl-text-main)] hover:bg-white transition-all duration-500">
+                                    Cập nhập
+                                </button>
+                            </div>
+                        </form>
+                        <form action="https://joblaw.vn/thay-doi-thong-tin-cong-ty" method="POST"
+                            class="info-acc tabcontent form-validate active"
+                            data-success="NOTIFICATION.toastrMessageRedirect" data-target="tab-lesson" id="tab-lesson-2"
+                            enctype="multipart/form-data" clear="">
+                            <input type="hidden" name="_token" value="UcmVA5JsAAbibZB9bRjbdnDRnijNTWCPmQHuV9eH">
+                            <div class="xl:max-w-[53.9375rem] w-full py-4 border-b border-solid last:border-none">
+                                <div class="form-all">
+                                    <div class="flex flex-wrap items-center mb-4">
+                                        <p class="w-full lg:w-1/4 mb-2 lg:mb-0">
+                                            Mã số thuế <span class=" text-[#D90909]">*</span>
+                                        </p>
+                                        <div
+                                            class="w-full lg:w-3/4 box-pass relative flex justify-between items-center border-solid rounded-[5px] border border-[#B9B9B9] bg-[#F0F0F3]">
+                                            <input type="text" name="code_business" value="" class="bg-[#F0F0F3]"
+                                                placeholder="0103293209">
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-wrap items-center mb-4">
+                                        <p class="w-full lg:w-1/4 mb-2 lg:mb-0">
+                                            Tên công ty <span class=" text-[#D90909]">*</span>
+                                        </p>
+                                        <div
+                                            class="w-full lg:w-3/4 box-pass relative flex justify-between items-center border-solid rounded-[5px] border border-[#B9B9B9] bg-[#F0F0F3]">
+                                            <input type="text" name="company_name"
+                                                value="CÔNG TY TNHH GIẢI PHÁP TRỰC TUYẾN B AGENCY" class="bg-[#F0F0F3]"
+                                                placeholder="0234 456 778">
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-wrap items-center mb-4">
+                                        <p class="w-full lg:w-1/4 mb-2 lg:mb-0">
+                                            Quy mô nhân sự <span class=" text-[#D90909]">*</span>
+                                        </p>
+                                        <div
+                                            class="w-full lg:w-3/4 box-pass relative flex justify-between items-center border-solid rounded-[5px] border border-[#B9B9B9] bg-[#F0F0F3]">
+                                            <select name="personel_size_id" id="personel_size_id" class="bg-[#F0F0F3]">
+                                                <option value="" selected="" disabled="">Chọn quy mô nhân sự</option>
+                                                <option value="Dưới 20">Dưới 20</option>
+                                                <option value="Từ 20 - 50">Từ 20 - 50</option>
+                                                <option value="Từ 50 - 100">Từ 50 - 100</option>
+                                                <option value="Từ 100 - 200">Từ 100 - 200</option>
+                                                <option value="Từ 200 - 500">Từ 200 - 500</option>
+                                                <option value="Từ 500">Từ 500</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-wrap items-center mb-4">
+                                        <p class="w-full lg:w-1/4 mb-2 lg:mb-0">
+                                            Địa điểm <span class=" text-[#D90909]">*</span>
+                                        </p>
+                                        <div
+                                            class="w-full lg:w-3/4 box-pass relative flex justify-between items-center border-solid rounded-[5px] border border-[#B9B9B9] bg-[#F0F0F3]">
+                                            <select name="province" id="province" class="bg-[#F0F0F3]">
+                                                <option value="" selected="" disabled="">Chọn quận/huyện</option>
+                                                <option value="2706">Hà Nội</option>
+                                                <option value="2707">Toàn Quốc</option>
+                                                <option value="2708">Bình Định</option>
+                                                <option value="2709">Miền Bắc</option>
+                                                <option value="2710">Hồ Chí Minh</option>
+                                                <option value="2711">Phú Thọ</option>
+                                                <option value="2712">Miền Nam</option>
+                                                <option value="2713">Đồng Nai</option>
+                                                <option value="2714">Gia Lai</option>
+                                                <option value="2715">Bến Tre</option>
+                                                <option value="2716">Thanh Hóa</option>
+                                                <option value="2717">An Giang</option>
+                                                <option value="2718">Hưng Yên</option>
+                                                <option value="2719">Khánh Hòa</option>
+                                                <option value="2720">Thái Bình</option>
+                                                <option value="2721">Vĩnh Long</option>
+                                                <option value="2722">Kiên Giang</option>
+                                                <option value="2723">Nghệ An</option>
+                                                <option value="2724">Bình Dương</option>
+                                                <option value="2725">Tiền Giang</option>
+                                                <option value="2726">Cà Mau</option>
+                                                <option value="2727">Long An</option>
+                                                <option value="2728">Cần Thơ</option>
+                                                <option value="2729">Sóc Trăng</option>
+                                                <option value="2730">Lâm Đồng</option>
+                                                <option value="2731">Miền Trung</option>
+                                                <option value="2732">Quảng Nam</option>
+                                                <option value="2733">Hải Dương</option>
+                                                <option value="2734">Hải Phòng</option>
+                                                <option value="2735">Bạc Liêu</option>
+                                                <option value="2736">Đắk Lắk</option>
+                                                <option value="2737">Điện Biên</option>
+                                                <option value="2738">Bắc Giang</option>
+                                                <option value="2739">Quảng Ninh</option>
+                                                <option value="2740">Thừa Thiên Huế</option>
+                                                <option value="2741">Đà Nẵng</option>
+                                                <option value="2742">Bình Thuận</option>
+                                                <option value="2743">Ninh Bình</option>
+                                                <option value="2744">Nam Định</option>
+                                                <option value="2745">Hà Tĩnh</option>
+                                                <option value="2746">Hà Nam</option>
+                                                <option value="2747">Bắc Ninh</option>
+                                                <option value="2748">Đồng Tháp</option>
+                                                <option value="2749">Bà Rịa - Vũng Tàu</option>
+                                                <option value="2750">Bắc Kạn</option>
+                                                <option value="2751">Hà Giang</option>
+                                                <option value="2752">Lạng Sơn</option>
+                                                <option value="2753">Lai Châu</option>
+                                                <option value="2754">Trà Vinh</option>
+                                                <option value="2755">Đắk Nông</option>
+                                                <option value="2756">Bình Phước</option>
+                                                <option value="2757">Vĩnh Phúc</option>
+                                                <option value="2758">Thái Nguyên</option>
+                                                <option value="2759">Yên Bái</option>
+                                                <option value="2760">Ninh Thuận</option>
+                                                <option value="2761">Quảng Bình</option>
+                                                <option value="2762">Lào Cai</option>
+                                                <option value="2763">Hòa Bình</option>
+                                                <option value="2764">Quảng Trị</option>
+                                                <option value="2765">Cao Bằng</option>
+                                                <option value="2766">Quảng Ngãi</option>
+                                                <option value="2767">Tây Ninh</option>
+                                                <option value="2768">Hậu Giang</option>
+                                                <option value="2769">Sơn La</option>
+                                                <option value="2770">Chưa cập nhật</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-wrap items-center mb-4">
+                                        <p class="w-full lg:w-1/4 mb-2 lg:mb-0">
+                                            Địa chỉ <span class=" text-[#D90909]">*</span>
+                                        </p>
+                                        <div
+                                            class="w-full lg:w-3/4 box-pass relative flex justify-between items-center border-solid rounded-[5px] border border-[#B9B9B9] bg-[#F0F0F3]">
+                                            <input type="text" name="company_address" value="" class="bg-[#F0F0F3]"
+                                                placeholder="Số 19 Ngõ 68 Lưu Hữu Phước, Mỹ Đình 1, Nam Từ Liêm, Hà Nội">
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-wrap items-center mb-4">
+                                        <p class="w-full lg:w-1/4 mb-2 lg:mb-0">
+                                            Số điện thoại cố định <span class=" text-[#D90909]">*</span>
+                                        </p>
+                                        <div
+                                            class="w-full lg:w-3/4 box-pass relative flex justify-between items-center border-solid rounded-[5px] border border-[#B9B9B9] bg-[#F0F0F3]">
+                                            <input type="text" name="hotline" value="" class="bg-[#F0F0F3]"
+                                                placeholder="0234 456 778">
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-wrap items-center mb-4">
+                                        <p class="w-full lg:w-1/4 mb-2 lg:mb-0">
+                                            Địa chỉ website Công ty <span class=" text-[#D90909]">*</span>
+                                        </p>
+                                        <div
+                                            class="w-full lg:w-3/4 box-pass relative flex justify-between items-center border-solid rounded-[5px] border border-[#B9B9B9] bg-[#F0F0F3]">
+                                            <input type="text" name="website_company" value="" class="bg-[#F0F0F3]"
+                                                placeholder="Địa chỉ website">
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-wrap items-center mb-4">
+                                        <p class="w-full lg:w-1/4 mb-2 lg:mb-0">
+                                            Hình ảnh công ty <span class=" text-[#D90909]">*</span>
+                                        </p>
+                                        <div
+                                            class="w-full lg:w-3/4 box-pass relative flex justify-between items-center border-solid rounded-[5px] border border-[#B9B9B9] bg-[#F0F0F3]">
+                                            <div class="flex items-center flex-nowrap">
+                                                <div class="lg:mr-[1.5rem] mr-[1rem]">
+                                                    <div for="image_company"
+                                                        class="img-ava rounded-md overflow-hidden w-28 h-28 c-img pt-0 bg-[#D9D9D9]">
+                                                        <img src="../../../theme/frontend/images/noimage.png"
+                                                            alt="Nguyễn Văn C" id="image_company">
+                                                    </div>
+                                                </div>
+                                                <div class="">
+                                                    <label for="image_company"
+                                                        class="relative inline-flex rounded-md overflow-hidden border-solid border border-[var(--border-main)] px-5 py-2.5 !text-[var(--cl-text-main)] font-medium text-sm">
+                                                        <input type="file" name="image_company"
+                                                            class="absolute top-0 right-0 w-full h-full opacity-0 input-avatars"
+                                                            accept="image/*"
+                                                            onchange="document.getElementById('image_company').src = window.URL.createObjectURL(this.files[0])">
+                                                        Thay đổi ảnh
+                                                    </label>
+                                                    <div class="note text-[var(--cl-sub-title)] mt-2 max-w-sm w-full">
+                                                        Cho phép tải ảnh JPG, GIF hoặc PNG, dung
+                                                        lượng tối đa 800kB
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="flex flex-wrap items-center mb-4">
+                                    <p class="w-full lg:w-1/4 mb-2 lg:mb-0">
+                                        Giới thiệu công ty
+                                    </p>
+                                    <div
+                                        class="w-full lg:w-3/4 box-pass relative flex justify-between items-center border-solid rounded-[5px] border border-[#B9B9B9] bg-[#F0F0F3]">
+                                        <textarea type="text" name="content_company" class="bg-[#F0F0F3] editor"
+                                            placeholder="Thông tin về công ty" id="mce_0" style="display: none;"
+                                            aria-hidden="true">
+                                        </textarea>
+                                        <div role="application" class="tox tox-tinymce tox-tinymce--toolbar-bottom"
+                                            aria-disabled="false" style="visibility: hidden; height: 200px;"
+                                            data-mce-style="visibility: hidden; height: 200px;">
+                                            <div class="tox-editor-container">
+                                                <div class="tox-sidebar-wrap">
+                                                    <div class="tox-edit-area"><iframe id="mce_0_ifr" frameborder="0"
+                                                            allowtransparency="true"
+                                                            title="Rich Text Area. Press ALT-0 for help."
+                                                            class="tox-edit-area__iframe"></iframe></div>
+                                                    <div role="complementary" class="tox-sidebar">
+                                                        <div data-alloy-tabstop="true" tabindex="-1"
+                                                            class="tox-sidebar__slider tox-sidebar--sliding-closed"
+                                                            style="width: 0px;">
+                                                            <div class="tox-sidebar__pane-container"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div data-alloy-vertical-dir="bottomtotop" class="tox-editor-header">
+                                                    <div role="group" class="tox-toolbar-overlord"
+                                                        aria-disabled="false">
+                                                        <div role="group" class="tox-toolbar__primary">
+                                                            <div title="" role="toolbar" data-alloy-tabstop="true"
+                                                                tabindex="-1" class="tox-toolbar__group"><button
+                                                                    aria-label="Undo" title="Undo" type="button"
+                                                                    tabindex="-1" class="tox-tbtn tox-tbtn--disabled"
+                                                                    aria-disabled="true"><span
+                                                                        class="tox-icon tox-tbtn__icon-wrap"><svg
+                                                                            width="24" height="24" focusable="false">
+                                                                            <path
+                                                                                d="M6.4 8H12c3.7 0 6.2 2 6.8 5.1.6 2.7-.4 5.6-2.3 6.8a1 1 0 01-1-1.8c1.1-.6 1.8-2.7 1.4-4.6-.5-2.1-2.1-3.5-4.9-3.5H6.4l3.3 3.3a1 1 0 11-1.4 1.4l-5-5a1 1 0 010-1.4l5-5a1 1 0 011.4 1.4L6.4 8z"
+                                                                                fill-rule="nonzero"></path>
+                                                                        </svg></span></button><button aria-label="Redo"
+                                                                    title="Redo" type="button" tabindex="-1"
+                                                                    class="tox-tbtn tox-tbtn--disabled"
+                                                                    aria-disabled="true"><span
+                                                                        class="tox-icon tox-tbtn__icon-wrap"><svg
+                                                                            width="24" height="24" focusable="false">
+                                                                            <path
+                                                                                d="M17.6 10H12c-2.8 0-4.4 1.4-4.9 3.5-.4 2 .3 4 1.4 4.6a1 1 0 11-1 1.8c-2-1.2-2.9-4.1-2.3-6.8.6-3 3-5.1 6.8-5.1h5.6l-3.3-3.3a1 1 0 111.4-1.4l5 5a1 1 0 010 1.4l-5 5a1 1 0 01-1.4-1.4l3.3-3.3z"
+                                                                                fill-rule="nonzero"></path>
+                                                                        </svg></span></button></div>
+                                                            <div title="" role="toolbar" data-alloy-tabstop="true"
+                                                                tabindex="-1" class="tox-toolbar__group"><button
+                                                                    title="Formats" aria-label="Formats"
+                                                                    aria-haspopup="true" type="button" unselectable="on"
+                                                                    tabindex="-1"
+                                                                    class="tox-tbtn tox-tbtn--select tox-tbtn--bespoke"
+                                                                    aria-expanded="false"
+                                                                    style="user-select: none;"><span
+                                                                        class="tox-tbtn__select-label">Paragraph</span>
+                                                                    <div class="tox-tbtn__select-chevron"><svg
+                                                                            width="10" height="10" focusable="false">
+                                                                            <path
+                                                                                d="M8.7 2.2c.3-.3.8-.3 1 0 .4.4.4.9 0 1.2L5.7 7.8c-.3.3-.9.3-1.2 0L.2 3.4a.8.8 0 010-1.2c.3-.3.8-.3 1.1 0L5 6l3.7-3.8z"
+                                                                                fill-rule="nonzero"></path>
+                                                                        </svg></div>
+                                                                </button></div>
+                                                            <div title="" role="toolbar" data-alloy-tabstop="true"
+                                                                tabindex="-1" class="tox-toolbar__group">
+                                                                <div aria-pressed="false" aria-label="Text color"
+                                                                    title="Text color" role="button"
+                                                                    aria-haspopup="true" unselectable="on" tabindex="-1"
+                                                                    class="tox-split-button" aria-disabled="false"
+                                                                    aria-expanded="false"
+                                                                    aria-describedby="aria_4960300681451719419920588"
+                                                                    style="user-select: none;"><span role="presentation"
+                                                                        tabindex="-1" class="tox-tbtn"
+                                                                        aria-disabled="false"><span
+                                                                            class="tox-icon tox-tbtn__icon-wrap"><svg
+                                                                                width="24" height="24"
+                                                                                focusable="false">
+                                                                                <g fill-rule="evenodd">
+                                                                                    <path
+                                                                                        id="tox-icon-text-color__color"
+                                                                                        d="M3 18h18v3H3z"></path>
+                                                                                    <path
+                                                                                        d="M8.7 16h-.8a.5.5 0 01-.5-.6l2.7-9c.1-.3.3-.4.5-.4h2.8c.2 0 .4.1.5.4l2.7 9a.5.5 0 01-.5.6h-.8a.5.5 0 01-.4-.4l-.7-2.2c0-.3-.3-.4-.5-.4h-3.4c-.2 0-.4.1-.5.4l-.7 2.2c0 .3-.2.4-.4.4zm2.6-7.6l-.6 2a.5.5 0 00.5.6h1.6a.5.5 0 00.5-.6l-.6-2c0-.3-.3-.4-.5-.4h-.4c-.2 0-.4.1-.5.4z">
+                                                                                    </path>
+                                                                                </g>
+                                                                            </svg></span></span><span
+                                                                        role="presentation" tabindex="-1"
+                                                                        class="tox-tbtn tox-split-button__chevron"
+                                                                        aria-disabled="false"><svg width="10"
+                                                                            height="10" focusable="false">
+                                                                            <path
+                                                                                d="M8.7 2.2c.3-.3.8-.3 1 0 .4.4.4.9 0 1.2L5.7 7.8c-.3.3-.9.3-1.2 0L.2 3.4a.8.8 0 010-1.2c.3-.3.8-.3 1.1 0L5 6l3.7-3.8z"
+                                                                                fill-rule="nonzero"></path>
+                                                                        </svg></span><span aria-hidden="true"
+                                                                        id="aria_4960300681451719419920588"
+                                                                        style="display: none;">To open the popup, press
+                                                                        Shift+Enter</span></div>
+                                                                <div aria-pressed="false" aria-label="Background color"
+                                                                    title="Background color" role="button"
+                                                                    aria-haspopup="true" unselectable="on" tabindex="-1"
+                                                                    class="tox-split-button" aria-disabled="false"
+                                                                    aria-expanded="false"
+                                                                    aria-describedby="aria_2492982061471719419920589"
+                                                                    style="user-select: none;"><span role="presentation"
+                                                                        tabindex="-1" class="tox-tbtn"
+                                                                        aria-disabled="false"><span
+                                                                            class="tox-icon tox-tbtn__icon-wrap"><svg
+                                                                                width="24" height="24"
+                                                                                focusable="false">
+                                                                                <g fill-rule="evenodd">
+                                                                                    <path
+                                                                                        id="tox-icon-highlight-bg-color__color"
+                                                                                        d="M3 18h18v3H3z"></path>
+                                                                                    <path fill-rule="nonzero"
+                                                                                        d="M7.7 16.7H3l3.3-3.3-.7-.8L10.2 8l4 4.1-4 4.2c-.2.2-.6.2-.8 0l-.6-.7-1.1 1.1zm5-7.5L11 7.4l3-2.9a2 2 0 012.6 0L18 6c.7.7.7 2 0 2.7l-2.9 2.9-1.8-1.8-.5-.6">
+                                                                                    </path>
+                                                                                </g>
+                                                                            </svg></span></span><span
+                                                                        role="presentation" tabindex="-1"
+                                                                        class="tox-tbtn tox-split-button__chevron"
+                                                                        aria-disabled="false"><svg width="10"
+                                                                            height="10" focusable="false">
+                                                                            <path
+                                                                                d="M8.7 2.2c.3-.3.8-.3 1 0 .4.4.4.9 0 1.2L5.7 7.8c-.3.3-.9.3-1.2 0L.2 3.4a.8.8 0 010-1.2c.3-.3.8-.3 1.1 0L5 6l3.7-3.8z"
+                                                                                fill-rule="nonzero"></path>
+                                                                        </svg></span><span aria-hidden="true"
+                                                                        id="aria_2492982061471719419920589"
+                                                                        style="display: none;">To open the popup, press
+                                                                        Shift+Enter</span></div>
+                                                            </div>
+                                                            <div title="" role="toolbar" data-alloy-tabstop="true"
+                                                                tabindex="-1" class="tox-toolbar__group"><button
+                                                                    aria-label="Bold" title="Bold" type="button"
+                                                                    tabindex="-1" class="tox-tbtn" aria-disabled="false"
+                                                                    aria-pressed="false"><span
+                                                                        class="tox-icon tox-tbtn__icon-wrap"><svg
+                                                                            width="24" height="24" focusable="false">
+                                                                            <path
+                                                                                d="M7.8 19c-.3 0-.5 0-.6-.2l-.2-.5V5.7c0-.2 0-.4.2-.5l.6-.2h5c1.5 0 2.7.3 3.5 1 .7.6 1.1 1.4 1.1 2.5a3 3 0 01-.6 1.9c-.4.6-1 1-1.6 1.2.4.1.9.3 1.3.6s.8.7 1 1.2c.4.4.5 1 .5 1.6 0 1.3-.4 2.3-1.3 3-.8.7-2.1 1-3.8 1H7.8zm5-8.3c.6 0 1.2-.1 1.6-.5.4-.3.6-.7.6-1.3 0-1.1-.8-1.7-2.3-1.7H9.3v3.5h3.4zm.5 6c.7 0 1.3-.1 1.7-.4.4-.4.6-.9.6-1.5s-.2-1-.7-1.4c-.4-.3-1-.4-2-.4H9.4v3.8h4z"
+                                                                                fill-rule="evenodd"></path>
+                                                                        </svg></span></button><button
+                                                                    aria-label="Italic" title="Italic" type="button"
+                                                                    tabindex="-1" class="tox-tbtn" aria-disabled="false"
+                                                                    aria-pressed="false"><span
+                                                                        class="tox-icon tox-tbtn__icon-wrap"><svg
+                                                                            width="24" height="24" focusable="false">
+                                                                            <path
+                                                                                d="M16.7 4.7l-.1.9h-.3c-.6 0-1 0-1.4.3-.3.3-.4.6-.5 1.1l-2.1 9.8v.6c0 .5.4.8 1.4.8h.2l-.2.8H8l.2-.8h.2c1.1 0 1.8-.5 2-1.5l2-9.8.1-.5c0-.6-.4-.8-1.4-.8h-.3l.2-.9h5.8z"
+                                                                                fill-rule="evenodd"></path>
+                                                                        </svg></span></button></div>
+                                                            <div title="" role="toolbar" data-alloy-tabstop="true"
+                                                                tabindex="-1" class="tox-toolbar__group"><button
+                                                                    aria-label="Align left" title="Align left"
+                                                                    type="button" tabindex="-1" class="tox-tbtn"
+                                                                    aria-disabled="false" aria-pressed="false"><span
+                                                                        class="tox-icon tox-tbtn__icon-wrap"><svg
+                                                                            width="24" height="24" focusable="false">
+                                                                            <path
+                                                                                d="M5 5h14c.6 0 1 .4 1 1s-.4 1-1 1H5a1 1 0 110-2zm0 4h8c.6 0 1 .4 1 1s-.4 1-1 1H5a1 1 0 110-2zm0 8h8c.6 0 1 .4 1 1s-.4 1-1 1H5a1 1 0 010-2zm0-4h14c.6 0 1 .4 1 1s-.4 1-1 1H5a1 1 0 010-2z"
+                                                                                fill-rule="evenodd"></path>
+                                                                        </svg></span></button><button
+                                                                    aria-label="Align center" title="Align center"
+                                                                    type="button" tabindex="-1" class="tox-tbtn"
+                                                                    aria-disabled="false" aria-pressed="false"><span
+                                                                        class="tox-icon tox-tbtn__icon-wrap"><svg
+                                                                            width="24" height="24" focusable="false">
+                                                                            <path
+                                                                                d="M5 5h14c.6 0 1 .4 1 1s-.4 1-1 1H5a1 1 0 110-2zm3 4h8c.6 0 1 .4 1 1s-.4 1-1 1H8a1 1 0 110-2zm0 8h8c.6 0 1 .4 1 1s-.4 1-1 1H8a1 1 0 010-2zm-3-4h14c.6 0 1 .4 1 1s-.4 1-1 1H5a1 1 0 010-2z"
+                                                                                fill-rule="evenodd"></path>
+                                                                        </svg></span></button><button
+                                                                    aria-label="Align right" title="Align right"
+                                                                    type="button" tabindex="-1" class="tox-tbtn"
+                                                                    aria-disabled="false" aria-pressed="false"><span
+                                                                        class="tox-icon tox-tbtn__icon-wrap"><svg
+                                                                            width="24" height="24" focusable="false">
+                                                                            <path
+                                                                                d="M5 5h14c.6 0 1 .4 1 1s-.4 1-1 1H5a1 1 0 110-2zm6 4h8c.6 0 1 .4 1 1s-.4 1-1 1h-8a1 1 0 010-2zm0 8h8c.6 0 1 .4 1 1s-.4 1-1 1h-8a1 1 0 010-2zm-6-4h14c.6 0 1 .4 1 1s-.4 1-1 1H5a1 1 0 010-2z"
+                                                                                fill-rule="evenodd"></path>
+                                                                        </svg></span></button><button
+                                                                    aria-label="Justify" title="Justify" type="button"
+                                                                    tabindex="-1" class="tox-tbtn" aria-disabled="false"
+                                                                    aria-pressed="false"><span
+                                                                        class="tox-icon tox-tbtn__icon-wrap"><svg
+                                                                            width="24" height="24" focusable="false">
+                                                                            <path
+                                                                                d="M5 5h14c.6 0 1 .4 1 1s-.4 1-1 1H5a1 1 0 110-2zm0 4h14c.6 0 1 .4 1 1s-.4 1-1 1H5a1 1 0 110-2zm0 4h14c.6 0 1 .4 1 1s-.4 1-1 1H5a1 1 0 010-2zm0 4h14c.6 0 1 .4 1 1s-.4 1-1 1H5a1 1 0 010-2z"
+                                                                                fill-rule="evenodd"></path>
+                                                                        </svg></span></button></div>
+                                                            <div title="" role="toolbar" data-alloy-tabstop="true"
+                                                                tabindex="-1" class="tox-toolbar__group"><button
+                                                                    aria-label="Decrease indent" title="Decrease indent"
+                                                                    type="button" tabindex="-1"
+                                                                    class="tox-tbtn tox-tbtn--disabled"
+                                                                    aria-disabled="true"><span
+                                                                        class="tox-icon tox-tbtn__icon-wrap"><svg
+                                                                            width="24" height="24" focusable="false">
+                                                                            <path
+                                                                                d="M7 5h12c.6 0 1 .4 1 1s-.4 1-1 1H7a1 1 0 110-2zm5 4h7c.6 0 1 .4 1 1s-.4 1-1 1h-7a1 1 0 010-2zm0 4h7c.6 0 1 .4 1 1s-.4 1-1 1h-7a1 1 0 010-2zm-5 4h12a1 1 0 010 2H7a1 1 0 010-2zm1.6-3.8a1 1 0 01-1.2 1.6l-3-2a1 1 0 010-1.6l3-2a1 1 0 011.2 1.6L6.8 12l1.8 1.2z"
+                                                                                fill-rule="evenodd"></path>
+                                                                        </svg></span></button><button
+                                                                    aria-label="Increase indent" title="Increase indent"
+                                                                    type="button" tabindex="-1" class="tox-tbtn"
+                                                                    aria-disabled="false"><span
+                                                                        class="tox-icon tox-tbtn__icon-wrap"><svg
+                                                                            width="24" height="24" focusable="false">
+                                                                            <path
+                                                                                d="M7 5h12c.6 0 1 .4 1 1s-.4 1-1 1H7a1 1 0 110-2zm5 4h7c.6 0 1 .4 1 1s-.4 1-1 1h-7a1 1 0 010-2zm0 4h7c.6 0 1 .4 1 1s-.4 1-1 1h-7a1 1 0 010-2zm-5 4h12a1 1 0 010 2H7a1 1 0 010-2zm-2.6-3.8L6.2 12l-1.8-1.2a1 1 0 011.2-1.6l3 2a1 1 0 010 1.6l-3 2a1 1 0 11-1.2-1.6z"
+                                                                                fill-rule="evenodd"></path>
+                                                                        </svg></span></button></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tox-anchorbar"></div>
+                                                </div>
+                                            </div>
+                                            <div aria-hidden="true" class="tox-throbber" style="display: none;"></div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="w-full form-all text-center">
+                                    <button type="submit" title="Cập nhập"
+                                        class="lg:mt-8 mt-4 text-white text-center  bg-[var(--cl-bg-main)] rounded-md border border-solid border-[var(--border-main)] hover:text-[var(--cl-text-main)] hover:bg-white transition-all duration-500">
+                                        Cập nhập
+                                    </button>
+                                </div>
+
+                            </div>
+                            <div
+                                class="up-file xl:max-w-[53.9375rem] w-full py-4 border-b border-solid last:border-none">
+                                <p class="font-semibold text-[var(--cl-text-main-2)] ">
+                                    Giấy phép kinh doanh
+                                </p>
+                                <p class="my-4">Để chứng thực tài khoản Quý khách đang sử dụng, vui lòng đăng tải giấy
+                                    phép đăng ký kinh
+                                    doanh.</p>
+                                <div class="flex items-center">
+                                    <div
+                                        class="btn-update__avatars relative inline-flex rounded-md overflow-hidden border-solid border border-[var(--border-main)] px-5 py-2.5 !text-[var(--cl-text-main)] font-medium text-sm mr-2">
+                                        <p class="font-medium text-[0.875rem]">Tải file</p>
+                                        <input type="file" name="business_license" value=""
+                                            class="absolute top-0 left-0 w-full h-full opacity-0 cursor-pointer input-business-license">
+                                    </div>
+                                    <span>(Dạng file .doc, .docx, .pdf dung lượng &lt;= 10 MB)</span>
+                                </div>
+                                <div class="mt-2 file-name w-fit hidden"></div>
+                                <p class="mt-4 font-semibold">
+                                    Giấy phép kinh doanh hợp lệ
+                                </p>
+                                <div class="mt-2 s-content">
+                                    <ul>
+                                        <li>Có dấu giáp lai của cơ quan có thẩm quyền.</li>
+                                        <li>Trường hợp giấy phép kinh doanh là bản photo thì phải có dấu công chứng.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <footer class="footer_upgrade">
+        <div class="container">
+            <div class="main-footer 2xl:py-14 xl:py-10 py-6 border-b-[1px] border-solid border-[#fff]">
+                <div class="flex flex-wrap lg:justify-between -mx-2">
+                    <div class="w-full lg:w-[25%] px-2 mb-4 lg:mb-0">
+                        <a href="https://joblaw.vn" title="JobLaw TUYỂN DỤNG VIỆC LÀM PHÁP LUẬT"
+                            class="logo-footer block max-w-[200px] md:max-w-[390px]">
+                            <picture>
+                                <source media="(min-width:0px)"
+                                    data-srcset="../../../theme/frontend/images//logo-footer.png"
+                                    srcset="../../../theme/frontend/images//logo-footer.png">
+                                <img loading="lazy" src="../../../theme/frontend/images//logo-footer.png"
+                                    data-src="../../../theme/frontend/images//logo-footer.png" alt="" title=""
+                                    class="img-fluid">
+                            </picture>
+                        </a>
+                        <div class="footer-contact text-white lg:mt-6 mt-4">
+                            <p class="title flex items-center font-semibold lg:text-[1.125rem] ">
+                                <svg class="mr-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24" fill="none">
+                                    <path
+                                        d="M21.9994 16.9201V19.9201C22.0006 20.1986 21.9435 20.4743 21.832 20.7294C21.7204 20.9846 21.5567 21.2137 21.3515 21.402C21.1463 21.5902 20.904 21.7336 20.6402 21.8228C20.3764 21.912 20.0968 21.9452 19.8194 21.9201C16.7423 21.5857 13.7864 20.5342 11.1894 18.8501C8.77327 17.3148 6.72478 15.2663 5.18945 12.8501C3.49942 10.2413 2.44769 7.27109 2.11944 4.1801C2.09446 3.90356 2.12732 3.62486 2.21595 3.36172C2.30457 3.09859 2.44702 2.85679 2.63421 2.65172C2.82141 2.44665 3.04925 2.28281 3.30324 2.17062C3.55722 2.05843 3.83179 2.00036 4.10945 2.0001H7.10945C7.59475 1.99532 8.06524 2.16718 8.43321 2.48363C8.80118 2.80008 9.04152 3.23954 9.10944 3.7201C9.23607 4.68016 9.47089 5.62282 9.80945 6.5301C9.94399 6.88802 9.97311 7.27701 9.89335 7.65098C9.8136 8.02494 9.62831 8.36821 9.35944 8.6401L8.08945 9.9101C9.513 12.4136 11.5859 14.4865 14.0894 15.9101L15.3594 14.6401C15.6313 14.3712 15.9746 14.1859 16.3486 14.1062C16.7225 14.0264 17.1115 14.0556 17.4694 14.1901C18.3767 14.5286 19.3194 14.7635 20.2794 14.8901C20.7652 14.9586 21.2088 15.2033 21.526 15.5776C21.8431 15.9519 22.0116 16.4297 21.9994 16.9201Z"
+                                        stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    </path>
+                                </svg>
+                                Liên hệ:
+                            </p>
+                            <div class="content mt-4 mb-3">
+                                Hệ thống Hotline hỗ trợ 24/7. Nếu cần hỗ trợ vui lòng liên hệ:
+                                <a href="tel:024.62872777" title="hotline" class="link font-bold">024.62872777</a>
+                                <span> - </span>
+                                <a href="tel:091.121.9099" title="hotline" class="link font-bold">091.121.9099</a>
+                                <span></span>
+                            </div>
+                            <p>
+                                <i class="fa fa-globe" aria-hidden="true"></i>
+                                <span>Website: </span>
+                                <a href="https://joblaw.vn" target="_blank" title="hotline"
+                                    class="link font-bold">https://joblaw.vn</a>
+                            </p>
+                            <p>
+                                <i class="fa fa-globe" aria-hidden="true"></i>
+                                <span>Website: </span>
+                                <a href="https://luattamanh.com.vn" target="_blank" title="hotline"
+                                    class="link font-bold">https://luattamanh.com.vn</a>
+                            </p>
+                        </div>
+                        <div class="footer-social lg:mt-6 mt-4">
+                            <p class="title font-semibold text-white mb-4">Cộng đồng JobLaw</p>
+                            <ul class="f-social flex flex-wrap items-center">
+                                <li class="xl:mr-8 mr-4 last:mr-0">
+                                    <a href="https://www.facebook.com/luattamanh.com.vn" title="Facebook"
+                                        target="_blank" class="w-10 h-10 img_full img-h-full img-contain">
+                                        <img src="../../../theme/frontend/images/logos_facebook.svg" alt="facebook">
+                                    </a>
+                                </li>
+                                <li class="xl:mr-8 mr-4 last:mr-0">
+                                    <a href="https://zalo.me/0911219099" title="Facebook" target="_blank"
+                                        class="w-10 h-10 img_full img-h-full img-contain">
+                                        <img src="../../../theme/frontend/images/zalo.png" style="width: 41px;"
+                                            alt="facebook">
+                                    </a>
+                                </li>
+                                <li class="xl:mr-8 mr-4 last:mr-0">
+                                    <a href="https://www.instagram.com/" title="Instagram" target="_blank"
+                                        class="w-10 h-10 img_full img-h-full img-contain">
+                                        <img src="../../../theme/frontend/images/skill-icons_instagram.png"
+                                            alt="instagram">
+                                    </a>
+                                </li>
+                                <li class="xl:mr-8 mr-4 last:mr-0">
+                                    <a href="https://twitter.com/?lang=vi" title="Twitter" target="_blank"
+                                        class="w-10 h-10 img_full img-h-full img-contain">
+                                        <img src="../../../theme/frontend/images/formkit_twitter.png" alt="twitter">
+                                    </a>
+                                </li>
+                                <li class="xl:mr-8 mr-4 last:mr-0">
+                                    <a href="https://twitter.com/?lang=vi" title="linkedin" target="_blank"
+                                        class="w-10 h-10 img_full img-h-full img-contain">
+                                        <img src="../../../theme/frontend/images/skill-icons_linkedin.png"
+                                            alt="linkedin">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="w-full lg:w-[70%] px-2">
+                        <div class="flex flex-wrap -mx-2">
+                            <div class="w-full sm:w-1/2 lg:w-1/3 px-2 mb-4">
+                                <p
+                                    class="title-footer font-semibold text-white 2xl:text-[1.5rem] lg:text-[1.25rem] text-[1rem] mb-4">
+                                    Về chúng tôi
+                                </p>
+                                <div class="nav-footer">
+                                    <ul>
+                                        <li><a href="huong-dan-su-dung" title="Hướng dẫn sử dụng">Hướng dẫn sử dụng</a>
+                                        </li>
+                                        <li><a href="mau-hop-dong-dich-vu" title="Mẫu hợp đồng dịch vụ">Mẫu hợp đồng
+                                                dịch vụ</a></li>
+                                        <li><a href="quy-che-hoat-dong" title="Quy chế hoạt động">Quy chế hoạt động</a>
+                                        </li>
+                                        <li><a href="quy-trinh-tiep-nhan-va-giai-quyet-khieu-nai-tranh-chap"
+                                                title="Quy trình tiếp nhận và giải quyết khiếu nại, tranh chấp">Quy
+                                                trình tiếp nhận và giải quyết khiếu nại, tranh chấp</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="w-full sm:w-1/2 lg:w-1/3 px-2 mb-4">
+                                <p
+                                    class="title-footer font-semibold text-white 2xl:text-[1.5rem] lg:text-[1.25rem] text-[1rem] mb-4">
+                                    Trợ giúp &amp; dịch vụ
+                                </p>
+                                <div class="nav-footer">
+                                    <ul>
+                                        <li><a href="chinh-sach-bao-mat-thong-tin"
+                                                title="Chính sách bảo mật thông tin">Chính sách bảo mật thông tin</a>
+                                        </li>
+                                        <li><a href="quy-che-bao-ve-dlcn" title="Quy chế bảo vệ dữ liệu cá nhân">Quy chế
+                                                bảo vệ dữ liệu cá nhân</a></li>
+                                        <li><a href="thoa-thuan-bao-ve-dlcn"
+                                                title="Thoả thuận bảo vệ dữ liệu cá nhân">Thoả thuận bảo vệ dữ liệu cá
+                                                nhân</a></li>
+                                        <li><a href="bao-phi-dich-vu" title="Báo phí dịch vụ">Báo phí dịch vụ</a></li>
+                                        <li><a href="lien-he" title="Liên hệ">Liên hệ</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="w-full sm:w-1/2 lg:w-1/3 px-2 mb-4">
+                                <p
+                                    class="title-footer font-semibold text-white 2xl:text-[1.5rem] lg:text-[1.25rem] text-[1rem] mb-4">
+                                    Hồ sơ &amp; CV
+                                </p>
+                                <div class="nav-footer">
+                                    <ul>
+                                        <li><a href="#" title="Nhà tuyển dụng xem hồ sơ của bạn">Nhà tuyển dụng xem hồ
+                                                sơ của bạn</a></li>
+                                        <li><a href="#" title="Quản lý việc đã làm">Quản lý việc đã làm</a></li>
+                                        <li><a href="#" title="Quản lý CV của bạn">Quản lý CV của bạn</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="w-full sm:w-1/2 lg:w-1/3 px-2 mb-4">
+                                <p
+                                    class="title-footer font-semibold text-white 2xl:text-[1.5rem] lg:text-[1.25rem] text-[1rem] mb-4">
+                                    Khám phá
+                                </p>
+                                <div class="nav-footer">
+                                    <ul>
+                                        <li><a href="#" title="Định hướng ngành luật">Định hướng ngành luật</a></li>
+                                        <li><a href="#" title="Công cụ tính thuế thu nhập cá nhân">Công cụ tính thuế thu
+                                                nhập cá nhân</a></li>
+                                        <li><a href="#" title="Hỏi - đáp ngành luật">Hỏi - đáp ngành luật</a></li>
+                                        <li><a href="#" title="Tính lương Gross - Net">Tính lương Gross - Net</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="w-full sm:w-1/2 lg:w-1/3 px-2 mb-4">
+                                <p
+                                    class="title-footer font-semibold text-white 2xl:text-[1.5rem] lg:text-[1.25rem] text-[1rem] mb-4">
+                                    Phát triển bản thân
+                                </p>
+                                <div class="nav-footer">
+                                    <ul>
+                                        <li><a href="#" title="Việc làm lương cao">Việc làm lương cao</a></li>
+                                        <li><a href="#" title="Việc làm tốt nhất">Việc làm tốt nhất</a></li>
+                                        <li><a href="#" title="Định hướng ngành luật">Định hướng ngành luật</a></li>
+                                        <li><a href="#" title="Tính lương Gross - Net">Tính lương Gross - Net</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="w-full sm:w-1/2 lg:w-1/3 px-2 mb-4">
+                                <p
+                                    class="title-footer font-semibold text-white 2xl:text-[1.5rem] lg:text-[1.25rem] text-[1rem] mb-4">
+                                    Luật sư
+                                </p>
+                                <div class="nav-footer">
+                                    <ul>
+                                        <li><a href="dang-ky-luat-su" title="Đăng ký luật sư">Đăng ký luật sư</a></li>
+                                        <li><a href="dang-nhap-luat-su" title="Đăng nhập luật sư">Đăng nhập luật sư</a>
+                                        </li>
+                                        <li><a href="danh-ba-luat-su" title="Danh bạ luật sư">Danh bạ luật sư</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-middle xl:py-8 py-6">
+                <div class="flex flex-wrap -mx-2 lg:justify-between">
+                    <div class="w-full lg:w-[60%] px-2 mb-4 lg:mb-0">
+                        <p class="address flex items-center text-white mb-3">
+                            <i class="fa fa-building mr-2 text-[1.5rem] relative" aria-hidden="true"></i>
+                            <span class="company_name">CÔNG TY TNHH JOBLAW - MST: 0110475863</span>
+                        </p>
+                        <p class="address flex items-center text-white mb-3">
+                            <i class="fa-solid fa-house-chimney mr-2 text-[1.5rem] relative "></i>
+                            Nhà liền kề số 14 - Manor 1 Str Sunrise A – Khu đô thị The Manor Central Park đường Nguyễn
+                            Xiển, Phường Đại Kim, Quận Hoàng Mai, Thành phố Hà Nội, Việt Nam
+                        </p>
+                        <p class="address flex items-center text-white mb-3">
+                            <i class="fa-solid fa-location-dot mr-2 text-[1.5rem] relative"></i>
+                            <a href="https://www.google.com/maps/place/LU%E1%BA%ACT+T%C3%82M+ANH/@20.9751544,105.8131586,17z/data=!3m1!4b1!4m6!3m5!1s0x3135adb5be55818d:0x38b5f41ebc1148b2!8m2!3d20.9751544!4d105.8131586!16s%2Fg%2F11vbylgn2r?entry=ttu"
+                                target="_blank">Link google map</a>
+                        </p>
+                        <p class="address flex items-center text-white mb-3">
+                            <i class="fa-regular fa-envelope mr-2 text-[1.5rem] relative "></i>
+                            <a href="mailto:joblawpro@gmail.com" class="link">Gmail: joblawpro@gmail.com</a>
+                        </p>
+                        <p class="address flex items-center text-white mb-3">
+                            <i class="fa-solid fa-credit-card mr-2 text-[1.5rem] relative"></i>
+                            Số tài khoản: 9911219099 - Techcombank - CN Hà Thành Hà Nội
+                        </p>
+                    </div>
+                    <div class="w-full lg:w-[26%] px-2">
+                        <p class="title text-white font-semibold mb-4">Nhận thông tin việc làm</p>
+                        <div class="form-send-mail">
+                            <form action="https://joblaw.vn/gui-lien-he" method="POST" class="form-validate"
+                                data-success="NOTIFICATION.toastrMessageReload" accept-charset="utf8" absolute=""
+                                clear="">
+                                <input type="hidden" name="_token" value="CHa9xw1jQ6FDVi0kiSrUE0BehICCIbkBtKfwZvBB">
+                                <input type="hidden" name="type" value="1">
+                                <div class="w-full">
+                                    <input class="outline-none" type="email" placeholder="Nhập email..." name="email"
+                                        aria-required="true">
+                                </div>
+                                <button type="submit">Gửi</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom py-4 flex flex-wrap justify-center text-white text-[.875rem]">
+                <div
+                    class="item w-full lg:w-auto text-center lg:pr-4 lg:mr-4 last:pr-0 last:mr-0 lg:border-r-[1px] border-solid border-white last:border-r-[0px]">
+                    Copyright © 2022 JOBLAW Việt Nam </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../../../theme/frontend/js/jquery-3.7.0.min.js?v=1686826683" defer=""></script>
+    <script src="../../../theme/frontend/js/wow.min.js?v=1669823382" defer=""></script>
+    <script src="../../../theme/frontend/js/base.js?v=1712131214" defer=""></script>
+    <script src="../../../theme/frontend/js/fslightbox.js?v=1698467970" defer=""></script>
+    <script src="../../../theme/frontend/js/swiper-bundle.min.js?v=1701135452" defer=""></script>
+    <script src="../../../theme/frontend/js/tabs.js?v=1669823382" defer=""></script>
+    <script src="../../../theme/frontend/js/select2.min.js?v=1700040752" defer=""></script>
+
+    <script src="../../../theme/frontend/js/slider.js?v=1705056749" defer=""></script>
+    <script src="../../../theme/frontend/js/script.js" defer=""></script>
+
+
+</body>
+
+</html>
