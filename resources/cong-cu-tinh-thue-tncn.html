@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../theme/frontend/css//fontawesome-free-6.4.0-web/css/all.css" rel="stylesheet">
+    <link href="../theme/frontend/css/toastify.css" rel="stylesheet">
+    <link href="../theme/frontend/css/animate.min.css" rel="stylesheet">
+    <link href="../theme/frontend/css/swiper-bundle.min.css" rel="stylesheet">
+    <link href="../theme/frontend/css/lightbox.css" rel="stylesheet">
+    <link href="../theme/frontend/css/select2.min.css" rel="stylesheet">
+    <link href="../theme/frontend/css/output.css" rel="stylesheet">
+    <link href="../theme/frontend/css/main.css" rel="stylesheet">
+    <link href="../theme/frontend/css/sub.css" rel="stylesheet">
+    <link href="../theme/frontend/css/add.css" rel="stylesheet">
+    <link href="../theme/frontend/css/style.css" rel="stylesheet">
+    <title>Công cụ tính thuế TNCN</title>
+</head>
+
+<body>
+    <header class="header bg-[var(--cl-blue)] xl:py-0 py-2 fixed">
+        <div class="2xl:px-10 xl:py-0 px-5 py-4 flex items-center !max-w-[1920px] mx-auto">
+            <span class="show-menu-mobile text-white block xl:hidden text-[20px] mr-4"><i
+                    class="fa-solid fa-bars"></i></span>
+            <a href="https://joblaw.vn" title="JobLaw TUYỂN DỤNG VIỆC LÀM PHÁP LUẬT"
+                class="h-logo max-w-[125px] lg:max-w-[135px] shrink-0 xl:mr-2">
+                <picture>
+                    <source media="(min-width:0px)" data-srcset="../theme/frontend/images/logo-joblaw.png"
+                        srcset="../theme/frontend/images/logo-joblaw.png">
+                    <img loading="auto" src="../theme/frontend/images/logo-joblaw.png"
+                        data-src="../theme/frontend/images/logo-joblaw.png" alt="Logo" title="Logo" class="img-fluid">
+                </picture>
+            </a>
+            <div class="menu flex-1 xl:flex items-center justify-end">
+                <a href="https://joblaw.vn" title="JobLaw TUYỂN DỤNG VIỆC LÀM PHÁP LUẬT"
+                    class="logo-mobile block xl:hidden max-w-[176px] mx-auto my-4">
+                    <picture>
+                        <source media="(min-width:0px)" data-srcset="../theme/frontend/images/logo-joblaw.png"
+                            srcset="../theme/frontend/images/logo-joblaw.png">
+                        <img loading="auto" src="../theme/frontend/images/logo-joblaw.png"
+                            data-src="../theme/frontend/images/logo-joblaw.png" alt="Logo" title="Logo"
+                            class="img-fluid">
+                    </picture>
+                </a>
+                <ul class="">
+                    <li><a href="tuyen-dung" title="Tuyển dụng" class=" ">Tuyển dụng</a></li>
+                    <li><a href="tim-ung-vien-moi" title="Ứng viên" class=" ">Ứng viên</a></li>
+                    <li><a href="phap-luat-lao-dong" title="Pháp luật lao động" class=" ">Pháp luật lao động</a>
+                        <ul class="">
+                            <li><a href="hoi-dap-nganh-luat" title="Hỏi - Đáp ngành luật" class=" ">Hỏi - Đáp ngành
+                                    luật</a></li>
+                            <li><a href="dinh-huong-nganh-luat" title="Định hướng ngành luật" class=" ">Định hướng ngành
+                                    luật</a></li>
+                            <li><a href="ki-nang-nganh-luat" title="Kĩ năng ngành luật" class=" ">Kĩ năng ngành luật</a>
+                            </li>
+                            <li><a href="tuyen-dung-cong-chuc" title="Tuyển dụng công chức" class=" ">Tuyển dụng công
+                                    chức</a></li>
+                        </ul><span class="btn-dropdown-menu"><i class="fa fa-angle-down text-[var(--cl-text-main)]"
+                                aria-hidden="true"></i></span>
+                    </li>
+                    <li><a href="tien-ich" title="Tiện ích" class=" ">Tiện ích</a>
+                        <ul class="">
+                            <li><a href="cong-cu-tinh-luong-gross-net" title="Công cụ tính lương Gross/Net"
+                                    class=" ">Công cụ tính lương Gross/Net</a></li>
+                            <li><a href="cong-cu-tinh-thue-tncn" title="Công cụ tính thuế TNCN" class=" ">Công cụ tính
+                                    thuế TNCN</a></li>
+                        </ul><span class="btn-dropdown-menu"><i class="fa fa-angle-down text-[var(--cl-text-main)]"
+                                aria-hidden="true"></i></span>
+                    </li>
+                    <li><a href="dich-vu-cua-chung-toi" title="Dịch vụ" class=" ">Dịch vụ</a></li>
+                    <li><a href="huong-dan-su-dung" title="Hướng dẫn sử dụng" class=" ">Hướng dẫn sử dụng</a></li>
+                    <li><a href="danh-ba-luat-su" title="Danh bạ luật sư" class=" ">Danh bạ luật sư</a></li>
+                    <li><a href="lien-he" title="Liên hệ" class=" ">Liên hệ</a></li>
+                </ul>
+                <div class="box-actions flex flex-wrap">
+                    <a href="https://joblaw.vn/dang-ky" title="Đăng ký"
+                        class="btn text-white py-4 px-6 bg-transparent hover:text-white rounded-[1rem] hover:bg-[var(--cl-orange)] transition-all duration-300 border border-solid border-white hover:border-[var(--cl-orange)] mr-4 last:mr-0 xl:min-w-[132px] text-center">Đăng
+                        ký</a>
+                    <a href="https://joblaw.vn/dang-nhap" title="Đăng nhập"
+                        class="btn text-white py-4 px-6 bg-transparent hover:text-white rounded-[1rem]  hover:bg-[var(--cl-orange)] transition-all duration-300 border border-solid border-white hover:border-[var(--cl-orange)] mr-4 last:mr-0 xl:min-w-[132px] text-center">Đăng
+                        nhập</a>
+
+                </div>
+
+            </div>
+            <div class="box-actions flex xl:hidden flex-1 justify-end flex-wrap">
+                <a href="https://joblaw.vn/dang-nhap" title="Đăng nhập"
+                    class="btn text-white hover:text-[var(--cl-text-main)] hover:bg-white transition-all duration-500 bg-[var(--cl-bg-main)] mb-2 lg:mb-0 mr-2 last:mr-0 border-solid border-[var(--border-main)] border">Đăng
+                    nhập</a>
+                <a href="https://joblaw.vn/dang-ky" title="Đăng ký"
+                    class="btn text-white hover:text-[var(--cl-text-main)] hover:bg-white transition-all duration-500 bg-[var(--cl-bg-main)] mb-2 lg:mb-0 mr-2 last:mr-0 border-solid border-[var(--border-main)] border">Đăng
+                    ký
+                </a>
+
+            </div>
+
+            <div class="flex items-center xl:hidden ml-auto">
+            </div>
+
+        </div>
+        <div
+            class="over-lay fixed block xl:hidden top-0 right-[-100%] w-full h-full z-50 bg-[rgba(0,0,0,.5)] transition-all duration-300">
+        </div>
+    </header>
+    <section class="section-taxpersonal py-8 bg-no-repeat bg-right-top"
+        style="background-image: url(../theme/frontend/images/bg-gross-net.png);">
+        <div class="container">
+            <h2 class="text-[var(--cl-text-main-2)] lg:text-2xl text-lg uppercase font-semibold mb-4">CÔNG CỤ TÍNH THUẾ
+                THU NHẬP CÁ NHÂN</h2>
+            <div class="flex flex-wrap lg:-mx-2">
+                <div class="box-white box-salary w-full lg:w-1/2 lg:px-2">
+                    <div class="salary-cal-form w-full">
+                        <div class="flex items-center mb-4">
+                            <label class="text-[var(--cl-text-main-2)] mr-4 w-full mb-2 lg:mb-0 lg:w-1/3">Thu
+                                nhập:</label>
+                            <div
+                                class="w-full lg:w-2/3 box-pass relative flex justify-between items-center border-solid rounded-[5px] border h-12 p-3 bg-white">
+                                <input id="income" placeholder="0" type="text" maxlength="15">
+                                <label>VND</label>
+                            </div>
+                            <small class="error-mess-income"><span>*</span> Xin vui lòng điền Thu nhập</small>
+                        </div>
+                        <div class="flex items-center mb-4">
+                            <label class="text-[var(--cl-text-main-2)] mr-4 w-full mb-2 lg:mb-0 lg:w-1/3">Lương đóng bảo
+                                hiểm :</label>
+                            <div
+                                class="w-full lg:w-2/3 box-pass relative flex justify-between items-center border-solid rounded-[5px] border h-12 p-3 bg-white">
+                                <input id="ldbh" placeholder="0" type="text" maxlength="15">
+                                <label>VND</label>
+                            </div>
+                            <small class="error-mess-income"><span>*</span> Xin vui lòng điền Lương đóng bảo
+                                hiểm</small>
+                        </div>
+                        <div class="flex items-center mb-4">
+                            <label class="text-[var(--cl-text-main-2)] mr-4 w-full mb-2 lg:mb-0 lg:w-1/3">Số người phụ
+                                thuộc:</label>
+                            <div
+                                class="w-full lg:w-2/3 box-pass relative flex justify-between items-center border-solid rounded-[5px] border h-12 p-3 bg-white">
+                                <input id="numDep" type="text" maxlength="3" placeholder="0">
+                                <label>Người</label>
+                            </div>
+                        </div>
+                        <a href="javascript:void(0)" id="btnTinh"
+                            class="bg-[var(--cl-bg-main)] border-[var(--border-main)] border-solid border hover:bg-white transition-all duration-500 rounded-md overflow-hidden btn-salary inline-block text-center max-w-xs w-full py-3"
+                            onclick="calculate()">TÍNH</a>
+                    </div>
+                </div>
+                <div id="result" class="result mt-4 lg:mt-0 w-full lg:w-1/2 lg:px-2" style="display: none;">
+                    <p class="mb-2">
+                        Mức đóng: BHXH (8%), BHYT (1.5%), BHTN (1%)
+                    </p>
+                    <p class="mb-2" id="contract_salary1" style="display:none">
+                        Mức lương tối đa để đóng BHXH, BHYT là: 29,800,000
+                    </p>
+                    <p class="mb-2" id="contract_salary2" style="display:none">
+                        Mức lương tối đa để đóng BHTN là: 85,172,000
+                    </p>
+                    <p class="mb-2">
+                        <b class="text-danger">Bảo hiểm bắt buộc</b> = <span id="fmt_bhxh_salary"></span> x 8% + <span
+                            id="fmt_bhxh_salary"></span> x 1.5% + <span id="fmt_bhxh_salary"></span> x 1% = <b
+                            class="text-danger" id="fmt_insurance">đ</b>
+                    </p>
+                    <p class="mb-2">
+                        Giảm trừ bản thân = 11,000,000
+                    </p>
+                    <p class="mb-2">
+                        Giảm trừ người phụ thuộc = <span id="fmt_children"></span> x 4,400,000 = <span
+                            id="fmt_children_subtract"></span>
+                    </p>
+                    <p class="mb-2">
+                        Thu nhập tính thuế = <span id="fmt_gross"></span> - <span id="fmt_insurance1"></span> -
+                        11,000,000 - <span id="fmt_children_subtract1"></span> = <span id="fmt_tntt"></span>
+                    </p>
+                    <p class="mb-2" id="tntt">
+                    </p>
+                    <div class="max-w-xs bg-[var(--cl-bg-main)] text-white py-2 rounded-md overflow-hidden">
+                        <p class="mb-2 text-center">
+                            THUẾ THU NHẬP CÁ NHÂN PHẢI NỘP <br><span id="tntt1"></span> <span id="big-rs"></span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="s-content mt-8">
+                <h2><span style="text-decoration: underline;">1. Khái niệm</span></h2>
+                <p>Đóng thuế thu nhập cá nhân là việc một cá nhân nào đó phải thực hiện trích một khoản lương hoặc một
+                    khoản thu nhập nào khác nộp vào ngân sách nhà nước. Trong đó Thuế TNCN là một loại thuế trực thu,
+                    được đánh vào một số cá nhân có thu nhập cao và mức chịu thuế này sẽ do pháp luật quy định một cách
+                    rõ ràng.</p>
+                <h2><span style="text-decoration: underline;">2. Đối tượng nộp thuế</span></h2>
+                <p style="text-align: left;"><span style="color: #000000; display: block;">Chủ thể là cá nhân cư trú và
+                        có thu nhập từ trong và ngoài của lãnh thổ Việt Nam nhưng phải thuộc 1 trong hai trường hợp
+                        là<br></span></p>
+                <ul>
+                    <li style="text-align: left;"><span style="color: #000000; display: block;">Thực tế có mặt ở Việt
+                            Nam nhiều hơn 183 ngày của một năm theo dương lịch hoặc là đủ 12 tháng liên tục tính từ ngày
+                            đầu thực tế có mặt ở Việt Nam</span></li>
+                    <li style="text-align: left;"><span style="color: #000000; display: block;">Cá nhân có nơi ở thường
+                            xuyên ở Việt Nam, trong đó nơi ở là nơi chủ thể đăng ký thường trú hoặc là nhà đi thuê mục
+                            đích để ở tại Việt Nam nhưng đảm bảo hợp đồng thuê này phải có thời hạn.</span></li>
+                    <li style="text-align: left;"><span style="color: #000000; display: block;">Cá nhân không có cư trú
+                            nhưng có khoản thu nhập chịu thuế từ trong lãnh thổ của Việt Nam. Trong đó, cá nhân không có
+                            cư trú là cá nhân không đáp ứng đủ 1 trong các trường hợp trên về cá nhân cư trú.</span>
+                    </li>
+                </ul>
+                <h2 style="text-align: left;"><span style="text-decoration: underline;"><span
+                            style="background-color: #ffffff; color: #000000; display: block; text-decoration: underline;">3.
+                            Bảng mức thuế TNCN<br></span></span></h2>
+                <table style="width: 924px;">
+                    <tbody>
+                        <tr>
+                            <td style="width: 381px;">&nbsp;</td>
+                            <td style="width: 495.438px;">Lương Gross</td>
+                            <td style="width: 538.562px;">Lương Net</td>
+                        </tr>
+                        <tr>
+                            <td style="width: 381px;">1</td>
+                            <td style="width: 495.438px;">&nbsp;TN &lt;= 5tr</td>
+                            <td style="width: 538.562px;">&nbsp;TN x 5%</td>
+                        </tr>
+                        <tr>
+                            <td style="width: 381px;">2&nbsp;</td>
+                            <td style="width: 495.438px;">&nbsp;5tr &lt; TN &lt;= 10tr</td>
+                            <td style="width: 538.562px;">&nbsp;TN x 10% - 0.25tr</td>
+                        </tr>
+                        <tr>
+                            <td style="width: 381px;">3&nbsp;</td>
+                            <td style="width: 495.438px;">&nbsp;10tr &lt; TN &lt;= 18tr</td>
+                            <td style="width: 538.562px;">&nbsp;TN x 15% - 0.75tr</td>
+                        </tr>
+                        <tr>
+                            <td style="width: 381px;">4&nbsp;</td>
+                            <td style="width: 495.438px;">&nbsp;18tr &lt; TN &lt;= 32tr</td>
+                            <td style="width: 538.562px;">&nbsp;TN x 20% - 1.65tr</td>
+                        </tr>
+                        <tr>
+                            <td style="width: 381px;">5&nbsp;</td>
+                            <td style="width: 495.438px;">&nbsp;32tr &lt; TN &lt;= 52tr</td>
+                            <td style="width: 538.562px;">&nbsp;TN x 25% - 3.25tr</td>
+                        </tr>
+                        <tr>
+                            <td style="width: 381px;">6&nbsp;</td>
+                            <td style="width: 495.438px;">&nbsp;52tr &lt; TN &lt;= 80tr</td>
+                            <td style="width: 538.562px;">&nbsp;TN x 30% - 5.85tr</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h2>4. Lưu ý</h2>
+                <p>Thu nhập tháng (thường tính bằng tiền lương ghi trên hợp đồng) của tiện ích này là tổng thu nhập chịu
+                    thuế quy định tại Điều 10 và Điều 11 của Luật thuế TNCN, đã tính các khoản giảm trừ sau:</p>
+                <ul>
+                    <li>Các khoản đóng bảo hiểm, quỹ hưu trí tự nguyện.</li>
+                    <li>Các khoản đóng góp từ thiện, nhân đạo, khuyến học.</li>
+                </ul>
+                <p>* Mức tiền lương tháng thấp nhất để đóng BHXH không được thấp hơn mức tối thiểu vùng tại thời điểm
+                    đóng đối với người lao động làm công việc hoặc chức danh giản đơn nhất trong điều kiện lao động bình
+                    thường.</p>
+                <p>&nbsp;</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer_upgrade">
+        <div class="container">
+            <div class="main-footer 2xl:py-14 xl:py-10 py-6 border-b-[1px] border-solid border-[#fff]">
+                <div class="flex flex-wrap lg:justify-between -mx-2">
+                    <div class="w-full lg:w-[25%] px-2 mb-4 lg:mb-0">
+                        <a href="https://joblaw.vn" title="JobLaw TUYỂN DỤNG VIỆC LÀM PHÁP LUẬT"
+                            class="logo-footer block max-w-[200px] md:max-w-[390px]">
+                            <picture>
+                                <source media="(min-width:0px)" data-srcset="../theme/frontend/images//logo-footer.png"
+                                    srcset="../theme/frontend/images//logo-footer.png">
+                                <img loading="lazy" src="../theme/frontend/images//logo-footer.png"
+                                    data-src="../theme/frontend/images//logo-footer.png" alt="" title=""
+                                    class="img-fluid">
+                            </picture>
+                        </a>
+                        <div class="footer-contact text-white lg:mt-6 mt-4">
+                            <p class="title flex items-center font-semibold lg:text-[1.125rem] ">
+                                <svg class="mr-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24" fill="none">
+                                    <path
+                                        d="M21.9994 16.9201V19.9201C22.0006 20.1986 21.9435 20.4743 21.832 20.7294C21.7204 20.9846 21.5567 21.2137 21.3515 21.402C21.1463 21.5902 20.904 21.7336 20.6402 21.8228C20.3764 21.912 20.0968 21.9452 19.8194 21.9201C16.7423 21.5857 13.7864 20.5342 11.1894 18.8501C8.77327 17.3148 6.72478 15.2663 5.18945 12.8501C3.49942 10.2413 2.44769 7.27109 2.11944 4.1801C2.09446 3.90356 2.12732 3.62486 2.21595 3.36172C2.30457 3.09859 2.44702 2.85679 2.63421 2.65172C2.82141 2.44665 3.04925 2.28281 3.30324 2.17062C3.55722 2.05843 3.83179 2.00036 4.10945 2.0001H7.10945C7.59475 1.99532 8.06524 2.16718 8.43321 2.48363C8.80118 2.80008 9.04152 3.23954 9.10944 3.7201C9.23607 4.68016 9.47089 5.62282 9.80945 6.5301C9.94399 6.88802 9.97311 7.27701 9.89335 7.65098C9.8136 8.02494 9.62831 8.36821 9.35944 8.6401L8.08945 9.9101C9.513 12.4136 11.5859 14.4865 14.0894 15.9101L15.3594 14.6401C15.6313 14.3712 15.9746 14.1859 16.3486 14.1062C16.7225 14.0264 17.1115 14.0556 17.4694 14.1901C18.3767 14.5286 19.3194 14.7635 20.2794 14.8901C20.7652 14.9586 21.2088 15.2033 21.526 15.5776C21.8431 15.9519 22.0116 16.4297 21.9994 16.9201Z"
+                                        stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    </path>
+                                </svg>
+                                Liên hệ:
+                            </p>
+                            <div class="content mt-4 mb-3">
+                                Hệ thống Hotline hỗ trợ 24/7. Nếu cần hỗ trợ vui lòng liên hệ:
+                                <a href="tel:024.62872777" title="hotline" class="link font-bold">024.62872777</a>
+                                <span> - </span>
+                                <a href="tel:091.121.9099" title="hotline" class="link font-bold">091.121.9099</a>
+                                <span></span>
+                            </div>
+                            <p>
+                                <i class="fa fa-globe" aria-hidden="true"></i>
+                                <span>Website: </span>
+                                <a href="https://joblaw.vn" target="_blank" title="hotline"
+                                    class="link font-bold">https://joblaw.vn</a>
+                            </p>
+                            <p>
+                                <i class="fa fa-globe" aria-hidden="true"></i>
+                                <span>Website: </span>
+                                <a href="https://luattamanh.com.vn" target="_blank" title="hotline"
+                                    class="link font-bold">https://luattamanh.com.vn</a>
+                            </p>
+                        </div>
+                        <div class="footer-social lg:mt-6 mt-4">
+                            <p class="title font-semibold text-white mb-4">Cộng đồng JobLaw</p>
+                            <ul class="f-social flex flex-wrap items-center">
+                                <li class="xl:mr-8 mr-4 last:mr-0">
+                                    <a href="https://www.facebook.com/luattamanh.com.vn" title="Facebook"
+                                        target="_blank" class="w-10 h-10 img_full img-h-full img-contain">
+                                        <img src="../theme/frontend/images/logos_facebook.svg" alt="facebook">
+                                    </a>
+                                </li>
+                                <li class="xl:mr-8 mr-4 last:mr-0">
+                                    <a href="https://zalo.me/0911219099" title="Facebook" target="_blank"
+                                        class="w-10 h-10 img_full img-h-full img-contain">
+                                        <img src="../theme/frontend/images/zalo.png" style="width: 41px;"
+                                            alt="facebook">
+                                    </a>
+                                </li>
+                                <li class="xl:mr-8 mr-4 last:mr-0">
+                                    <a href="https://www.instagram.com/" title="Instagram" target="_blank"
+                                        class="w-10 h-10 img_full img-h-full img-contain">
+                                        <img src="../theme/frontend/images/skill-icons_instagram.png" alt="instagram">
+                                    </a>
+                                </li>
+                                <li class="xl:mr-8 mr-4 last:mr-0">
+                                    <a href="https://twitter.com/?lang=vi" title="Twitter" target="_blank"
+                                        class="w-10 h-10 img_full img-h-full img-contain">
+                                        <img src="../theme/frontend/images/formkit_twitter.png" alt="twitter">
+                                    </a>
+                                </li>
+                                <li class="xl:mr-8 mr-4 last:mr-0">
+                                    <a href="https://twitter.com/?lang=vi" title="linkedin" target="_blank"
+                                        class="w-10 h-10 img_full img-h-full img-contain">
+                                        <img src="../theme/frontend/images/skill-icons_linkedin.png" alt="linkedin">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="w-full lg:w-[70%] px-2">
+                        <div class="flex flex-wrap -mx-2">
+                            <div class="w-full sm:w-1/2 lg:w-1/3 px-2 mb-4">
+                                <p
+                                    class="title-footer font-semibold text-white 2xl:text-[1.5rem] lg:text-[1.25rem] text-[1rem] mb-4">
+                                    Về chúng tôi
+                                </p>
+                                <div class="nav-footer">
+                                    <ul>
+                                        <li><a href="huong-dan-su-dung" title="Hướng dẫn sử dụng">Hướng dẫn sử dụng</a>
+                                        </li>
+                                        <li><a href="mau-hop-dong-dich-vu" title="Mẫu hợp đồng dịch vụ">Mẫu hợp đồng
+                                                dịch vụ</a></li>
+                                        <li><a href="quy-che-hoat-dong" title="Quy chế hoạt động">Quy chế hoạt động</a>
+                                        </li>
+                                        <li><a href="quy-trinh-tiep-nhan-va-giai-quyet-khieu-nai-tranh-chap"
+                                                title="Quy trình tiếp nhận và giải quyết khiếu nại, tranh chấp">Quy
+                                                trình tiếp nhận và giải quyết khiếu nại, tranh chấp</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="w-full sm:w-1/2 lg:w-1/3 px-2 mb-4">
+                                <p
+                                    class="title-footer font-semibold text-white 2xl:text-[1.5rem] lg:text-[1.25rem] text-[1rem] mb-4">
+                                    Trợ giúp &amp; dịch vụ
+                                </p>
+                                <div class="nav-footer">
+                                    <ul>
+                                        <li><a href="chinh-sach-bao-mat-thong-tin"
+                                                title="Chính sách bảo mật thông tin">Chính sách bảo mật thông tin</a>
+                                        </li>
+                                        <li><a href="quy-che-bao-ve-dlcn" title="Quy chế bảo vệ dữ liệu cá nhân">Quy chế
+                                                bảo vệ dữ liệu cá nhân</a></li>
+                                        <li><a href="thoa-thuan-bao-ve-dlcn"
+                                                title="Thoả thuận bảo vệ dữ liệu cá nhân">Thoả thuận bảo vệ dữ liệu cá
+                                                nhân</a></li>
+                                        <li><a href="bao-phi-dich-vu" title="Báo phí dịch vụ">Báo phí dịch vụ</a></li>
+                                        <li><a href="lien-he" title="Liên hệ">Liên hệ</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="w-full sm:w-1/2 lg:w-1/3 px-2 mb-4">
+                                <p
+                                    class="title-footer font-semibold text-white 2xl:text-[1.5rem] lg:text-[1.25rem] text-[1rem] mb-4">
+                                    Hồ sơ &amp; CV
+                                </p>
+                                <div class="nav-footer">
+                                    <ul>
+                                        <li><a href="#" title="Nhà tuyển dụng xem hồ sơ của bạn">Nhà tuyển dụng xem hồ
+                                                sơ của bạn</a></li>
+                                        <li><a href="#" title="Quản lý việc đã làm">Quản lý việc đã làm</a></li>
+                                        <li><a href="#" title="Quản lý CV của bạn">Quản lý CV của bạn</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="w-full sm:w-1/2 lg:w-1/3 px-2 mb-4">
+                                <p
+                                    class="title-footer font-semibold text-white 2xl:text-[1.5rem] lg:text-[1.25rem] text-[1rem] mb-4">
+                                    Khám phá
+                                </p>
+                                <div class="nav-footer">
+                                    <ul>
+                                        <li><a href="#" title="Định hướng ngành luật">Định hướng ngành luật</a></li>
+                                        <li><a href="#" title="Công cụ tính thuế thu nhập cá nhân">Công cụ tính thuế thu
+                                                nhập cá nhân</a></li>
+                                        <li><a href="#" title="Hỏi - đáp ngành luật">Hỏi - đáp ngành luật</a></li>
+                                        <li><a href="#" title="Tính lương Gross - Net">Tính lương Gross - Net</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="w-full sm:w-1/2 lg:w-1/3 px-2 mb-4">
+                                <p
+                                    class="title-footer font-semibold text-white 2xl:text-[1.5rem] lg:text-[1.25rem] text-[1rem] mb-4">
+                                    Phát triển bản thân
+                                </p>
+                                <div class="nav-footer">
+                                    <ul>
+                                        <li><a href="#" title="Việc làm lương cao">Việc làm lương cao</a></li>
+                                        <li><a href="#" title="Việc làm tốt nhất">Việc làm tốt nhất</a></li>
+                                        <li><a href="#" title="Định hướng ngành luật">Định hướng ngành luật</a></li>
+                                        <li><a href="#" title="Tính lương Gross - Net">Tính lương Gross - Net</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="w-full sm:w-1/2 lg:w-1/3 px-2 mb-4">
+                                <p
+                                    class="title-footer font-semibold text-white 2xl:text-[1.5rem] lg:text-[1.25rem] text-[1rem] mb-4">
+                                    Luật sư
+                                </p>
+                                <div class="nav-footer">
+                                    <ul>
+                                        <li><a href="dang-ky-luat-su" title="Đăng ký luật sư">Đăng ký luật sư</a></li>
+                                        <li><a href="dang-nhap-luat-su" title="Đăng nhập luật sư">Đăng nhập luật sư</a>
+                                        </li>
+                                        <li><a href="danh-ba-luat-su" title="Danh bạ luật sư">Danh bạ luật sư</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-middle xl:py-8 py-6">
+                <div class="flex flex-wrap -mx-2 lg:justify-between">
+                    <div class="w-full lg:w-[60%] px-2 mb-4 lg:mb-0">
+                        <p class="address flex items-center text-white mb-3">
+                            <i class="fa fa-building mr-2 text-[1.5rem] relative" aria-hidden="true"></i>
+                            <span class="company_name">CÔNG TY TNHH JOBLAW - MST: 0110475863</span>
+                        </p>
+                        <p class="address flex items-center text-white mb-3">
+                            <i class="fa-solid fa-house-chimney mr-2 text-[1.5rem] relative "></i>
+                            Nhà liền kề số 14 - Manor 1 Str Sunrise A – Khu đô thị The Manor Central Park đường Nguyễn
+                            Xiển, Phường Đại Kim, Quận Hoàng Mai, Thành phố Hà Nội, Việt Nam
+                        </p>
+                        <p class="address flex items-center text-white mb-3">
+                            <i class="fa-solid fa-location-dot mr-2 text-[1.5rem] relative"></i>
+                            <a href="https://www.google.com/maps/place/LU%E1%BA%ACT+T%C3%82M+ANH/@20.9751544,105.8131586,17z/data=!3m1!4b1!4m6!3m5!1s0x3135adb5be55818d:0x38b5f41ebc1148b2!8m2!3d20.9751544!4d105.8131586!16s%2Fg%2F11vbylgn2r?entry=ttu"
+                                target="_blank">Link google map</a>
+                        </p>
+                        <p class="address flex items-center text-white mb-3">
+                            <i class="fa-regular fa-envelope mr-2 text-[1.5rem] relative "></i>
+                            <a href="mailto:joblawpro@gmail.com" class="link">Gmail: joblawpro@gmail.com</a>
+                        </p>
+                        <p class="address flex items-center text-white mb-3">
+                            <i class="fa-solid fa-credit-card mr-2 text-[1.5rem] relative"></i>
+                            Số tài khoản: 9911219099 - Techcombank - CN Hà Thành Hà Nội
+                        </p>
+                    </div>
+                    <div class="w-full lg:w-[26%] px-2">
+                        <p class="title text-white font-semibold mb-4">Nhận thông tin việc làm</p>
+                        <div class="form-send-mail">
+                            <form action="https://joblaw.vn/gui-lien-he" method="POST" class="form-validate"
+                                data-success="NOTIFICATION.toastrMessageReload" accept-charset="utf8" absolute=""
+                                clear="">
+                                <input type="hidden" name="_token" value="CHa9xw1jQ6FDVi0kiSrUE0BehICCIbkBtKfwZvBB">
+                                <input type="hidden" name="type" value="1">
+                                <div class="w-full">
+                                    <input class="outline-none" type="email" placeholder="Nhập email..." name="email"
+                                        aria-required="true">
+                                </div>
+                                <button type="submit">Gửi</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom py-4 flex flex-wrap justify-center text-white text-[.875rem]">
+                <div
+                    class="item w-full lg:w-auto text-center lg:pr-4 lg:mr-4 last:pr-0 last:mr-0 lg:border-r-[1px] border-solid border-white last:border-r-[0px]">
+                    Copyright © 2022 JOBLAW Việt Nam </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../theme/frontend/js/jquery-3.7.0.min.js?v=1686826683" defer=""></script>
+    <script src="../theme/frontend/js/wow.min.js?v=1669823382" defer=""></script>
+    <script src="../theme/frontend/js/base.js?v=1712131214" defer=""></script>
+    <script src="../theme/frontend/js/fslightbox.js?v=1698467970" defer=""></script>
+    <script src="../theme/frontend/js/swiper-bundle.min.js?v=1701135452" defer=""></script>
+    <script src="../theme/frontend/js/tabs.js?v=1669823382" defer=""></script>
+    <script src="../theme/frontend/js/select2.min.js?v=1700040752" defer=""></script>
+
+    <script src="../theme/frontend/js/slider.js?v=1705056749" defer=""></script>
+    <script src="../theme/frontend/js/script.js" defer=""></script>
+
+    <script>
+        var Title = "[TIỆN ÍCH] Tính thuế thu nhập cá nhân 2022";
+        var giamTruNguoiPhuThuoc = 4400000;
+        var giamTruBanThan = 11000000;
+
+        function calculate() {
+            var incomeInput = document.getElementById('income');
+            var ldphInput = document.getElementById('ldbh');
+            var numDepInput = document.getElementById('numDep');
+            var result = document.getElementById('result');
+            var txtGross = incomeInput.value === '' ? 0 : ClearFormatMoney(incomeInput.value);
+            var txtContractSalary = ldphInput.value === '' ? 0 : ClearFormatMoney(ldphInput.value);
+            var txtChildren = numDepInput.value === '' ? 0 : numDepInput.value;
+            result.style.display = 'block';
+            var gross = parseFloat(txtGross);
+            var contractSalary = parseFloat(txtContractSalary);
+            var children = parseFloat(txtChildren);
+            var bhxhSalary = contractSalary > 29800000 ? 29800000 : contractSalary;
+            var bhtnSalary = contractSalary > 85172000 ? 85172000 : contractSalary;
+            var insurance = (bhxhSalary * 9.5) / 100 + (bhtnSalary * 1) / 100;
+            var childrenSubtract = children * giamTruNguoiPhuThuoc;
+            var tntt = gross - insurance - giamTruBanThan - childrenSubtract;
+            var taxLevel = get_tax_level(tntt);
+            var taxLevelName = taxLevel.name;
+            var tax = taxLevel.value;
+            if (contractSalary > 29800000) {
+                document.getElementById('contract_salary1').style.display = 'block';
+                document.getElementById('contract_salary1').innerHTML = 'Mức lương tối đa để đóng BHXH, BHYT là: 29,800,000';
+            }
+            if (contractSalary > 85172000) {
+                document.getElementById('contract_salary2').style.display = 'block';
+                document.getElementById('contract_salary2').innerHTML = 'Mức lương tối đa để đóng BHTN là: 85,172,000';
+            }
+            document.getElementById('fmt_bhxh_salary').innerHTML = fmt(bhxhSalary);
+            document.getElementById('fmt_insurance').innerHTML = fmt(insurance);
+            document.getElementById('fmt_insurance1').innerHTML = fmt(insurance);
+            document.getElementById('fmt_children').innerHTML = fmt(children);
+            document.getElementById('fmt_children_subtract').innerHTML = fmt(childrenSubtract);
+            document.getElementById('fmt_children_subtract1').innerHTML = fmt(childrenSubtract);
+            document.getElementById('fmt_gross').innerHTML = fmt(gross);
+            document.getElementById('fmt_tntt').innerHTML = fmt(tntt);
+            if (tntt > 0) {
+                document.getElementById('tntt').style.display = 'block';
+                document.getElementById('tntt').innerHTML = 'Mức thuế áp dụng đối với ' + fmt(tntt) + ' là ' + taxLevelName + ' (Tham khảo bảng mức thuế TNCN)';
+            } else {
+                document.getElementById('tntt').style.display = 'block';
+                document.getElementById('tntt').innerHTML = 'Mức thu nhập này không phải đóng thuế TNCN';
+            }
+            if (tntt > 0) {
+                document.getElementById('tntt1').innerHTML = fmt(tntt) + ' x ' + taxLevelName + ' =';
+            } else {
+                document.getElementById('tntt1').innerHTML = '';
+            }
+            document.getElementById('big-rs').innerHTML = fmt(tax);
+        }
+
+        function get_tax_level(tntt) {
+            if (tntt <= 0) {
+                return {
+                    name: '0%',
+                    value: 0
+                };
+            } else if (tntt <= 5000000) {
+                return {
+                    name: '5%',
+                    value: tntt * 5 / 100
+                };
+            } else if (tntt <= 10000000) {
+                return {
+                    name: '10% - 250,000',
+                    value: tntt * 10 / 100 - 250000
+                };
+            } else if (tntt <= 18000000) {
+                return {
+                    name: '15% - 750,000',
+                    value: tntt * 15 / 100 - 750000
+                };
+            } else if (tntt <= 32000000) {
+                return {
+                    name: '20% - 1,650,000',
+                    value: tntt * 20 / 100 - 1650000
+                };
+            } else if (tntt <= 52000000) {
+                return {
+                    name: '25% - 3,250,000',
+                    value: tntt * 25 / 100 - 3250000
+                };
+            } else if (tntt <= 80000000) {
+                return {
+                    name: '30% - 5,850,000',
+                    value: tntt * 30 / 100 - 5850000
+                };
+            } else {
+                return {
+                    name: '35% - 9,850,000',
+                    value: tntt * 35 / 100 - 9850000
+                };
+            }
+        }
+
+        function fmt(number) {
+            return new Intl.NumberFormat('vi-VN', {
+                style: 'currency',
+                currency: 'VND'
+            }).format(number);
+        }
+
+        function NumberFormat(x) {
+            return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+        }
+        document.getElementById('income').addEventListener('change', function () {
+            // Your code for the income change event
+        });
+        document.getElementById('ldbh').addEventListener('change', function () {
+            // Your code for the ldbh change event
+        });
+        var incomeLdbhInputs = document.querySelectorAll('#income, #ldbh');
+        incomeLdbhInputs.forEach(function (input) {
+            input.addEventListener('change', function (event) {
+                event.target.value = FormatMoney(event.target.value);
+            });
+            input.addEventListener('click', function (event) {
+                event.target.value = FormatMoney(event.target.value);
+            });
+            input.addEventListener('keyup', function (event) {
+                event.target.value = FormatMoney(event.target.value);
+            });
+            input.addEventListener('input', function (event) {
+                event.target.value = FormatMoney(event.target.value);
+            });
+            input.addEventListener('paste', function (event) {
+                event.target.value = FormatMoney(event.target.value);
+            });
+        });
+
+        function FormatMoney(value) {
+            return String(value).replace(/\D/g, "").replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+        }
+
+        function ClearFormatMoney(value) {
+            return String(value) == "" ? 0 : parseInt(String(value).replaceAll(",", ""));
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,1063 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../theme/frontend/css//fontawesome-free-6.4.0-web/css/all.css" rel="stylesheet">
+    <link href="../theme/frontend/css/toastify.css" rel="stylesheet">
+    <link href="../theme/frontend/css/animate.min.css" rel="stylesheet">
+    <link href="../theme/frontend/css/swiper-bundle.min.css" rel="stylesheet">
+    <link href="../theme/frontend/css/lightbox.css" rel="stylesheet">
+    <link href="../theme/frontend/css/select2.min.css" rel="stylesheet">
+    <link href="../theme/frontend/css/output.css" rel="stylesheet">
+    <link href="../theme/frontend/css/main.css" rel="stylesheet">
+    <link href="../theme/frontend/css/sub.css" rel="stylesheet">
+    <link href="../theme/frontend/css/add.css" rel="stylesheet">
+    <link href="../theme/frontend/css/style.css" rel="stylesheet">
+    <title>Công cụ tính lương GROSS - NET</title>
+</head>
+
+<body>
+    <header class="header bg-[var(--cl-blue)] xl:py-0 py-2 fixed">
+        <div class="2xl:px-10 xl:py-0 px-5 py-4 flex items-center !max-w-[1920px] mx-auto">
+            <span class="show-menu-mobile text-white block xl:hidden text-[20px] mr-4"><i
+                    class="fa-solid fa-bars"></i></span>
+            <a href="https://joblaw.vn" title="JobLaw TUYỂN DỤNG VIỆC LÀM PHÁP LUẬT"
+                class="h-logo max-w-[125px] lg:max-w-[135px] shrink-0 xl:mr-2">
+                <picture>
+                    <source media="(min-width:0px)" data-srcset="../theme/frontend/images/logo-joblaw.png"
+                        srcset="../theme/frontend/images/logo-joblaw.png">
+                    <img loading="auto" src="../theme/frontend/images/logo-joblaw.png"
+                        data-src="../theme/frontend/images/logo-joblaw.png" alt="Logo" title="Logo" class="img-fluid">
+                </picture>
+            </a>
+            <div class="menu flex-1 xl:flex items-center justify-end">
+                <a href="https://joblaw.vn" title="JobLaw TUYỂN DỤNG VIỆC LÀM PHÁP LUẬT"
+                    class="logo-mobile block xl:hidden max-w-[176px] mx-auto my-4">
+                    <picture>
+                        <source media="(min-width:0px)" data-srcset="../theme/frontend/images/logo-joblaw.png"
+                            srcset="../theme/frontend/images/logo-joblaw.png">
+                        <img loading="auto" src="../theme/frontend/images/logo-joblaw.png"
+                            data-src="../theme/frontend/images/logo-joblaw.png" alt="Logo" title="Logo"
+                            class="img-fluid">
+                    </picture>
+                </a>
+                <ul class="">
+                    <li><a href="tuyen-dung" title="Tuyển dụng" class=" ">Tuyển dụng</a></li>
+                    <li><a href="tim-ung-vien-moi" title="Ứng viên" class=" ">Ứng viên</a></li>
+                    <li><a href="phap-luat-lao-dong" title="Pháp luật lao động" class=" ">Pháp luật lao động</a>
+                        <ul class="">
+                            <li><a href="hoi-dap-nganh-luat" title="Hỏi - Đáp ngành luật" class=" ">Hỏi - Đáp ngành
+                                    luật</a></li>
+                            <li><a href="dinh-huong-nganh-luat" title="Định hướng ngành luật" class=" ">Định hướng ngành
+                                    luật</a></li>
+                            <li><a href="ki-nang-nganh-luat" title="Kĩ năng ngành luật" class=" ">Kĩ năng ngành luật</a>
+                            </li>
+                            <li><a href="tuyen-dung-cong-chuc" title="Tuyển dụng công chức" class=" ">Tuyển dụng công
+                                    chức</a></li>
+                        </ul><span class="btn-dropdown-menu"><i class="fa fa-angle-down text-[var(--cl-text-main)]"
+                                aria-hidden="true"></i></span>
+                    </li>
+                    <li><a href="tien-ich" title="Tiện ích" class=" ">Tiện ích</a>
+                        <ul class="">
+                            <li><a href="cong-cu-tinh-luong-gross-net" title="Công cụ tính lương Gross/Net"
+                                    class=" ">Công cụ tính lương Gross/Net</a></li>
+                            <li><a href="cong-cu-tinh-thue-tncn" title="Công cụ tính thuế TNCN" class=" ">Công cụ tính
+                                    thuế TNCN</a></li>
+                        </ul><span class="btn-dropdown-menu"><i class="fa fa-angle-down text-[var(--cl-text-main)]"
+                                aria-hidden="true"></i></span>
+                    </li>
+                    <li><a href="dich-vu-cua-chung-toi" title="Dịch vụ" class=" ">Dịch vụ</a></li>
+                    <li><a href="huong-dan-su-dung" title="Hướng dẫn sử dụng" class=" ">Hướng dẫn sử dụng</a></li>
+                    <li><a href="danh-ba-luat-su" title="Danh bạ luật sư" class=" ">Danh bạ luật sư</a></li>
+                    <li><a href="lien-he" title="Liên hệ" class=" ">Liên hệ</a></li>
+                </ul>
+                <div class="box-actions flex flex-wrap">
+                    <a href="https://joblaw.vn/dang-ky" title="Đăng ký"
+                        class="btn text-white py-4 px-6 bg-transparent hover:text-white rounded-[1rem] hover:bg-[var(--cl-orange)] transition-all duration-300 border border-solid border-white hover:border-[var(--cl-orange)] mr-4 last:mr-0 xl:min-w-[132px] text-center">Đăng
+                        ký</a>
+                    <a href="https://joblaw.vn/dang-nhap" title="Đăng nhập"
+                        class="btn text-white py-4 px-6 bg-transparent hover:text-white rounded-[1rem]  hover:bg-[var(--cl-orange)] transition-all duration-300 border border-solid border-white hover:border-[var(--cl-orange)] mr-4 last:mr-0 xl:min-w-[132px] text-center">Đăng
+                        nhập</a>
+
+                </div>
+
+            </div>
+            <div class="box-actions flex xl:hidden flex-1 justify-end flex-wrap">
+                <a href="https://joblaw.vn/dang-nhap" title="Đăng nhập"
+                    class="btn text-white hover:text-[var(--cl-text-main)] hover:bg-white transition-all duration-500 bg-[var(--cl-bg-main)] mb-2 lg:mb-0 mr-2 last:mr-0 border-solid border-[var(--border-main)] border">Đăng
+                    nhập</a>
+                <a href="https://joblaw.vn/dang-ky" title="Đăng ký"
+                    class="btn text-white hover:text-[var(--cl-text-main)] hover:bg-white transition-all duration-500 bg-[var(--cl-bg-main)] mb-2 lg:mb-0 mr-2 last:mr-0 border-solid border-[var(--border-main)] border">Đăng
+                    ký
+                </a>
+
+            </div>
+
+            <div class="flex items-center xl:hidden ml-auto">
+            </div>
+
+        </div>
+        <div
+            class="over-lay fixed block xl:hidden top-0 right-[-100%] w-full h-full z-50 bg-[rgba(0,0,0,.5)] transition-all duration-300">
+        </div>
+    </header>
+    <section class="section-payroll py-8 bg-no-repeat bg-right-top"
+        style="background-image: url(theme/frontend/images/bg-gross-net.png);">
+        <div class="container">
+            <div class="box-white box-salary">
+                <h2 class="text-[var(--cl-text-main-2)] mb-2 lg:text-2xl text-lg uppercase font-semibold">CÔNG CỤ TÍNH
+                    LƯƠNG</h2>
+                <p class="text-[var(--cl-sub-title)] text-sm  mb-8">
+                    Công cụ tính lương này giúp chuyển đổi lương gộp (lương gross) thành lương ròng (lương net) và ngược
+                    lại.
+                    Thuế suất và các khoản giảm trừ liên quan đến khoản lương nói trên được tính theo luật lao động hiện
+                    hành.
+                </p>
+                <div class="salary-cal-form">
+                    <div class=" flex items-center flex-wrap mb-4">
+                        <label class="text-[var(--cl-text-main-2)] mr-4">Thu nhập:</label>
+                        <div
+                            class="box-pass relative flex justify-between items-center border-solid rounded-[5px] border h-12 p-3 bg-white">
+                            <input id="income" type="text" maxlength="15">
+                            <label>VND</label>
+                        </div>
+                        <div style="display:none">
+                            <label class="ml-10">Tiền tệ:</label>
+                            <label class="dropdown">
+                                <select id="currency">
+                                    <option value="VND" selected="">VND</option>
+                                    <option value="USD">USD</option>
+                                </select>
+                            </label>
+                            <label class="ml-10">1 USD = </label>
+                            <input type="text" id="exchangeRate" maxlength="7" class="not-allow" disabled="">
+                        </div>
+                        <small class="error-mess-income"><span>*</span> Xin vui lòng điền Thu nhập</small>
+                    </div>
+                    <div class=" flex items-center flex-wrap mb-4">
+                        <label class="text-[var(--cl-text-main-2)] mr-4 mb-2">Đóng bảo hiểm:</label>
+                        <label class="radio-row  mr-4 mb-2">
+                            <input type="radio" name="insurance" value="full" checked="">
+                            <span style="font-weight:normal">Trên lương chính thức</span>
+                        </label>
+                        <label class="radio-row mr-4 mb-2">
+                            <input type="radio" name="insurance" value="other">
+                            <span style="font-weight:normal">Khác</span>
+                        </label>
+                        <input type="text" id="otherInsurance" maxlength="15" class="not-allow mb-2" disabled="">
+                        <small class="error-mess-otherInsurance mb-2"><span>*</span> Xin vui lòng điền Mức lương đóng
+                            bảo hiểm</small>
+                    </div>
+                    <div class=" flex items-center flex-wrap mb-4">
+                        <label>Vùng:</label> <a href="#popup-personal-tax" class="popup-personal-tax"
+                            data-toggle="modal" data-target="#exampleModalCenter1"><b style="color:red">(?)</b></a>
+                        <label class="dropdown">
+                            <select id="zone" style="width:60px">
+                                <option value="1" selected="">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select>
+                        </label>
+                        <label class=" sm:ml-10 my-2 sm:my-0 w-full sm:w-auto mr-2">Số người phụ thuộc:</label>
+                        <input id="numDep" type="text" maxlength="3" class="h-12 max-w-sm w-full rounded-[5px]">
+                    </div>
+                    <div class="flex">
+                        <a id="btnGrossToNet"
+                            class="px-3 py-2 text-white bg-[var(--cl-bg-main)] hover:bg-white border-[var(--cl-bg-main)] border-solid border">GROSS
+                            TO NET</a>
+                        <a id="btnNetToGross"
+                            class="px-3 py-2 text-white bg-[var(--cl-sub-title-2)] hover:bg-white btn-net ml-10 border-[var(--cl-sub-title-2)] border-solid border">NET
+                            TO GROSS</a>
+                    </div>
+                </div>
+            </div>
+            <div class="box-white box-salary afterCal mt-6" style="display:none">
+                <div class="salary-cal-result">
+                    <div class="flex flex-wrap lg:-mx-2 mb-4" id="gross-net-result"></div>
+                    <div class="flex  flex-wrap lg:-mx-2">
+                        <div class="w-full lg:w-1/2 lg:px-2">
+                            <h4 class="uppercase text-[var(--cl-text-main-2)] font-medium  mb-2">CHI TIẾT LƯƠNG NHÂN
+                                VIÊN:</h4>
+                            <div class="flex items-center mb-2">
+                                <div class="w-1/2">
+                                    <p class="font-bold">LƯƠNG GROSS:</p>
+                                </div>
+                                <class id="result-gross-salary" class="result-value w-1/2"></class>
+                            </div>
+                            <div class="flex items-center mb-2">
+                                <div class="w-1/2">
+                                    <p class="font-semibold"> Bảo hiểm xã hội:</p>
+                                </div>
+                                <div class="w-1/2">
+                                    (<span id="per-social-ratio"></span>%) <span id="result-social-insur"
+                                        class="result-value"></span>
+                                </div>
+                            </div>
+                            <div class="flex items-center mb-2">
+                                <div class="w-1/2">
+                                    <p class="font-semibold"> Bảo hiểm y tế: </p>
+                                </div>
+                                <div class="w-1/2">
+                                    (<span id="per-heal-ratio"></span>%) <span id="result-heal-insur"
+                                        class="result-value"></span>
+                                </div>
+                            </div>
+                            <div class="flex items-center mb-2">
+                                <div class="w-1/2">
+                                    <p class="font-semibold">Bảo hiểm thất nghiệp:</p>
+                                </div>
+                                <div class="w-1/2">
+                                    (<span id="per-unemp-ratio"></span>%) <span id="result-unemp-insur"
+                                        class="result-value"></span>
+                                </div>
+                            </div>
+                            <div class="flex items-center mb-2">
+                                <div class="w-1/2">
+                                    <p class="font-bold">THU NHẬP TRƯỚC THUẾ:</p>
+                                </div>
+                                <div class="w-1/2">
+                                    <strong id="result-salary-before-tax" class="result-value"></strong>
+                                </div>
+                            </div>
+                            <div class="flex items-center mb-2">
+                                <div class="w-1/2">
+                                    <p class="font-semibold">Giảm trừ gia cảnh bản thân:</p>
+                                </div>
+                                <div class="w-1/2">
+                                    <span id="result-per-allow" class="result-value"></span>
+                                </div>
+                            </div>
+                            <div class="flex items-center mb-2">
+                                <div class="w-1/2">
+                                    <p class="font-semibold"> Giảm trừ người phụ thuộc:</p>
+                                </div>
+                                <div class="w-1/2">
+                                    <span id="result-dep-allow" class="result-value"></span>
+                                </div>
+                            </div>
+                            <div class="flex items-center mb-2">
+                                <div class="w-1/2">
+                                    <p class="font-semibold">THU NHẬP CHỊU THUẾ:</p>
+                                </div>
+                                <div class="w-1/2">
+                                    <strong id="result-taxable-salary" class="result-value"></strong>
+                                </div>
+                            </div>
+                            <div class="flex items-center mb-2">
+                                <div class="w-1/2">
+                                    <p class="font-semibold">Thuế thu nhập cá nhân:</p>
+                                </div>
+                                <div class="w-1/2">
+                                    <a href="#popup-personal-tax" class="popup-personal-tax" data-toggle="modal"
+                                        data-target="#exampleModalCenter"><b style="color:red">(?)</b></a> <span
+                                        id="result-per-tax" class="result-value"></span>
+                                </div>
+                            </div>
+                            <div class="flex items-center mb-2">
+                                <div class="w-1/2">
+                                    <p class="font-semibold">LƯƠNG NET:</p>
+                                </div>
+                                <div class="w-1/2">
+                                    <strong class="result-value" id="result-net-salary"></strong>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-full lg:w-1/2 lg:px-2">
+                            <h4 class="uppercase text-[var(--cl-text-main-2)] font-medium  mb-2">NGƯỜI SỬ DỤNG LAO ĐỘNG
+                                TRẢ:</h4>
+                            <div class="flex items-center mb-2">
+                                <div class="w-1/2">
+                                    <p class="font-bold">LƯƠNG GROSS:</p>
+                                </div>
+                                <div class="w-1/2">
+                                    <strong id="result-cost-gross-salary" class="result-value"></strong>
+                                </div>
+                            </div>
+                            <div class="flex items-center mb-2">
+                                <div class="w-1/2">
+                                    <p class="font-medium">Bảo hiểm xã hội:</p>
+                                </div>
+                                <div class="w-1/2">
+                                    (<span id="com-social-ratio"></span>%) <span id="result-cost-social-insur"
+                                        class="result-value"></span>
+                                </div>
+                            </div>
+                            <div class="flex items-center mb-2">
+                                <div class="w-1/2">
+                                    <p class="font-medium">Bảo hiểm y tế: </p>
+                                </div>
+                                <div class="w-1/2">
+                                    (<span id="com-heal-ratio"></span>%) <span id="result-cost-heal-insur"
+                                        class="result-value"></span>
+                                </div>
+                            </div>
+                            <div class="flex items-center mb-2">
+                                <div class="w-1/2">
+                                    <p class="font-medium"> Bảo hiểm thất nghiệp: </p>
+                                </div>
+                                <div class="w-1/2">
+                                    (<span id="com-unemp-ratio"></span>%) <span id="result-cost-unemp-insur"
+                                        class="result-value"></span>
+                                </div>
+                            </div>
+                            <div class="flex items-center mb-2">
+                                <div class="w-1/2">
+                                    <p class="font-medium">Công đoàn: </p>
+                                </div>
+                                <div class="w-1/2">
+                                    (<span id="com-trade-ratio"></span>%) <span id="result-cost-trade-union"
+                                        class="result-value"></span>
+                                </div>
+                            </div>
+                            <div class="flex items-center mb-2">
+                                <div class="w-1/2">
+                                    <p class="font-bold">TỔNG CHI PHÍ:</p>
+                                </div>
+                                <div class="w-1/2">
+                                    <strong class="result-value" id="result-total-emp-cost"></strong>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+            </div>
+            <div class="s-content mt-8">
+                <h2>1. Khái niệm</h2>
+                <p><strong>Lương gross</strong> là tổng tiền lương mà người sử dụng lao động sẽ trả cho người lao động
+                    trong mỗi kì trả lương.<br><br>Tổng tiền lương sẽ bao gồm: mức lương cơ bản, phụ cấp, các khoản trợ
+                    cấp, phụ cấp khác và khoản tiền đóng bảo hiểm (BHXH, BHYT, BHTN,…), thuế TNCN (nếu có) mà doanh
+                    nghiệp chưa trích đóng của người lao động.<br>Trước khi trả thu nhập cho người lao động, người sử
+                    dụng lao động sẽ trích từ tiền lương của người lao động một khoản tiền để đóng bảo hiểm, đóng thuế
+                    TNCN cho người lao động. Do đó mức lương thực nhận của người lao động sẽ thấp hơn so mới mức lương
+                    đã thỏa thuận trên hợp đồng.<br><br><strong>Lương net</strong> là tiền lương thực nhận của người lao
+                    động sau khi đã trừ các khoản tiền đóng bảo hiểm và tiền thuế. Khi thỏa thuận trả lương net thì
+                    người lao động sẽ nhận đúng với số lương đã thỏa thuận trên hợp đồng.</p>
+                <h2>2. Cách tính lương gross sang net và ngược lại</h2>
+                <p>Dựa trên khái niệm của lương gross và lương net, có thể thấy được rằng lương gross và lương net có
+                    mối quan hệ với nhau. Ta có thể tính lương gross sang net và ngược lại theo công thức:</p>
+                <p style="background-color: #3366ff; color: #ffffff; padding: 0.75rem; text-align: center;">Lương gross
+                    = Lương net + (BHXH + BHYT + BHTN) + Thuế TNCN (nếu có)</p>
+                <p style="background-color: #3366ff; color: #ffffff; padding: 0.75rem; text-align: center;">Lương net =
+                    Lương gross – (BHXH + BHYT + BHTN + Thuế TNCN (nếu có)</p>
+                <h2>3. Phân biệt lương gross, net</h2>
+                <table>
+                    <tbody>
+                        <tr style="background-color: #3366ff; color: #ffffff;">
+                            <td>&nbsp;</td>
+                            <td style="text-align: center;">Lương Gross</td>
+                            <td style="text-align: center;">Lương net</td>
+                        </tr>
+                        <tr>
+                            <td>Khái niệm</td>
+                            <td>Là tổng tiền lương của người lao động (NLĐ) mà người sử dụng lao động (NSDLĐ) chi trả
+                                mỗi kì trả lương chưa trừ các khoản tiền bảo hiểm, tiền thuế TNCN.</td>
+                            <td>Là tiền lương thực nhận của người lao động mỗi kì trả lương, không bị trừ thêm tiền đóng
+                                bảo hiểm, tiền thuế TNCN.</td>
+                        </tr>
+                        <tr>
+                            <td>Mức lương thực nhận của người lao động</td>
+                            <td>Thấp hơn so với lương đã thỏa thuận trên hợp đồng<br><br>Lương thực nhận bằng = Lương
+                                Gross – (BHXH + BHYT + BHTN + Thuế TNCN (nếu có)<br><br>Trong đó, mức trích đóng các
+                                khoản bảo hiểm là: BHXH (8%), BHYT (1,5%), BHTN (1%)</td>
+                            <td>Bằng với mức lương đã thỏa thuận trên hợp đồng</td>
+                        </tr>
+                        <tr>
+                            <td>Ưu điểm</td>
+                            <td>Dựa trên mức lương gross có thể tính toán được các khoản tiền bảo hiểm, tiền thuế TNCN
+                                phải nộp.</td>
+                            <td>Người lao động chỉ cần nhận đúng số tiền đã thỏa thuận trên hợp đồng, không phải tính
+                                toán xem người sử dụng lao động trừ tiền đóng bảo hiểm, tiền thuế TNCN có đúng hay không
+                                như nhận lương gross.</td>
+                        </tr>
+                        <tr>
+                            <td>Nhược điểm</td>
+                            <td>Do thu nhập thực nhận thấp hơn mức lương đã thỏa thuận trên hợp đồng nên NLĐ phải thường
+                                xuyên tính toán số tiền đóng bảo hiểm và thuế thu nhập để tránh bị NSDLĐ tính sai.</td>
+                            <td>&nbsp;NSDLĐ có thể sử dụng mức lương này để đóng Bảo hiểm cho NLĐ dẫn đến mức đóng thấp,
+                                mức hưởng các chế độ bảo hiểm của NLĐ cũng thấp.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer_upgrade">
+        <div class="container">
+            <div class="main-footer 2xl:py-14 xl:py-10 py-6 border-b-[1px] border-solid border-[#fff]">
+                <div class="flex flex-wrap lg:justify-between -mx-2">
+                    <div class="w-full lg:w-[25%] px-2 mb-4 lg:mb-0">
+                        <a href="https://joblaw.vn" title="JobLaw TUYỂN DỤNG VIỆC LÀM PHÁP LUẬT"
+                            class="logo-footer block max-w-[200px] md:max-w-[390px]">
+                            <picture>
+                                <source media="(min-width:0px)" data-srcset="../theme/frontend/images//logo-footer.png"
+                                    srcset="../theme/frontend/images//logo-footer.png">
+                                <img loading="lazy" src="../theme/frontend/images//logo-footer.png"
+                                    data-src="../theme/frontend/images//logo-footer.png" alt="" title=""
+                                    class="img-fluid">
+                            </picture>
+                        </a>
+                        <div class="footer-contact text-white lg:mt-6 mt-4">
+                            <p class="title flex items-center font-semibold lg:text-[1.125rem] ">
+                                <svg class="mr-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24" fill="none">
+                                    <path
+                                        d="M21.9994 16.9201V19.9201C22.0006 20.1986 21.9435 20.4743 21.832 20.7294C21.7204 20.9846 21.5567 21.2137 21.3515 21.402C21.1463 21.5902 20.904 21.7336 20.6402 21.8228C20.3764 21.912 20.0968 21.9452 19.8194 21.9201C16.7423 21.5857 13.7864 20.5342 11.1894 18.8501C8.77327 17.3148 6.72478 15.2663 5.18945 12.8501C3.49942 10.2413 2.44769 7.27109 2.11944 4.1801C2.09446 3.90356 2.12732 3.62486 2.21595 3.36172C2.30457 3.09859 2.44702 2.85679 2.63421 2.65172C2.82141 2.44665 3.04925 2.28281 3.30324 2.17062C3.55722 2.05843 3.83179 2.00036 4.10945 2.0001H7.10945C7.59475 1.99532 8.06524 2.16718 8.43321 2.48363C8.80118 2.80008 9.04152 3.23954 9.10944 3.7201C9.23607 4.68016 9.47089 5.62282 9.80945 6.5301C9.94399 6.88802 9.97311 7.27701 9.89335 7.65098C9.8136 8.02494 9.62831 8.36821 9.35944 8.6401L8.08945 9.9101C9.513 12.4136 11.5859 14.4865 14.0894 15.9101L15.3594 14.6401C15.6313 14.3712 15.9746 14.1859 16.3486 14.1062C16.7225 14.0264 17.1115 14.0556 17.4694 14.1901C18.3767 14.5286 19.3194 14.7635 20.2794 14.8901C20.7652 14.9586 21.2088 15.2033 21.526 15.5776C21.8431 15.9519 22.0116 16.4297 21.9994 16.9201Z"
+                                        stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    </path>
+                                </svg>
+                                Liên hệ:
+                            </p>
+                            <div class="content mt-4 mb-3">
+                                Hệ thống Hotline hỗ trợ 24/7. Nếu cần hỗ trợ vui lòng liên hệ:
+                                <a href="tel:024.62872777" title="hotline" class="link font-bold">024.62872777</a>
+                                <span> - </span>
+                                <a href="tel:091.121.9099" title="hotline" class="link font-bold">091.121.9099</a>
+                                <span></span>
+                            </div>
+                            <p>
+                                <i class="fa fa-globe" aria-hidden="true"></i>
+                                <span>Website: </span>
+                                <a href="https://joblaw.vn" target="_blank" title="hotline"
+                                    class="link font-bold">https://joblaw.vn</a>
+                            </p>
+                            <p>
+                                <i class="fa fa-globe" aria-hidden="true"></i>
+                                <span>Website: </span>
+                                <a href="https://luattamanh.com.vn" target="_blank" title="hotline"
+                                    class="link font-bold">https://luattamanh.com.vn</a>
+                            </p>
+                        </div>
+                        <div class="footer-social lg:mt-6 mt-4">
+                            <p class="title font-semibold text-white mb-4">Cộng đồng JobLaw</p>
+                            <ul class="f-social flex flex-wrap items-center">
+                                <li class="xl:mr-8 mr-4 last:mr-0">
+                                    <a href="https://www.facebook.com/luattamanh.com.vn" title="Facebook"
+                                        target="_blank" class="w-10 h-10 img_full img-h-full img-contain">
+                                        <img src="../theme/frontend/images/logos_facebook.svg" alt="facebook">
+                                    </a>
+                                </li>
+                                <li class="xl:mr-8 mr-4 last:mr-0">
+                                    <a href="https://zalo.me/0911219099" title="Facebook" target="_blank"
+                                        class="w-10 h-10 img_full img-h-full img-contain">
+                                        <img src="../theme/frontend/images/zalo.png" style="width: 41px;"
+                                            alt="facebook">
+                                    </a>
+                                </li>
+                                <li class="xl:mr-8 mr-4 last:mr-0">
+                                    <a href="https://www.instagram.com/" title="Instagram" target="_blank"
+                                        class="w-10 h-10 img_full img-h-full img-contain">
+                                        <img src="../theme/frontend/images/skill-icons_instagram.png" alt="instagram">
+                                    </a>
+                                </li>
+                                <li class="xl:mr-8 mr-4 last:mr-0">
+                                    <a href="https://twitter.com/?lang=vi" title="Twitter" target="_blank"
+                                        class="w-10 h-10 img_full img-h-full img-contain">
+                                        <img src="../theme/frontend/images/formkit_twitter.png" alt="twitter">
+                                    </a>
+                                </li>
+                                <li class="xl:mr-8 mr-4 last:mr-0">
+                                    <a href="https://twitter.com/?lang=vi" title="linkedin" target="_blank"
+                                        class="w-10 h-10 img_full img-h-full img-contain">
+                                        <img src="../theme/frontend/images/skill-icons_linkedin.png" alt="linkedin">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="w-full lg:w-[70%] px-2">
+                        <div class="flex flex-wrap -mx-2">
+                            <div class="w-full sm:w-1/2 lg:w-1/3 px-2 mb-4">
+                                <p
+                                    class="title-footer font-semibold text-white 2xl:text-[1.5rem] lg:text-[1.25rem] text-[1rem] mb-4">
+                                    Về chúng tôi
+                                </p>
+                                <div class="nav-footer">
+                                    <ul>
+                                        <li><a href="huong-dan-su-dung" title="Hướng dẫn sử dụng">Hướng dẫn sử dụng</a>
+                                        </li>
+                                        <li><a href="mau-hop-dong-dich-vu" title="Mẫu hợp đồng dịch vụ">Mẫu hợp đồng
+                                                dịch vụ</a></li>
+                                        <li><a href="quy-che-hoat-dong" title="Quy chế hoạt động">Quy chế hoạt động</a>
+                                        </li>
+                                        <li><a href="quy-trinh-tiep-nhan-va-giai-quyet-khieu-nai-tranh-chap"
+                                                title="Quy trình tiếp nhận và giải quyết khiếu nại, tranh chấp">Quy
+                                                trình tiếp nhận và giải quyết khiếu nại, tranh chấp</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="w-full sm:w-1/2 lg:w-1/3 px-2 mb-4">
+                                <p
+                                    class="title-footer font-semibold text-white 2xl:text-[1.5rem] lg:text-[1.25rem] text-[1rem] mb-4">
+                                    Trợ giúp &amp; dịch vụ
+                                </p>
+                                <div class="nav-footer">
+                                    <ul>
+                                        <li><a href="chinh-sach-bao-mat-thong-tin"
+                                                title="Chính sách bảo mật thông tin">Chính sách bảo mật thông tin</a>
+                                        </li>
+                                        <li><a href="quy-che-bao-ve-dlcn" title="Quy chế bảo vệ dữ liệu cá nhân">Quy chế
+                                                bảo vệ dữ liệu cá nhân</a></li>
+                                        <li><a href="thoa-thuan-bao-ve-dlcn"
+                                                title="Thoả thuận bảo vệ dữ liệu cá nhân">Thoả thuận bảo vệ dữ liệu cá
+                                                nhân</a></li>
+                                        <li><a href="bao-phi-dich-vu" title="Báo phí dịch vụ">Báo phí dịch vụ</a></li>
+                                        <li><a href="lien-he" title="Liên hệ">Liên hệ</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="w-full sm:w-1/2 lg:w-1/3 px-2 mb-4">
+                                <p
+                                    class="title-footer font-semibold text-white 2xl:text-[1.5rem] lg:text-[1.25rem] text-[1rem] mb-4">
+                                    Hồ sơ &amp; CV
+                                </p>
+                                <div class="nav-footer">
+                                    <ul>
+                                        <li><a href="#" title="Nhà tuyển dụng xem hồ sơ của bạn">Nhà tuyển dụng xem hồ
+                                                sơ của bạn</a></li>
+                                        <li><a href="#" title="Quản lý việc đã làm">Quản lý việc đã làm</a></li>
+                                        <li><a href="#" title="Quản lý CV của bạn">Quản lý CV của bạn</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="w-full sm:w-1/2 lg:w-1/3 px-2 mb-4">
+                                <p
+                                    class="title-footer font-semibold text-white 2xl:text-[1.5rem] lg:text-[1.25rem] text-[1rem] mb-4">
+                                    Khám phá
+                                </p>
+                                <div class="nav-footer">
+                                    <ul>
+                                        <li><a href="#" title="Định hướng ngành luật">Định hướng ngành luật</a></li>
+                                        <li><a href="#" title="Công cụ tính thuế thu nhập cá nhân">Công cụ tính thuế thu
+                                                nhập cá nhân</a></li>
+                                        <li><a href="#" title="Hỏi - đáp ngành luật">Hỏi - đáp ngành luật</a></li>
+                                        <li><a href="#" title="Tính lương Gross - Net">Tính lương Gross - Net</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="w-full sm:w-1/2 lg:w-1/3 px-2 mb-4">
+                                <p
+                                    class="title-footer font-semibold text-white 2xl:text-[1.5rem] lg:text-[1.25rem] text-[1rem] mb-4">
+                                    Phát triển bản thân
+                                </p>
+                                <div class="nav-footer">
+                                    <ul>
+                                        <li><a href="#" title="Việc làm lương cao">Việc làm lương cao</a></li>
+                                        <li><a href="#" title="Việc làm tốt nhất">Việc làm tốt nhất</a></li>
+                                        <li><a href="#" title="Định hướng ngành luật">Định hướng ngành luật</a></li>
+                                        <li><a href="#" title="Tính lương Gross - Net">Tính lương Gross - Net</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="w-full sm:w-1/2 lg:w-1/3 px-2 mb-4">
+                                <p
+                                    class="title-footer font-semibold text-white 2xl:text-[1.5rem] lg:text-[1.25rem] text-[1rem] mb-4">
+                                    Luật sư
+                                </p>
+                                <div class="nav-footer">
+                                    <ul>
+                                        <li><a href="dang-ky-luat-su" title="Đăng ký luật sư">Đăng ký luật sư</a></li>
+                                        <li><a href="dang-nhap-luat-su" title="Đăng nhập luật sư">Đăng nhập luật sư</a>
+                                        </li>
+                                        <li><a href="danh-ba-luat-su" title="Danh bạ luật sư">Danh bạ luật sư</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-middle xl:py-8 py-6">
+                <div class="flex flex-wrap -mx-2 lg:justify-between">
+                    <div class="w-full lg:w-[60%] px-2 mb-4 lg:mb-0">
+                        <p class="address flex items-center text-white mb-3">
+                            <i class="fa fa-building mr-2 text-[1.5rem] relative" aria-hidden="true"></i>
+                            <span class="company_name">CÔNG TY TNHH JOBLAW - MST: 0110475863</span>
+                        </p>
+                        <p class="address flex items-center text-white mb-3">
+                            <i class="fa-solid fa-house-chimney mr-2 text-[1.5rem] relative "></i>
+                            Nhà liền kề số 14 - Manor 1 Str Sunrise A – Khu đô thị The Manor Central Park đường Nguyễn
+                            Xiển, Phường Đại Kim, Quận Hoàng Mai, Thành phố Hà Nội, Việt Nam
+                        </p>
+                        <p class="address flex items-center text-white mb-3">
+                            <i class="fa-solid fa-location-dot mr-2 text-[1.5rem] relative"></i>
+                            <a href="https://www.google.com/maps/place/LU%E1%BA%ACT+T%C3%82M+ANH/@20.9751544,105.8131586,17z/data=!3m1!4b1!4m6!3m5!1s0x3135adb5be55818d:0x38b5f41ebc1148b2!8m2!3d20.9751544!4d105.8131586!16s%2Fg%2F11vbylgn2r?entry=ttu"
+                                target="_blank">Link google map</a>
+                        </p>
+                        <p class="address flex items-center text-white mb-3">
+                            <i class="fa-regular fa-envelope mr-2 text-[1.5rem] relative "></i>
+                            <a href="mailto:joblawpro@gmail.com" class="link">Gmail: joblawpro@gmail.com</a>
+                        </p>
+                        <p class="address flex items-center text-white mb-3">
+                            <i class="fa-solid fa-credit-card mr-2 text-[1.5rem] relative"></i>
+                            Số tài khoản: 9911219099 - Techcombank - CN Hà Thành Hà Nội
+                        </p>
+                    </div>
+                    <div class="w-full lg:w-[26%] px-2">
+                        <p class="title text-white font-semibold mb-4">Nhận thông tin việc làm</p>
+                        <div class="form-send-mail">
+                            <form action="https://joblaw.vn/gui-lien-he" method="POST" class="form-validate"
+                                data-success="NOTIFICATION.toastrMessageReload" accept-charset="utf8" absolute=""
+                                clear="">
+                                <input type="hidden" name="_token" value="CHa9xw1jQ6FDVi0kiSrUE0BehICCIbkBtKfwZvBB">
+                                <input type="hidden" name="type" value="1">
+                                <div class="w-full">
+                                    <input class="outline-none" type="email" placeholder="Nhập email..." name="email"
+                                        aria-required="true">
+                                </div>
+                                <button type="submit">Gửi</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom py-4 flex flex-wrap justify-center text-white text-[.875rem]">
+                <div
+                    class="item w-full lg:w-auto text-center lg:pr-4 lg:mr-4 last:pr-0 last:mr-0 lg:border-r-[1px] border-solid border-white last:border-r-[0px]">
+                    Copyright © 2022 JOBLAW Việt Nam </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../theme/frontend/js/jquery-3.7.0.min.js?v=1686826683" defer=""></script>
+    <script src="../theme/frontend/js/wow.min.js?v=1669823382" defer=""></script>
+    <script src="../theme/frontend/js/base.js?v=1712131214" defer=""></script>
+    <script src="../theme/frontend/js/fslightbox.js?v=1698467970" defer=""></script>
+    <script src="../theme/frontend/js/swiper-bundle.min.js?v=1701135452" defer=""></script>
+    <script src="../theme/frontend/js/tabs.js?v=1669823382" defer=""></script>
+    <script src="../theme/frontend/js/select2.min.js?v=1700040752" defer=""></script>
+
+    <script src="../theme/frontend/js/slider.js?v=1705056749" defer=""></script>
+    <script src="../theme/frontend/js/script.js" defer=""></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const REDUCEPERTAX = 11000000;
+            const REDUCEDEPENTAX = 4400000;
+            const elements = document.querySelectorAll('#income, #exchangeRate, #otherInsurance, #numDep');
+            elements.forEach(function (element) {
+                element.addEventListener('change', handleEvent);
+                element.addEventListener('click', handleEvent);
+                element.addEventListener('keyup', handleEvent);
+                element.addEventListener('input', handleEvent);
+                element.addEventListener('paste', handleEvent);
+            });
+
+            function handleEvent(event) {
+                this.value = FormatMoney(this.value);
+            }
+            const insuranceRadio = document.querySelector('input[type=radio][name=insurance]');
+            insuranceRadio.addEventListener('change', function () {
+                const otherInsurance = document.querySelector("#otherInsurance");
+                if (this.value === 'other') {
+                    otherInsurance.disabled = false;
+                    otherInsurance.classList.remove("not-allow");
+                } else {
+                    otherInsurance.disabled = true;
+                    otherInsurance.classList.add("not-allow");
+                }
+            });
+            document.querySelector("#currency").addEventListener("change", function () {
+                const exchangeRateInput = document.querySelector("#exchangeRate");
+                if (this.value === 'USD') {
+                    exchangeRateInput.disabled = false;
+                    exchangeRateInput.classList.remove("not-allow");
+                } else {
+                    exchangeRateInput.disabled = true;
+                    exchangeRateInput.classList.add("not-allow");
+                }
+            });
+            document.querySelector("#btnGrossToNet").addEventListener("click", function () {
+                CalSalaryDetail('gross2net');
+            });
+            document.querySelector("#btnNetToGross").addEventListener("click", function () {
+                CalSalaryDetail('net2gross');
+            });
+
+            function CalSalaryDetail(type) {
+                var formId = "salary-cal-form";
+                var formSelection = "." + formId;
+                if (ValidateForm(formSelection)) {
+                    var dataInput = GetInputData();
+                    dataInput = ExchangeCurencyInput(dataInput);
+                    dataInput.insuranceRatio = GetInsuranceRatioBy(dataInput.nationality);
+                    if (type === 'gross2net') {
+                        dataInput.grossSalary = dataInput.income;
+                    } else {
+                        dataInput.grossSalary = CalGrossFromNet(dataInput);
+                        dataInput.insurance = dataInput.insurance != dataInput.income ? dataInput.insurance : dataInput.grossSalary;
+                    }
+                    var result = CalculationSalary(dataInput);
+                    result = ExchangeCurencyOutput(result);
+                    SetHtml(result, type);
+                }
+            }
+
+            function ValidateForm(formSelection) {
+                const incomeInput = document.querySelector(formSelection + " #income");
+                const errorMessIncome = document.querySelector('.error-mess-income');
+                const otherInsuranceInput = document.querySelector(formSelection + " #otherInsurance");
+                const errorMessOtherInsurance = document.querySelector('.error-mess-otherInsurance');
+                if (!incomeInput.value.trim()) {
+                    errorMessIncome.style.display = 'block';
+                    return false;
+                } else {
+                    errorMessIncome.style.display = 'none';
+                }
+                const insuranceRadio = document.querySelector('input[name=insurance]:checked');
+                if (insuranceRadio && insuranceRadio.value === "other") {
+                    if (!otherInsuranceInput.value.trim()) {
+                        errorMessOtherInsurance.style.display = 'block';
+                        return false;
+                    } else {
+                        errorMessOtherInsurance.style.display = 'none';
+                    }
+                } else {
+                    errorMessOtherInsurance.style.display = 'none';
+                }
+                return true;
+            }
+
+            function FormatMoney(value) {
+                return String(value).replace(/\D/g, "").replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+            }
+
+            function ClearFormatMoney(value) {
+                return String(value) == "" ? 0 : parseInt(String(value).replaceAll(",", ""));
+            }
+
+            function GetInputData() {
+                return {
+                    income: ClearFormatMoney(document.querySelector("#income").value),
+                    currency: document.querySelector("#currency").value,
+                    exchangeRate: ClearFormatMoney(document.querySelector("#currency").value === "VND" ? "1" : document.querySelector("#exchangeRate").value),
+                    insurance: ClearFormatMoney(document.querySelector('input[name=insurance]:checked').value === "full" ?
+                        document.querySelector("#income").value :
+                        document.querySelector("#otherInsurance").value),
+                    zone: document.querySelector("#zone").value,
+                    numDepen: ClearFormatMoney(document.querySelector("#numDep").value),
+                    nationality: "VN"
+                };
+            }
+
+            function SetHtml(data, type) {
+                // btn
+                if (type === 'gross2net') {
+                    document.querySelector("#gross-net-result").innerHTML = `
+                <div class="w-full lg:w-1/2 lg:px-2">
+                <label class="btn block text-center btn-salary">LƯƠNG GROSS<br /><span id="result-btn-gross" class="salary-amount"></span></label>
+                <div class="icon-block"><i class="li-arrow-right"></i></div>
+                </div>
+                <div class="w-full lg:w-1/2 lg:px-2">
+                <label class="btn block text-center btn-salary btn-net">LƯƠNG NET<br /><span id="result-btn-net" class="salary-amount"></span></label>
+                </div>`;
+                } else {
+                    document.querySelector("#gross-net-result").innerHTML = `
+                <div class="w-full lg:w-1/2 lg:px-2">
+                <label class="btn block text-center btn-salary btn-net">LƯƠNG NET<br /><span id="result-btn-net" class="salary-amount"></span></label>
+                <div class="icon-block"><i class="li-arrow-right"></i></div>
+                </div>
+                <div class="w-full lg:w-1/2 lg:px-2">
+                <label class="btn block text-center btn-salary">LƯƠNG GROSS<br /><span id="result-btn-gross" class="salary-amount"></span></label>
+                </div>
+            `;
+                }
+                if (document.querySelector("#currency").value === "USD") {
+                    document.querySelector("#result-btn-gross").innerHTML = FormatMoney(data.empSalaryDetail.grossSalaryUSD) + " USD <br/>" + FormatMoney(data.empSalaryDetail.grossSalary) + " VND";
+                    document.querySelector("#result-btn-net").innerHTML = FormatMoney(data.empSalaryDetail.netSalaryUSD) + " USD <br/>" + FormatMoney(data.empSalaryDetail.netSalary) + " VND";
+                    document.querySelector("#result-net-salary").innerHTML = FormatMoney(data.empSalaryDetail.netSalaryUSD) + " USD <br/>" + FormatMoney(data.empSalaryDetail.netSalary) + " VND";
+                    document.querySelector("#result-total-emp-cost").innerHTML = FormatMoney(data.employerCost.totalEmpCostUSD) + " USD <br/>" + FormatMoney(data.employerCost.totalEmpCost) + " VND";
+                } else {
+                    document.querySelector("#result-btn-gross").innerText = FormatMoney(data.empSalaryDetail.grossSalary);
+                    document.querySelector("#result-btn-net").innerText = FormatMoney(data.empSalaryDetail.netSalary);
+                    document.querySelector("#result-net-salary").innerText = FormatMoney(data.empSalaryDetail.netSalary);
+                    document.querySelector("#result-total-emp-cost").innerText = FormatMoney(data.employerCost.totalEmpCost);
+                }
+                document.querySelector("#per-social-ratio").innerText = data.insuranceRatio.personal.socialRatio * 100;
+                document.querySelector("#per-heal-ratio").innerText = data.insuranceRatio.personal.healRatio * 100;
+                document.querySelector("#per-unemp-ratio").innerText = data.insuranceRatio.personal.unempRatio * 100;
+                document.querySelector("#com-social-ratio").innerText = (data.insuranceRatio.company.socialRatio * 100);
+                document.querySelector("#com-heal-ratio").innerText = data.insuranceRatio.company.healRatio * 100;
+                document.querySelector("#com-unemp-ratio").innerText = data.insuranceRatio.company.unempRatio * 100;
+                document.querySelector("#com-trade-ratio").innerText = data.insuranceRatio.company.tradeRatio * 100;
+                document.querySelector("#result-gross-salary").innerText = FormatMoney(data.empSalaryDetail.grossSalary);
+                document.querySelector("#result-social-insur").innerText = "- " + FormatMoney(data.empSalaryDetail.socialInsur);
+                document.querySelector("#result-heal-insur").innerText = "- " + FormatMoney(data.empSalaryDetail.healInsur);
+                document.querySelector("#result-unemp-insur").innerText = "- " + FormatMoney(data.empSalaryDetail.unempInsur);
+                document.querySelector("#result-salary-before-tax").innerText = FormatMoney(data.empSalaryDetail.salaryBeforeTax);
+                document.querySelector("#result-dep-allow").innerText = "- " + FormatMoney(data.empSalaryDetail.depenAllow);
+                document.querySelector("#result-taxable-salary").innerText = FormatMoney(data.empSalaryDetail.taxableSalary);
+                document.querySelector("#result-per-tax").innerText = "- " + FormatMoney(data.empSalaryDetail.personTax);
+                document.querySelector("#result-cost-heal-insur").innerText = "+ " + FormatMoney(data.employerCost.healInsur);
+                document.querySelector("#result-cost-unemp-insur").innerText = "+ " + FormatMoney(data.employerCost.unempInsur);
+                document.querySelector("#result-cost-trade-union").innerText = "+ " + FormatMoney(data.employerCost.tradeUnion);
+                document.querySelector(".afterCal").style.display = "block";
+            }
+
+            function ExchangeCurencyInput(data) {
+                data.income = data.income * data.exchangeRate;
+                data.insurance = data.insurance * data.exchangeRate;
+                return data;
+            }
+
+            function ExchangeCurencyOutput(data) {
+                data.empSalaryDetail.grossSalaryUSD = Math.round(data.empSalaryDetail.grossSalary / data.exchangeRate);
+                data.empSalaryDetail.netSalaryUSD = Math.round(data.empSalaryDetail.netSalary / data.exchangeRate);
+                data.employerCost.totalEmpCostUSD = Math.round(data.employerCost.totalEmpCost / data.exchangeRate);
+                return data;
+            }
+
+            function CalculationSalary(data) {
+                data.empSalaryDetail = CalEmpSalDetailGross(data);
+                data.employerCost = CalEmployerCost(data);
+                return data;
+            }
+
+            function CalEmpSalDetailGross(data) {
+                var maxInsur = GetMaxInsuranceBy(data.zone, data.insurance);
+                var socialInsur = Math.round(maxInsur.maxSocial * data.insuranceRatio.personal.socialRatio),
+                    healInsur = Math.round(maxInsur.maxHeal * data.insuranceRatio.personal.healRatio),
+                    unempInsur = Math.round(maxInsur.maxUnemp * data.insuranceRatio.personal.unempRatio),
+                    salaryBeforeTax = data.grossSalary - socialInsur - healInsur - unempInsur,
+                    personalAllow = REDUCEPERTAX,
+                    depenAllow = REDUCEDEPENTAX * data.numDepen,
+                    taxableSalary = salaryBeforeTax - personalAllow - depenAllow;
+                taxableSalary = taxableSalary < 0 ? 0 : taxableSalary;
+                var personTaxDetail = GetPersonalTaxDetailBy(taxableSalary);
+                var personTax = personTaxDetail.reduce((a, b) => a + b, 0);
+                var netSalary = salaryBeforeTax - personTax;
+                return {
+                    grossSalary: data.grossSalary,
+                    socialInsur: socialInsur,
+                    healInsur: healInsur,
+                    unempInsur: unempInsur,
+                    salaryBeforeTax: salaryBeforeTax,
+                    personalAllow: personalAllow,
+                    depenAllow: depenAllow,
+                    taxableSalary: taxableSalary,
+                    personTax: personTax,
+                    personTaxDetail: personTaxDetail,
+                    netSalary: netSalary
+                }
+            }
+
+            function CalEmployerCost(data) {
+                var maxInsur = GetMaxInsuranceBy(data.zone, data.insurance);
+                var socialInsur = Math.round(maxInsur.maxSocial * data.insuranceRatio.company.socialRatio),
+                    healInsur = Math.round(maxInsur.maxHeal * data.insuranceRatio.company.healRatio),
+                    unempInsur = Math.round(maxInsur.maxUnemp * data.insuranceRatio.company.unempRatio),
+                    tradeUnion = Math.round(maxInsur.maxTrade * data.insuranceRatio.company.tradeRatio),
+                    totalEmpCost = data.grossSalary + socialInsur + healInsur + unempInsur + tradeUnion
+                return {
+                    grossSalary: data.grossSalary,
+                    socialInsur: socialInsur,
+                    healInsur: healInsur,
+                    unempInsur: unempInsur,
+                    tradeUnion: tradeUnion,
+                    totalEmpCost: totalEmpCost
+                }
+            }
+
+            function GetInsuranceRatioBy(nationality) {
+                return {
+                    personal: {
+                        socialRatio: nationality == "VN" ? 0.08 : 0.08,
+                        healRatio: nationality == "VN" ? 0.015 : 0.015,
+                        unempRatio: nationality == "VN" ? 0.01 : 0
+                    },
+                    company: {
+                        socialRatio: nationality == "VN" ? 0.17 : 0.17,
+                        healRatio: nationality == "VN" ? 0.03 : 0.03,
+                        unempRatio: nationality == "VN" ? 0.01 : 0,
+                        tradeRatio: nationality == "VN" ? 0.02 : 0.02
+                    }
+                }
+            }
+
+            function GetMaxInsuranceBy(zone, insurance) {
+                var minSalaryByZone = 0;
+                switch (zone) {
+                    case "1":
+                        minSalaryByZone = 4420000;
+                        break;
+                    case "2":
+                        minSalaryByZone = 3920000;
+                        break;
+                    case "3":
+                        minSalaryByZone = 3430000;
+                        break;
+                    case "4":
+                        minSalaryByZone = 3070000;
+                        break;
+                }
+                var maxSocialByZone = 20 * 1490000;
+                var maxHealByZone = 20 * 1490000;
+                var maxUnempByZone = 20 * minSalaryByZone;
+                var maxTradeByZone = 20 * 1490000;
+                return {
+                    maxSocial: insurance < maxSocialByZone ? insurance : maxSocialByZone,
+                    maxHeal: insurance < maxHealByZone ? insurance : maxHealByZone,
+                    maxUnemp: insurance < maxUnempByZone ? insurance : maxUnempByZone,
+                    maxTrade: insurance < maxTradeByZone ? insurance : maxTradeByZone,
+                }
+            }
+
+            function CalGrossFromNet(data) {
+                var salaryBeforeTax = 0;
+                var grossSalary = 0;
+                var reduceTax = REDUCEPERTAX + (REDUCEDEPENTAX * data.numDepen);
+                var convertedIncome = data.income - reduceTax;
+                var socialRatio = data.insuranceRatio.personal.socialRatio;
+                var healRatio = data.insuranceRatio.personal.healRatio;
+                var unempRatio = data.insuranceRatio.personal.unempRatio;
+                if (convertedIncome < 0) {
+                    salaryBeforeTax = data.income;
+                } else {
+                    var taxableSalary = GetTaxableSalaryBy(convertedIncome);
+                    var salaryBeforeTax = taxableSalary + reduceTax;
+                }
+                if (data.insurance != data.income) {
+                    var maxInsur = GetMaxInsuranceBy(data.zone, data.insurance);
+                    var socialInsur = Math.round(maxInsur.maxSocial * socialRatio),
+                        healInsur = Math.round(maxInsur.maxHeal * healRatio),
+                        unempInsur = Math.round(maxInsur.maxUnemp * unempRatio);
+                    grossSalary = salaryBeforeTax + socialInsur + healInsur + unempInsur;
+                } else {
+                    var tempGross = salaryBeforeTax / (1 - (socialRatio + healRatio + unempRatio));
+                    var maxInsur = GetMaxInsuranceBy(data.zone, tempGross);
+                    var socialInsur = Math.round(maxInsur.maxSocial * socialRatio),
+                        healInsur = Math.round(maxInsur.maxHeal * healRatio),
+                        unempInsur = Math.round(maxInsur.maxUnemp * unempRatio);
+                    if (data.nationality == "VN") {
+                        var insurOver = GetMaxInsuranceBy(data.zone, 9999999999);
+                        if (salaryBeforeTax <= 26671000) {
+                            //not over max insurance
+                            grossSalary = Math.round(tempGross);
+                        } else if (salaryBeforeTax <= insurOver.maxUnemp * 0.99 - insurOver.maxSocial * 0.08 - insurOver.maxHeal * 0.015) {
+                            // social & heal over max insurance
+                            grossSalary = Math.round((salaryBeforeTax + socialInsur + healInsur) / (1 - 0.01));
+                        } else {
+                            grossSalary = salaryBeforeTax + socialInsur + healInsur + unempInsur;
+                        }
+                    } else {
+                        if (salaryBeforeTax <= 26671000) {
+                            grossSalary = Math.round(tempGross);
+                        } else {
+                            grossSalary = salaryBeforeTax + socialInsur + healInsur + unempInsur;
+                        }
+                    }
+                }
+                return grossSalary;
+            }
+
+            function GetTaxableSalaryBy(convertedIncome) {
+                var result = 0;
+                if (convertedIncome <= 4750000) {
+                    result = convertedIncome / 0.95;
+                } else if (convertedIncome <= 9250000) {
+                    result = (convertedIncome - 250000) / 0.9;
+                } else if (convertedIncome <= 16050000) {
+                    result = (convertedIncome - 750000) / 0.85;
+                } else if (convertedIncome <= 27250000) {
+                    result = (convertedIncome - 1650000) / 0.8;
+                } else if (convertedIncome <= 42250000) {
+                    result = (convertedIncome - 3250000) / 0.75;
+                } else if (convertedIncome <= 61850000) {
+                    result = (convertedIncome - 5850000) / 0.7;
+                } else {
+                    result = (convertedIncome - 9850000) / 0.65;
+                }
+                return Math.round(result);
+            }
+
+            function GetPersonalTaxBy(taxableSalary) {
+                var result = 0;
+                if (taxableSalary <= 5000000) {
+                    result = taxableSalary * 0.05;
+                } else if (taxableSalary <= 10000000) {
+                    result = taxableSalary * 0.1 - 250000;
+                } else if (taxableSalary <= 18000000) {
+                    result = taxableSalary * 0.15 - 750000;
+                } else if (taxableSalary <= 32000000) {
+                    result = taxableSalary * 0.2 - 1650000;
+                } else if (taxableSalary <= 52000000) {
+                    result = taxableSalary * 0.25 - 3250000;
+                } else if (taxableSalary <= 80000000) {
+                    result = taxableSalary * 0.3 - 5850000;
+                } else {
+                    result = taxableSalary * 0.35 - 9850000;
+                }
+                return Math.round(result);
+            }
+            var taxRateArr = [0, 5000000, 10000000, 18000000, 32000000, 52000000, 80000000, 9000000000000000];
+
+            function GetPersonalTaxDetailBy(taxableSalary) {
+                var taxArr = [];
+                for (var i = 1; i <= taxRateArr.length; i++) {
+                    var tax = 0;
+                    var cost = 0;
+                    if (taxableSalary > taxRateArr[i - 1]) {
+                        if (taxableSalary > taxRateArr[i]) {
+                            cost = taxRateArr[i] - taxRateArr[i - 1];
+                        } else {
+                            cost = taxableSalary - taxRateArr[i - 1];
+                        }
+                        var rate = i * 5 / 100;
+                        var tax = Math.round(cost * rate);
+                    }
+                    taxArr.push(tax);
+                }
+                return taxArr;
+            }
+
+            function get_tax_level(tntt) {
+                if (tntt <= 0) {
+                    return {
+                        name: '0%',
+                        value: 0
+                    };
+                } else if (tntt <= 5000000) {
+                    return {
+                        name: '5%',
+                        value: tntt * 5 / 100
+                    };
+                } else if (tntt <= 10000000) {
+                    return {
+                        name: '10% - 250,000',
+                        value: tntt * 10 / 100 - 250000
+                    };
+                } else if (tntt <= 18000000) {
+                    return {
+                        name: '15% - 750,000',
+                        value: tntt * 15 / 100 - 750000
+                    };
+                } else if (tntt <= 32000000) {
+                    return {
+                        name: '20% - 1,650,000',
+                        value: tntt * 20 / 100 - 1650000
+                    };
+                } else if (tntt <= 52000000) {
+                    return {
+                        name: '25% - 3,250,000',
+                        value: tntt * 25 / 100 - 3250000
+                    };
+                } else if (tntt <= 80000000) {
+                    return {
+                        name: '30% - 5,850,000',
+                        value: tntt * 30 / 100 - 5850000
+                    };
+                } else {
+                    return {
+                        name: '35% - 9,850,000',
+                        value: tntt * 35 / 100 - 9850000
+                    };
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>
